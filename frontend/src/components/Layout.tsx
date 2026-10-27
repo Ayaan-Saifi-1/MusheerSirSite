@@ -71,7 +71,7 @@ export const Layout: React.FC<LayoutProps> = ({
     : defaultNavLinks;
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: 'var(--bg-primary)' }}>
       {/* Accessibility Skip Link */}
       <a
         href="#main-content"
@@ -215,7 +215,7 @@ export const Layout: React.FC<LayoutProps> = ({
       </header>
 
       {/* Main Page Content */}
-      <main id="main-content" style={{ flex: 1 }}>
+      <main id="main-content" style={{ flex: 1, backgroundColor: 'var(--bg-primary)' }}>
         {children}
       </main>
 

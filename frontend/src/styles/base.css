@@ -48,6 +48,13 @@ body {
   line-height: var(--line-body);
 }
 
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+}
+
 /* Restrained selection styling */
 ::selection {
   background: var(--accent-matcha-tint);
