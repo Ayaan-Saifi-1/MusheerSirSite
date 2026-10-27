@@ -186,8 +186,7 @@ class Command(BaseCommand):
 
                 # Determine selected and status
                 is_selected = num in selected_journal_ids
-                # If selected, make published so it appears on home page; otherwise DRAFT
-                status = ContentStatus.PUBLISHED if is_selected else ContentStatus.DRAFT
+                status = ContentStatus.PUBLISHED
 
                 slug = f"j-{num}-{year}-{slugify(title[:40])}"
 
@@ -281,7 +280,7 @@ class Command(BaseCommand):
                         "raw_reference": clean_raw,
                         "is_selected": False,
                         "order": int(num) + 100,
-                        "status": ContentStatus.DRAFT,
+                        "status": ContentStatus.PUBLISHED,
                     }
                 )
                 parsed_conferences += 1
