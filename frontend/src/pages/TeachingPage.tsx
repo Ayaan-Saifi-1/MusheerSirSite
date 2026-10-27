@@ -1,5 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
+import {
+  BookOpen,
+  GraduationCap,
+  Users,
+  Code,
+  FileText,
+  Layers,
+  CheckCircle2,
+} from 'lucide-react';
 
 const COURSES_TAUGHT = [
   {
@@ -92,7 +101,7 @@ export const TeachingPage: React.FC = () => {
               gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))',
               gap: '2.5rem',
               paddingBottom: '2.5rem',
-              marginBottom: '3rem',
+              marginBottom: '3.5rem',
               borderBottom: '1px solid var(--border-hairline)',
             }}
           >
@@ -100,8 +109,9 @@ export const TeachingPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1 }}>
                 18 Years
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginTop: '0.35rem' }}>
-                Teaching Experience
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <BookOpen size={13} strokeWidth={2.2} />
+                <span>Teaching Experience</span>
               </div>
               <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 Associate Professor at JMI; Former Lecturer at AMU Aligarh (2006–2010)
@@ -112,11 +122,12 @@ export const TeachingPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1 }}>
                 6 Scholars
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginTop: '0.35rem' }}>
-                Doctoral Supervision
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <Users size={13} strokeWidth={2.2} />
+                <span>Doctoral Supervision</span>
               </div>
               <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
-                Actively guiding 6 Ph.D. researchers in nonlinear cryptology & authentication
+                Actively guiding 6 Ph.D. researchers in nonlinear cryptology &amp; authentication
               </div>
             </div>
 
@@ -124,8 +135,9 @@ export const TeachingPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1 }}>
                 70+ Theses
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginTop: '0.35rem' }}>
-                Completed Dissertations
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <GraduationCap size={13} strokeWidth={2.2} />
+                <span>Completed Dissertations</span>
               </div>
               <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 14 M.Tech dissertations, 16 M.Tech projects, and 40+ B.Tech engineering projects
@@ -134,45 +146,66 @@ export const TeachingPage: React.FC = () => {
           </div>
 
           {/* Courses Taught */}
-          <div style={{ marginBottom: '4rem' }}>
+          <div style={{ marginBottom: '4.5rem' }}>
             <h2
               style={{
                 fontFamily: 'var(--font-serif)',
                 fontSize: '1.5rem',
                 color: 'var(--text-primary)',
-                marginBottom: '1rem',
+                marginBottom: '1.25rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
                 fontWeight: 500,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
               }}
             >
-              Core Courses Taught
+              <BookOpen size={18} strokeWidth={2} color="var(--accent-sage-dark)" />
+              <span>Core Courses Taught</span>
             </h2>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {COURSES_TAUGHT.map((course, idx) => (
                 <article
                   key={idx}
                   style={{
-                    padding: '1.35rem 0',
-                    borderBottom: '1px solid var(--border-hairline)',
-                    display: 'grid',
-                    gridTemplateColumns: '1fr',
-                    gap: '0.35rem',
+                    padding: '1.25rem',
+                    borderLeft: '3px solid var(--accent-sage)',
+                    background: 'var(--bg-elevated)',
+                    borderRadius: 'var(--radius-subtle)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    gap: '0.4rem',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.2rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
                       {course.title}
                     </h3>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', fontWeight: 600 }}>
-                      {course.code}
+                    <span
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '0.3rem',
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.75rem',
+                        color: 'var(--accent-sage-dark)',
+                        fontWeight: 600,
+                        background: 'rgba(117, 160, 106, 0.12)',
+                        padding: '0.2rem 0.5rem',
+                        borderRadius: '3px',
+                      }}
+                    >
+                      <Code size={11} />
+                      <span>{course.code}</span>
                     </span>
                   </div>
-                  <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', fontWeight: 500 }}>
-                    Level: {course.level}
+                  <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem', fontFamily: 'var(--font-sans)', fontSize: '0.8125rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    <GraduationCap size={13} />
+                    <span>Level: {course.level}</span>
                   </div>
-                  <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-muted)', lineHeight: 1.55, margin: '0.2rem 0 0 0', maxWidth: '75ch' }}>
+                  <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: '0.2rem 0 0 0', maxWidth: '75ch' }}>
                     {course.description}
                   </p>
                 </article>
@@ -187,38 +220,43 @@ export const TeachingPage: React.FC = () => {
                 fontFamily: 'var(--font-serif)',
                 fontSize: '1.5rem',
                 color: 'var(--text-primary)',
-                marginBottom: '1rem',
+                marginBottom: '1.25rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
                 fontWeight: 500,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
               }}
             >
-              Curricula & Syllabi Designed for University Programs
+              <Layers size={18} strokeWidth={2} color="var(--accent-sage-dark)" />
+              <span>Curricula &amp; Syllabi Designed for University Programs</span>
             </h2>
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
               {CURRICULUM_DESIGN.map((group, gIdx) => (
                 <div key={gIdx}>
-                  <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.75rem' }}>
+                  <h3 style={{ fontFamily: 'var(--font-sans)', fontSize: '1rem', color: 'var(--text-primary)', fontWeight: 600, marginBottom: '0.85rem' }}>
                     {group.category}
                   </h3>
-                  <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
                     {group.items.map((item, iIdx) => (
-                      <li
+                      <div
                         key={iIdx}
                         style={{
-                          fontSize: '0.9375rem',
+                          display: 'flex',
+                          alignItems: 'flex-start',
+                          gap: '0.65rem',
+                          fontSize: '0.9rem',
                           color: 'var(--text-secondary)',
                           lineHeight: 1.55,
-                          paddingLeft: '1.25rem',
-                          position: 'relative',
                         }}
                       >
-                        <span style={{ position: 'absolute', left: 0, color: 'var(--accent-green)' }}>—</span>
-                        {item}
-                      </li>
+                        <CheckCircle2 size={14} color="var(--accent-sage-dark)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                        <span>{item}</span>
+                      </div>
                     ))}
-                  </ul>
+                  </div>
                 </div>
               ))}
             </div>

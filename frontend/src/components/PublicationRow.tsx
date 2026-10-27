@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ExternalLink, FileDown, Code, ChevronDown, ChevronUp, Quote, Copy, Check, Download } from 'lucide-react';
 import { Publication } from '../lib/types';
 
 interface PublicationRowProps {
@@ -100,88 +101,66 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
           )}
         </div>
 
-        {/* Action links separated by thin divider dots without ugly brackets */}
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.75rem',
-            marginTop: '0.5rem',
-            fontFamily: 'var(--font-mono)',
-            fontSize: '0.75rem',
-          }}
-        >
+        {/* Action links with clean professional Lucide icons (No emojis) */}
+        <div className="pub-row__actions">
           {publication.doi && (
-            <>
-              <a
-                href={publication.doi.startsWith('http') ? publication.doi : `https://doi.org/${publication.doi}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-link"
-              >
-                DOI &rarr;
-              </a>
-              <span style={{ color: 'var(--border-hairline)' }}>&bull;</span>
-            </>
+            <a
+              href={publication.doi.startsWith('http') ? publication.doi : `https://doi.org/${publication.doi}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pub-action-btn"
+              title="Open DOI external publication page"
+            >
+              <ExternalLink size={12} aria-hidden="true" />
+              <span>DOI</span>
+            </a>
           )}
 
           {publication.pdf_url && (
-            <>
-              <a
-                href={publication.pdf_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-link"
-              >
-                PDF
-              </a>
-              <span style={{ color: 'var(--border-hairline)' }}>&bull;</span>
-            </>
+            <a
+              href={publication.pdf_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pub-action-btn"
+              title="Download official PDF preprint"
+            >
+              <FileDown size={12} aria-hidden="true" />
+              <span>PDF</span>
+            </a>
           )}
 
           {publication.code_url && (
-            <>
-              <a
-                href={publication.code_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-link"
-              >
-                Code
-              </a>
-              <span style={{ color: 'var(--border-hairline)' }}>&bull;</span>
-            </>
+            <a
+              href={publication.code_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pub-action-btn"
+              title="View source code repository"
+            >
+              <Code size={12} aria-hidden="true" />
+              <span>Code</span>
+            </a>
           )}
 
           {publication.abstract && (
-            <>
-              <button
-                type="button"
-                onClick={() => setShowAbstract(!showAbstract)}
-                className="text-link"
-                style={{ background: 'none', border: 'none', padding: 0, font: 'inherit', cursor: 'pointer' }}
-              >
-                {showAbstract ? 'Hide Abstract' : 'Abstract'}
-              </button>
-              <span style={{ color: 'var(--border-hairline)' }}>&bull;</span>
-            </>
+            <button
+              type="button"
+              onClick={() => setShowAbstract(!showAbstract)}
+              className="pub-action-btn"
+            >
+              {showAbstract ? <ChevronUp size={12} aria-hidden="true" /> : <ChevronDown size={12} aria-hidden="true" />}
+              <span>{showAbstract ? 'Hide Abstract' : 'Abstract'}</span>
+            </button>
           )}
 
           <button
             type="button"
             onClick={() => setShowCite(!showCite)}
-            className="text-link"
-            style={{
-              background: 'none',
-              border: 'none',
-              padding: 0,
-              font: 'inherit',
-              cursor: 'pointer',
-              color: showCite ? 'var(--accent-green)' : undefined,
-              fontWeight: showCite ? 600 : 400,
-            }}
+            className="pub-action-btn"
+            style={{ color: showCite ? 'var(--palette-c1-charcoal)' : undefined, fontWeight: showCite ? 600 : 400 }}
           >
-            {showCite ? 'Close Cite' : 'Cite'}
+            <Quote size={12} aria-hidden="true" />
+            <span>{showCite ? 'Close Cite' : 'Cite'}</span>
           </button>
         </div>
 
@@ -191,7 +170,7 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
             style={{
               marginTop: '0.85rem',
               padding: '1rem',
-              borderLeft: '2px solid var(--accent-green)',
+              borderLeft: '2px solid var(--accent-sage)',
               background: 'var(--bg-secondary)',
             }}
           >
@@ -262,40 +241,26 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
               {currentCitation}
             </pre>
 
-            {/* Copy & Download Actions */}
-            <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center' }}>
+            {/* Copy & Download Actions with professional icons */}
+            <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
               <button
                 type="button"
                 onClick={handleCopyCitation}
-                className="text-link"
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '0.75rem',
-                  background: 'none',
-                  border: 'none',
-                  padding: 0,
-                  cursor: 'pointer',
-                  fontWeight: 500,
-                }}
+                className="pub-action-btn"
+                style={{ fontWeight: 500 }}
               >
-                {copied ? 'Copied to clipboard \u2713' : 'Copy Citation \u2192'}
+                {copied ? <Check size={13} style={{ color: 'var(--accent-sage-dark)' }} /> : <Copy size={13} />}
+                <span>{copied ? 'Copied to clipboard' : 'Copy Citation'}</span>
               </button>
 
               {citeFormat === 'BIBTEX' && (
                 <button
                   type="button"
                   onClick={handleDownloadBib}
-                  className="text-link"
-                  style={{
-                    fontFamily: 'var(--font-mono)',
-                    fontSize: '0.75rem',
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    cursor: 'pointer',
-                  }}
+                  className="pub-action-btn"
                 >
-                  Download .bib &darr;
+                  <Download size={13} />
+                  <span>Download .bib</span>
                 </button>
               )}
             </div>

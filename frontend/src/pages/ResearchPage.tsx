@@ -2,6 +2,19 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/Button';
 import { Attractor3D } from '../components/Attractor3D';
+import {
+  Lock,
+  Binary,
+  ShieldCheck,
+  Activity,
+  Cpu,
+  Compass,
+  FileText,
+  Award,
+  TrendingUp,
+  Layers,
+  Hash,
+} from 'lucide-react';
 
 const RESEARCH_PILLARS = [
   {
@@ -124,6 +137,39 @@ export const ResearchPage: React.FC = () => {
             </p>
           </header>
 
+          {/* Quick Metrics Strip */}
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: '1.75rem',
+              alignItems: 'center',
+              paddingBottom: '1.25rem',
+              marginBottom: '2.5rem',
+              borderBottom: '1px solid var(--border-hairline)',
+              fontFamily: 'var(--font-mono)',
+              fontSize: '0.8125rem',
+              color: 'var(--text-secondary)',
+            }}
+          >
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+              <Layers size={14} color="var(--accent-sage-dark)" />
+              <span>6 Core Pillars</span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+              <FileText size={14} color="var(--accent-sage-dark)" />
+              <span>157 Peer-Reviewed Papers</span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+              <Award size={14} color="var(--accent-sage-dark)" />
+              <span>World's Top 2% Scientist</span>
+            </div>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
+              <TrendingUp size={14} color="var(--accent-sage-dark)" />
+              <span>h-Index 42 &bull; 5,296 Citations</span>
+            </div>
+          </div>
+
           {/* Interactive Phase Space Attractor Figure */}
           <div style={{ marginBottom: '4rem' }}>
             <Attractor3D />
@@ -131,31 +177,61 @@ export const ResearchPage: React.FC = () => {
 
           {/* Detailed Research Pillars List (Unboxed Editorial Typography) */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '4.5rem' }}>
-            {RESEARCH_PILLARS.map((pillar) => (
-              <article key={pillar.num} style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '2rem' }}>
-                <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem', marginBottom: '0.75rem' }}>
-                  <span style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--accent-green)', fontStyle: 'italic', lineHeight: 1 }}>
-                    {pillar.num}
-                  </span>
-                  <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.65rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
-                    {pillar.title}
-                  </h2>
-                </div>
+            {RESEARCH_PILLARS.map((pillar) => {
+              const pillarIcons: Record<string, React.ReactNode> = {
+                '01': <Lock size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+                '02': <Binary size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+                '03': <ShieldCheck size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+                '04': <Activity size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+                '05': <Cpu size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+                '06': <Compass size={20} strokeWidth={1.8} color="var(--accent-sage-dark)" />,
+              };
 
-                <div className="text-prose" style={{ marginTop: '1rem', fontSize: '1rem', lineHeight: 1.7, maxWidth: '78ch' }}>
-                  {pillar.details}
-                </div>
+              return (
+                <article key={pillar.num} style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '2rem' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '1rem', marginBottom: '0.75rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'baseline', gap: '1rem' }}>
+                      <span style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--accent-sage)', fontStyle: 'italic', lineHeight: 1 }}>
+                        {pillar.num}
+                      </span>
+                      <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.65rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
+                        {pillar.title}
+                      </h2>
+                    </div>
+                    <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', display: 'flex', alignItems: 'center' }}>
+                      {pillarIcons[pillar.num]}
+                    </div>
+                  </div>
 
-                <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', marginTop: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.75rem' }}>
-                  <span style={{ color: 'var(--text-muted)' }}>Focus Areas:</span>
-                  {pillar.keywords.map((kw, idx) => (
-                    <span key={idx} style={{ color: 'var(--accent-green)' }}>
-                      #{kw}{idx < pillar.keywords.length - 1 ? ' •' : ''}
-                    </span>
-                  ))}
-                </div>
-              </article>
-            ))}
+                  <div className="text-prose" style={{ marginTop: '1rem', fontSize: '1rem', lineHeight: 1.7, maxWidth: '78ch' }}>
+                    {pillar.details}
+                  </div>
+
+                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', alignItems: 'center', marginTop: '1.5rem', fontFamily: 'var(--font-mono)', fontSize: '0.75rem' }}>
+                    <span style={{ color: 'var(--text-muted)', marginRight: '0.25rem' }}>Focus Areas:</span>
+                    {pillar.keywords.map((kw, idx) => (
+                      <span
+                        key={idx}
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.25rem',
+                          padding: '0.25rem 0.55rem',
+                          background: 'var(--bg-elevated)',
+                          border: '1px solid var(--border-hairline)',
+                          borderRadius: 'var(--radius-subtle)',
+                          color: 'var(--text-secondary)',
+                          fontSize: '0.75rem',
+                        }}
+                      >
+                        <Hash size={10} color="var(--accent-sage-dark)" />
+                        <span>{kw}</span>
+                      </span>
+                    ))}
+                  </div>
+                </article>
+              );
+            })}
           </div>
 
           <div style={{ marginTop: '4rem', paddingTop: '2rem', borderTop: '1px solid var(--border-hairline)', display: 'flex', gap: '1.5rem', alignItems: 'center' }}>

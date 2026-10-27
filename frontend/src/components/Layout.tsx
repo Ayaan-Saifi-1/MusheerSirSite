@@ -1,6 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link, useLocation } from 'react-router-dom';
 import { NavigationItem, SiteSettings } from '../lib/types';
+import {
+  GoogleScholarLogo,
+  ScopusLogo,
+  OrcidLogo,
+  ResearchGateLogo,
+  UniversityLogo,
+} from './ScholarlyLogos';
+import {
+  Mail,
+  MapPin,
+  Building2,
+  ExternalLink,
+  Menu,
+  X,
+} from 'lucide-react';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -64,7 +79,7 @@ export const Layout: React.FC<LayoutProps> = ({
           position: 'absolute',
           top: '-9999px',
           left: '1rem',
-          background: 'var(--accent-green)',
+          background: 'var(--accent-sage-dark)',
           color: '#FFFFFF',
           padding: '0.5rem 1rem',
           zIndex: 100,
@@ -154,15 +169,17 @@ export const Layout: React.FC<LayoutProps> = ({
               </NavLink>
             </nav>
 
-            {/* Mobile Menu Toggle (Pure text button; zero icon dependencies) */}
+            {/* Mobile Menu Toggle (Professional icon button) */}
             <button
               type="button"
               className="mobile-menu-toggle"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
             >
-              [{mobileMenuOpen ? 'Close' : 'Menu'}]
+              {mobileMenuOpen ? <X size={15} /> : <Menu size={15} />}
+              <span>{mobileMenuOpen ? 'Close' : 'Menu'}</span>
             </button>
           </div>
 
@@ -222,8 +239,9 @@ export const Layout: React.FC<LayoutProps> = ({
               <p style={{ marginBottom: '0.75rem' }}>
                 {settings?.university || 'Jamia Millia Islamia (A Central University), New Delhi 110025, India'}
               </p>
-              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}>
-                Correspondence:{' '}
+              <p style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                <Mail size={13} color="var(--accent-sage-dark)" />
+                <span>Correspondence:</span>
                 <a
                   href={`mailto:${settings?.email_primary || 'mahmad9@jmi.ac.in'}`}
                   className="text-link"
@@ -263,8 +281,10 @@ export const Layout: React.FC<LayoutProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-link text-link--muted"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                      Google Scholar
+                      <GoogleScholarLogo size={14} color="#75A06A" />
+                      <span>Google Scholar</span>
                     </a>
                   </li>
                 )}
@@ -275,8 +295,10 @@ export const Layout: React.FC<LayoutProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-link text-link--muted"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                      ORCID iD
+                      <OrcidLogo size={14} />
+                      <span>ORCID iD</span>
                     </a>
                   </li>
                 )}
@@ -287,8 +309,10 @@ export const Layout: React.FC<LayoutProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-link text-link--muted"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                      Scopus
+                      <ScopusLogo size={14} color="#75A06A" />
+                      <span>Scopus</span>
                     </a>
                   </li>
                 )}
@@ -299,8 +323,10 @@ export const Layout: React.FC<LayoutProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-link text-link--muted"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                      ResearchGate
+                      <ResearchGateLogo size={14} color="#75A06A" />
+                      <span>ResearchGate</span>
                     </a>
                   </li>
                 )}
@@ -311,8 +337,10 @@ export const Layout: React.FC<LayoutProps> = ({
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-link text-link--muted"
+                      style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
                     >
-                      LinkedIn
+                      <ExternalLink size={13} color="var(--accent-sage-dark)" />
+                      <span>LinkedIn</span>
                     </a>
                   </li>
                 )}

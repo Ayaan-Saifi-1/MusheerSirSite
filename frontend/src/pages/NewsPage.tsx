@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useQuery } from '@tanstack/react-query';
+import { Award, BookOpen, Building2, Layers, ExternalLink, Calendar } from 'lucide-react';
 import { fetchNewsItems } from '../lib/api';
 
 interface StaticNewsEntry {
@@ -23,7 +24,7 @@ const VERIFIED_NEWS: StaticNewsEntry[] = [
     categoryLabel: 'Call for Papers / Guest Editor',
     title: 'Call for Papers: Scientific Reports Special Collection on "Post-quantum Cybersecurity and Cryptography"',
     details: 'Serving as Guest Editor for Scientific Reports (Springer Nature, SCIE-indexed, IF: 3.8). The collection solicits original research on quantum-resistant primitives, chaos-assisted post-quantum algorithms, lightweight hardware implementations, and cryptanalysis of emerging standards.',
-    linkText: 'Collection Details (Springer Nature) &rarr;',
+    linkText: 'Collection Details (Springer Nature)',
     linkUrl: 'https://www.nature.com/srep/',
     isPinned: true,
   },
@@ -34,7 +35,7 @@ const VERIFIED_NEWS: StaticNewsEntry[] = [
     categoryLabel: 'Call for Papers / Guest Editor',
     title: 'Call for Papers: Discover Computing Special Issue on "Securing Critical Infrastructure in Next-Generation Networks"',
     details: 'Serving as Guest Editor for Discover Computing (Springer). Welcoming contributions addressing cyber-physical security in smart grids, UAV/drone authentication, IoT edge encryption, and resilient cryptographic telemetry.',
-    linkText: 'Special Issue Submission Portal &rarr;',
+    linkText: 'Special Issue Submission Portal',
     linkUrl: 'https://link.springer.com/journal/10791',
     isPinned: true,
   },
@@ -64,7 +65,7 @@ const VERIFIED_NEWS: StaticNewsEntry[] = [
   },
   {
     id: 'crc-book-2024',
-    date: '2024 &ndash; 2025',
+    date: '2024 – 2025',
     category: 'EDITORIAL',
     categoryLabel: 'Edited Book',
     title: 'Edited Book Under Production with CRC Press: "AI Based Cybersecurity Management"',
@@ -124,7 +125,7 @@ export const NewsPage: React.FC = () => {
             </p>
           </header>
 
-          {/* Category Filter Tabs (Unboxed Plain Text Buttons) */}
+          {/* Category Filter Tabs (Unboxed Plain Text Buttons with subtle icons) */}
           <div
             style={{
               display: 'flex',
@@ -139,28 +140,36 @@ export const NewsPage: React.FC = () => {
               type="button"
               onClick={() => setActiveCategory('ALL')}
               className={`attractor-tab-btn ${activeCategory === 'ALL' ? 'active' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}
             >
+              <Layers size={14} />
               All Dispatches ({VERIFIED_NEWS.length})
             </button>
             <button
               type="button"
               onClick={() => setActiveCategory('AWARDS')}
               className={`attractor-tab-btn ${activeCategory === 'AWARDS' ? 'active' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}
             >
+              <Award size={14} />
               Awards &amp; Recognition ({VERIFIED_NEWS.filter((n) => n.category === 'AWARDS').length})
             </button>
             <button
               type="button"
               onClick={() => setActiveCategory('EDITORIAL')}
               className={`attractor-tab-btn ${activeCategory === 'EDITORIAL' ? 'active' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}
             >
+              <BookOpen size={14} />
               Calls for Papers &amp; Editorial ({VERIFIED_NEWS.filter((n) => n.category === 'EDITORIAL').length})
             </button>
             <button
               type="button"
               onClick={() => setActiveCategory('INSTITUTIONAL')}
               className={`attractor-tab-btn ${activeCategory === 'INSTITUTIONAL' ? 'active' : ''}`}
+              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}
             >
+              <Building2 size={14} />
               Institutional Roles ({VERIFIED_NEWS.filter((n) => n.category === 'INSTITUTIONAL').length})
             </button>
           </div>
@@ -174,6 +183,7 @@ export const NewsPage: React.FC = () => {
                   fontSize: '1.5rem',
                   color: 'var(--text-primary)',
                   marginBottom: '1.5rem',
+                  fontWeight: 500,
                 }}
               >
                 Recent Updates from CMS
@@ -191,7 +201,7 @@ export const NewsPage: React.FC = () => {
                     }}
                   >
                     <div>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                         {item.category}
                       </span>
                       <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--text-muted)', marginTop: '0.25rem' }}>
@@ -199,7 +209,7 @@ export const NewsPage: React.FC = () => {
                       </div>
                     </div>
                     <div>
-                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0 0 0.5rem 0' }}>
+                      <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0 0 0.5rem 0', fontWeight: 500 }}>
                         {item.title}
                       </h3>
                       {item.body && (
@@ -208,8 +218,8 @@ export const NewsPage: React.FC = () => {
                         </p>
                       )}
                       {item.link && (
-                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-link">
-                          Reference Link &rarr;
+                        <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-link" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+                          Reference Link <ExternalLink size={13} />
                         </a>
                       )}
                     </div>
@@ -219,103 +229,136 @@ export const NewsPage: React.FC = () => {
             </div>
           )}
 
-          {/* Verified News List (Pure Typographic Rows) */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2.5rem' }}>
-            {filteredNews.map((news) => (
-              <article
-                key={news.id}
-                style={{
-                  borderTop: '1px solid var(--border-hairline)',
-                  paddingTop: '1.75rem',
-                  display: 'grid',
-                  gridTemplateColumns: 'minmax(180px, 220px) 1fr',
-                  gap: '2.5rem',
-                }}
-              >
-                {/* Date & Tag Column */}
-                <div>
-                  <span
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '0.6875rem',
-                      textTransform: 'uppercase',
-                      letterSpacing: '0.05em',
-                      color: 'var(--accent-green)',
-                      display: 'block',
-                      marginBottom: '0.35rem',
-                    }}
-                  >
-                    {news.categoryLabel}
-                  </span>
-                  <div
-                    style={{
-                      fontFamily: 'var(--font-mono)',
-                      fontSize: '0.8125rem',
-                      color: 'var(--text-secondary)',
-                      lineHeight: 1.4,
-                    }}
-                  >
-                    {news.date}
-                  </div>
-                  {news.isPinned && (
-                    <span
+          {/* Verified News List (Pure Typographic Rows with Left Sage Accents) */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            {filteredNews.map((news) => {
+              const CategoryIcon =
+                news.category === 'AWARDS'
+                  ? Award
+                  : news.category === 'EDITORIAL'
+                  ? BookOpen
+                  : Building2;
+
+              return (
+                <article
+                  key={news.id}
+                  style={{
+                    borderTop: '1px solid var(--border-hairline)',
+                    paddingTop: '1.75rem',
+                    paddingBottom: '0.75rem',
+                    display: 'grid',
+                    gridTemplateColumns: 'minmax(200px, 240px) 1fr',
+                    gap: '2.5rem',
+                    transition: 'border-color var(--transition-fast)',
+                  }}
+                >
+                  {/* Date & Tag Column */}
+                  <div>
+                    <div
                       style={{
-                        display: 'inline-block',
-                        marginTop: '0.5rem',
-                        fontFamily: 'var(--font-mono)',
-                        fontSize: '0.6875rem',
-                        color: 'var(--text-primary)',
-                        borderBottom: '1px solid var(--accent-green)',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.45rem',
+                        marginBottom: '0.4rem',
                       }}
                     >
-                      Active Call
-                    </span>
-                  )}
-                </div>
-
-                {/* Content Column */}
-                <div>
-                  <h2
-                    style={{
-                      fontFamily: 'var(--font-serif)',
-                      fontSize: '1.35rem',
-                      color: 'var(--text-primary)',
-                      margin: '0 0 0.75rem 0',
-                      fontWeight: 500,
-                      lineHeight: 1.35,
-                    }}
-                  >
-                    {news.title}
-                  </h2>
-
-                  <p
-                    style={{
-                      fontFamily: 'var(--font-sans)',
-                      fontSize: '0.9375rem',
-                      color: 'var(--text-secondary)',
-                      lineHeight: 1.65,
-                      marginBottom: news.linkUrl ? '0.75rem' : 0,
-                    }}
-                  >
-                    {news.details}
-                  </p>
-
-                  {news.linkUrl && (
-                    <div style={{ marginTop: '0.5rem' }}>
-                      <a
-                        href={news.linkUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-link"
-                        style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}
+                      <CategoryIcon size={14} color="var(--accent-sage-dark)" />
+                      <span
+                        style={{
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.6875rem',
+                          textTransform: 'uppercase',
+                          letterSpacing: '0.05em',
+                          color: 'var(--accent-sage-dark)',
+                          fontWeight: 600,
+                        }}
                       >
-                        {news.linkText || 'View External Link &rarr;'}
-                      </a>
+                        {news.categoryLabel}
+                      </span>
                     </div>
-                  )}
-                </div>
-              </article>
-            ))}
+
+                    <div
+                      style={{
+                        fontFamily: 'var(--font-mono)',
+                        fontSize: '0.8125rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: 1.45,
+                      }}
+                    >
+                      {news.date}
+                    </div>
+
+                    {news.isPinned && (
+                      <span
+                        style={{
+                          display: 'inline-flex',
+                          alignItems: 'center',
+                          gap: '0.35rem',
+                          marginTop: '0.65rem',
+                          fontFamily: 'var(--font-mono)',
+                          fontSize: '0.6875rem',
+                          color: 'var(--text-primary)',
+                          background: 'var(--accent-matcha-tint)',
+                          padding: '0.15rem 0.5rem',
+                          borderLeft: '2px solid var(--accent-sage)',
+                          letterSpacing: '0.03em',
+                        }}
+                      >
+                        Active Call
+                      </span>
+                    )}
+                  </div>
+
+                  {/* Content Column */}
+                  <div>
+                    <h2
+                      style={{
+                        fontFamily: 'var(--font-serif)',
+                        fontSize: '1.35rem',
+                        color: 'var(--text-primary)',
+                        margin: '0 0 0.75rem 0',
+                        fontWeight: 500,
+                        lineHeight: 1.35,
+                      }}
+                    >
+                      {news.title}
+                    </h2>
+
+                    <p
+                      style={{
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.9375rem',
+                        color: 'var(--text-secondary)',
+                        lineHeight: 1.65,
+                        marginBottom: news.linkUrl ? '0.75rem' : 0,
+                      }}
+                    >
+                      {news.details}
+                    </p>
+
+                    {news.linkUrl && (
+                      <div style={{ marginTop: '0.75rem' }}>
+                        <a
+                          href={news.linkUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-link"
+                          style={{
+                            fontFamily: 'var(--font-mono)',
+                            fontSize: '0.8125rem',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            gap: '0.35rem',
+                          }}
+                        >
+                          {news.linkText || 'View External Link'} <ExternalLink size={13} />
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                </article>
+              );
+            })}
           </div>
         </div>
       </section>

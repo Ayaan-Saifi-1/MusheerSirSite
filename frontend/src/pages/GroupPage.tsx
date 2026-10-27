@@ -4,6 +4,16 @@ import { Link } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { fetchTeamMembers } from '../lib/api';
 import { Button } from '../components/Button';
+import {
+  Users,
+  GraduationCap,
+  BookOpen,
+  Award,
+  Lock,
+  Binary,
+  ShieldCheck,
+  Activity,
+} from 'lucide-react';
 
 export const GroupPage: React.FC = () => {
   const { data: teamMembers } = useQuery({
@@ -41,7 +51,7 @@ export const GroupPage: React.FC = () => {
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-              gap: '2rem',
+              gap: '2.5rem',
               paddingBottom: '2.5rem',
               marginBottom: '4rem',
               borderBottom: '1px solid var(--border-hairline)',
@@ -51,8 +61,9 @@ export const GroupPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
                 6
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-green)', marginTop: '0.35rem' }}>
-                Ph.D. Scholars Active
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <Users size={13} strokeWidth={2.2} />
+                <span>Ph.D. Scholars Active</span>
               </div>
               <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 Doctoral candidates under active supervision at JMI
@@ -63,8 +74,9 @@ export const GroupPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
                 2
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-green)', marginTop: '0.35rem' }}>
-                M.Tech Dissertations
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <GraduationCap size={13} strokeWidth={2.2} />
+                <span>M.Tech Dissertations</span>
               </div>
               <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 Ongoing postgraduate research dissertations
@@ -75,8 +87,9 @@ export const GroupPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
                 14 + 16
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-green)', marginTop: '0.35rem' }}>
-                M.Tech Supervised
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <BookOpen size={13} strokeWidth={2.2} />
+                <span>M.Tech Supervised</span>
               </div>
               <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 14 dissertations &amp; 16 projects successfully completed
@@ -87,8 +100,9 @@ export const GroupPage: React.FC = () => {
               <div style={{ fontFamily: 'var(--font-serif)', fontSize: '2.5rem', color: 'var(--text-primary)', lineHeight: 1.1 }}>
                 40+
               </div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-green)', marginTop: '0.35rem' }}>
-                B.Tech Capstones
+              <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.8125rem', color: 'var(--accent-sage-dark)', fontWeight: 600, marginTop: '0.35rem' }}>
+                <Award size={13} strokeWidth={2.2} />
+                <span>B.Tech Capstones</span>
               </div>
               <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.8125rem', color: 'var(--text-secondary)', marginTop: '0.25rem' }}>
                 Major engineering projects completed (3 currently ongoing)
@@ -111,10 +125,15 @@ export const GroupPage: React.FC = () => {
             </h2>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '3rem' }}>
               <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.25rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  DIRECTION 01
-                </span>
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.5rem 0' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    DIRECTION 01
+                  </span>
+                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                    <Lock size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                  </div>
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.25rem 0 0.65rem 0' }}>
                   High-Dimensional Chaotic &amp; Hyperchaotic Cryptosystems
                 </h3>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -125,10 +144,15 @@ export const GroupPage: React.FC = () => {
               </div>
 
               <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.25rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  DIRECTION 02
-                </span>
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.5rem 0' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    DIRECTION 02
+                  </span>
+                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                    <Binary size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                  </div>
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.25rem 0 0.65rem 0' }}>
                   Substitution-Box Synthesis &amp; Evolutionary Metaheuristics
                 </h3>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -139,10 +163,15 @@ export const GroupPage: React.FC = () => {
               </div>
 
               <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.25rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  DIRECTION 03
-                </span>
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.5rem 0' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    DIRECTION 03
+                  </span>
+                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                    <ShieldCheck size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                  </div>
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.25rem 0 0.65rem 0' }}>
                   Lightweight Authentication Protocols for Cyber-Physical IoT
                 </h3>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -153,10 +182,15 @@ export const GroupPage: React.FC = () => {
               </div>
 
               <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.25rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  DIRECTION 04
-                </span>
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.5rem 0' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '0.5rem' }}>
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    DIRECTION 04
+                  </span>
+                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                    <Activity size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                  </div>
+                </div>
+                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.25rem 0 0.65rem 0' }}>
                   Secure Medical Imagery &amp; Deep Learning Diagnostics
                 </h3>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -196,7 +230,7 @@ export const GroupPage: React.FC = () => {
                     }}
                   >
                     <div>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                         {member.role_display || member.role}
                       </span>
                       <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--text-primary)', margin: '0.25rem 0' }}>

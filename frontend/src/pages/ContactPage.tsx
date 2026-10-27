@@ -1,6 +1,24 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { SiteSettings } from '../lib/types';
+import {
+  GoogleScholarLogo,
+  ScopusLogo,
+  ResearchGateLogo,
+  DblpLogo,
+  WebOfScienceLogo,
+  UniversityLogo,
+} from '../components/ScholarlyLogos';
+import {
+  Building2,
+  Mail,
+  Phone,
+  MapPin,
+  Compass,
+  Send,
+  CheckCircle2,
+  ExternalLink,
+} from 'lucide-react';
 
 interface ContactPageProps {
   settings?: SiteSettings;
@@ -91,7 +109,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
           >
             {/* Column 1: Academic Location */}
             <div>
-              <span className="section-eyebrow">Academic Department</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.4rem' }}>
+                <Building2 size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                <span className="section-eyebrow" style={{ margin: 0 }}>Academic Department</span>
+              </div>
               <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--text-primary)', margin: '0.35rem 0 1rem 0', fontWeight: 500 }}>
                 Department of Computer Engineering
               </h2>
@@ -110,7 +131,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
               </address>
 
               <div style={{ marginTop: '1.5rem', paddingTop: '1.25rem', borderTop: '1px solid var(--border-hairline)' }}>
-                <span className="section-eyebrow">Administrative Office</span>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <MapPin size={14} color="var(--accent-sage-dark)" />
+                  <span className="section-eyebrow" style={{ margin: 0 }}>Administrative Office</span>
+                </div>
                 <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', margin: '0.35rem 0 0 0', lineHeight: 1.5 }}>
                   Assistant Controller of Examinations<br />
                   Office of the Controller of Examinations<br />
@@ -121,13 +145,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
 
             {/* Column 2: Electronic Mail & Phone */}
             <div>
-              <span className="section-eyebrow">Direct Correspondence</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.4rem' }}>
+                <Mail size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                <span className="section-eyebrow" style={{ margin: 0 }}>Direct Correspondence</span>
+              </div>
               <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--text-primary)', margin: '0.35rem 0 1rem 0', fontWeight: 500 }}>
                 Electronic Mail &amp; Telephone
               </h2>
 
               <div style={{ marginBottom: '1.5rem' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', textTransform: 'uppercase' }}>
+                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', textTransform: 'uppercase', fontWeight: 600 }}>
                   Official Institutional Email
                 </div>
                 <a
@@ -143,7 +170,7 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
               </div>
 
               <div style={{ marginBottom: '1.5rem' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', textTransform: 'uppercase' }}>
+                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', textTransform: 'uppercase', fontWeight: 600 }}>
                   Alternative / Editorial Email
                 </div>
                 <a
@@ -159,8 +186,11 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
               </div>
 
               <div style={{ paddingTop: '1.25rem', borderTop: '1px solid var(--border-hairline)' }}>
-                <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', textTransform: 'uppercase' }}>
-                  Office Telephone
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.2rem' }}>
+                  <Phone size={13} color="var(--accent-sage-dark)" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', textTransform: 'uppercase', fontWeight: 600 }}>
+                    Office Telephone
+                  </span>
                 </div>
                 <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.9375rem', color: 'var(--text-primary)', marginTop: '0.2rem' }}>
                   {settings?.office_phone || '+91 11 2698 0281'}
@@ -173,7 +203,10 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
 
             {/* Column 3: Transit & Visiting Guidelines */}
             <div>
-              <span className="section-eyebrow">Campus Transit</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.4rem' }}>
+                <Compass size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
+                <span className="section-eyebrow" style={{ margin: 0 }}>Campus Transit</span>
+              </div>
               <h2 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--text-primary)', margin: '0.35rem 0 1rem 0', fontWeight: 500 }}>
                 Transit &amp; Visiting
               </h2>
@@ -183,15 +216,15 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                <div>
+                <div style={{ borderLeft: '2px solid var(--accent-sage)', paddingLeft: '0.75rem' }}>
                   <strong style={{ color: 'var(--text-primary)' }}>Delhi Metro: </strong>
                   Jamia Millia Islamia Station (Magenta Line), Gate No. 2 exit.
                 </div>
-                <div>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
                   <strong style={{ color: 'var(--text-primary)' }}>Campus Entry: </strong>
                   Gate No. 7, approximately 300 meters walking distance from the metro station.
                 </div>
-                <div>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
                   <strong style={{ color: 'var(--text-primary)' }}>Meeting Protocol: </strong>
                   Prior appointment by email with at least 48 hours notice is required for in-person consultations.
                 </div>
@@ -407,13 +440,16 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
               style={{
                 display: 'grid',
                 gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-                gap: '1.5rem 3rem',
+                gap: '2rem 3rem',
               }}
             >
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  GOOGLE SCHOLAR
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <GoogleScholarLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    GOOGLE SCHOLAR
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.google_scholar_url || 'https://scholar.google.com/citations?user=cPbmjWoAAAAJ'}
@@ -430,10 +466,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  SCOPUS AUTHOR ID
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <ScopusLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    SCOPUS AUTHOR ID
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.scopus_url || 'https://www.scopus.com/authid/detail.uri?authorId=56339090200'}
@@ -450,10 +489,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  WEB OF SCIENCE RESEARCHERID
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <WebOfScienceLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    WEB OF SCIENCE RESEARCHERID
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.web_of_science_url || 'https://www.webofscience.com/wos/author/record/H-9587-2018'}
@@ -470,10 +512,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  DBLP BIBLIOGRAPHY
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <DblpLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    DBLP BIBLIOGRAPHY
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.dblp_url || 'https://dblp.org/pid/89/8467-2.html'}
@@ -490,10 +535,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  RESEARCHGATE
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <ResearchGateLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    RESEARCHGATE
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.researchgate_url || 'https://www.researchgate.net/profile/Musheer-Ahmad-3'}
@@ -510,10 +558,13 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 </div>
               </div>
 
-              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
-                  JAMIA MILLIA ISLAMIA
-                </span>
+              <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1.15rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', marginBottom: '0.35rem' }}>
+                  <UniversityLogo size={16} color="#75A06A" />
+                  <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
+                    JAMIA MILLIA ISLAMIA
+                  </span>
+                </div>
                 <div style={{ marginTop: '0.25rem' }}>
                   <a
                     href={settings?.jmi_profile_url || 'https://www.jmi.ac.in/ACADEMICS/Departments/Department-Of-Computer-Engineering/People/Faculty-Members/3148/Musheer_Ahmad'}

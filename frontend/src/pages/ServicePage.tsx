@@ -1,5 +1,16 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
+import {
+  Building2,
+  BookOpen,
+  Users,
+  Award,
+  FileText,
+  CheckCircle2,
+  Layers,
+  ChevronDown,
+  ChevronUp,
+} from 'lucide-react';
 
 const INSTITUTIONAL_RESPONSIBILITIES = [
   {
@@ -219,39 +230,118 @@ export const ServicePage: React.FC = () => {
             </p>
           </header>
 
+          {/* Service Metrics Strip */}
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))',
+              gap: '1.25rem',
+              padding: '1.5rem 0',
+              marginBottom: '3rem',
+              borderTop: '1px solid var(--border-hairline)',
+              borderBottom: '1px solid var(--border-hairline)',
+            }}
+          >
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>
+                <Building2 size={13} color="var(--accent-sage-dark)" />
+                Institutional
+              </div>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.75rem', fontWeight: 500, color: 'var(--text-primary)' }}>
+                8+
+              </div>
+              <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                University governance roles
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>
+                <BookOpen size={13} color="var(--accent-sage-dark)" />
+                Editorial Boards
+              </div>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.75rem', fontWeight: 500, color: 'var(--text-primary)' }}>
+                8
+              </div>
+              <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                Springer, IGI Global, CRC
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>
+                <Users size={13} color="var(--accent-sage-dark)" />
+                Conferences
+              </div>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.75rem', fontWeight: 500, color: 'var(--text-primary)' }}>
+                50+
+              </div>
+              <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                TPC & session chairmanships
+              </div>
+            </div>
+
+            <div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>
+                <FileText size={13} color="var(--accent-sage-dark)" />
+                Refereed Journals
+              </div>
+              <div style={{ fontFamily: 'var(--font-serif)', fontSize: '1.75rem', fontWeight: 500, color: 'var(--text-primary)' }}>
+                80+
+              </div>
+              <div style={{ fontFamily: 'var(--font-sans)', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
+                IEEE, ACM, Elsevier, Springer
+              </div>
+            </div>
+          </div>
+
           {/* 1. Institutional Governance */}
           <div style={{ marginBottom: '4rem' }}>
-            <h2
+            <div
               style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.5rem',
-                color: 'var(--text-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.65rem',
                 marginBottom: '1rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
-                fontWeight: 500,
               }}
             >
-              Institutional Responsibilities & Governance
-            </h2>
+              <Building2 size={20} color="var(--accent-sage-dark)" />
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.5rem',
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  fontWeight: 500,
+                }}
+              >
+                Institutional Responsibilities & Governance
+              </h2>
+            </div>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {INSTITUTIONAL_RESPONSIBILITIES.map((item, idx) => (
                 <article
                   key={idx}
                   style={{
-                    padding: '1.35rem 0',
-                    borderBottom: '1px solid var(--border-hairline)',
+                    padding: '1.15rem 1.25rem',
+                    borderLeft: '2px solid var(--border-hairline)',
+                    background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
+                    transition: 'border-left-color var(--transition-fast)',
                   }}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
+                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
                       {item.title}
                     </h3>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', fontWeight: 600 }}>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                       {item.span}
                     </span>
                   </div>
@@ -268,37 +358,51 @@ export const ServicePage: React.FC = () => {
 
           {/* 2. Editorial Boards & Guest Collections */}
           <div style={{ marginBottom: '4rem' }}>
-            <h2
+            <div
               style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.5rem',
-                color: 'var(--text-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.65rem',
                 marginBottom: '1rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
-                fontWeight: 500,
               }}
             >
-              Editorial Board Appointments & Guest Editorships
-            </h2>
+              <BookOpen size={20} color="var(--accent-sage-dark)" />
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.5rem',
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  fontWeight: 500,
+                }}
+              >
+                Editorial Board Appointments & Guest Editorships
+              </h2>
+            </div>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {EDITORIAL_LEADERSHIP.map((item, idx) => (
                 <article
                   key={idx}
                   style={{
-                    padding: '1.35rem 0',
-                    borderBottom: '1px solid var(--border-hairline)',
+                    padding: '1.15rem 1.25rem',
+                    borderLeft: '2px solid var(--border-hairline)',
+                    background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
+                    transition: 'border-left-color var(--transition-fast)',
                   }}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
+                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
                       {item.role}: {item.journal}
                     </h3>
-                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)', fontWeight: 600 }}>
+                    <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                       {item.publisher}
                     </span>
                   </div>
@@ -315,34 +419,48 @@ export const ServicePage: React.FC = () => {
 
           {/* 3. Conference Leadership */}
           <div style={{ marginBottom: '4rem' }}>
-            <h2
+            <div
               style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.5rem',
-                color: 'var(--text-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.65rem',
                 marginBottom: '1rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
-                fontWeight: 500,
               }}
             >
-              Conference Leadership & Track Management
-            </h2>
+              <Users size={20} color="var(--accent-sage-dark)" />
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.5rem',
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  fontWeight: 500,
+                }}
+              >
+                Conference Leadership & Track Management
+              </h2>
+            </div>
 
-            <div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
               {CONFERENCE_LEADERSHIP.map((item, idx) => (
                 <article
                   key={idx}
                   style={{
-                    padding: '1.35rem 0',
-                    borderBottom: '1px solid var(--border-hairline)',
+                    padding: '1.15rem 1.25rem',
+                    borderLeft: '2px solid var(--border-hairline)',
+                    background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
+                    transition: 'border-left-color var(--transition-fast)',
                   }}
+                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.15rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
+                    <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
                       {item.role}
                     </h3>
                   </div>
@@ -359,19 +477,29 @@ export const ServicePage: React.FC = () => {
 
           {/* 4. Journal Referee Service */}
           <div>
-            <h2
+            <div
               style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.5rem',
-                color: 'var(--text-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.65rem',
                 marginBottom: '0.75rem',
                 paddingBottom: '0.65rem',
                 borderBottom: '1px solid var(--border-hairline)',
-                fontWeight: 500,
               }}
             >
-              Peer Review Service for Scientific Journals (80+ Journals)
-            </h2>
+              <FileText size={20} color="var(--accent-sage-dark)" />
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.5rem',
+                  color: 'var(--text-primary)',
+                  margin: 0,
+                  fontWeight: 500,
+                }}
+              >
+                Peer Review Service for Scientific Journals (80+ Journals)
+              </h2>
+            </div>
             <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary)', marginBottom: '1.5rem', lineHeight: 1.6 }}>
               Regularly refereeing manuscripts for premier IEEE Transactions, ACM Transactions, Elsevier, Springer Nature, Wiley, and MDPI journals in cryptography and computational intelligence.
             </p>
@@ -390,19 +518,38 @@ export const ServicePage: React.FC = () => {
               }}
             >
               {(showAllJournals ? REVIEWED_JOURNALS_LIST : REVIEWED_JOURNALS_LIST.slice(0, 18)).map((journal, idx) => (
-                <li key={idx} style={{ padding: '0.25rem 0', borderBottom: '1px solid var(--border-hairline)' }}>
-                  {journal}
+                <li
+                  key={idx}
+                  style={{
+                    padding: '0.35rem 0',
+                    borderBottom: '1px solid var(--border-hairline)',
+                    display: 'flex',
+                    alignItems: 'baseline',
+                    gap: '0.5rem',
+                  }}
+                >
+                  <span style={{ color: 'var(--accent-sage-dark)', fontWeight: 600, fontSize: '0.75rem' }}>•</span>
+                  <span>{journal}</span>
                 </li>
               ))}
             </ul>
 
-            <div style={{ marginTop: '1.5rem' }}>
+            <div style={{ marginTop: '1.75rem' }}>
               <button
                 type="button"
                 onClick={() => setShowAllJournals(!showAllJournals)}
                 className="btn-secondary"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
               >
-                {showAllJournals ? 'Show fewer journals ↑' : `View all ${REVIEWED_JOURNALS_LIST.length} reviewed journals ↓`}
+                {showAllJournals ? (
+                  <>
+                    Show fewer journals <ChevronUp size={14} />
+                  </>
+                ) : (
+                  <>
+                    View all {REVIEWED_JOURNALS_LIST.length} reviewed journals <ChevronDown size={14} />
+                  </>
+                )}
               </button>
             </div>
           </div>

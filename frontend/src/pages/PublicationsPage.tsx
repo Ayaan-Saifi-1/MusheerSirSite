@@ -5,6 +5,16 @@ import { useQuery } from '@tanstack/react-query';
 import { fetchPublications } from '../lib/api';
 import { Publication, SiteSettings } from '../lib/types';
 import { PublicationRow } from '../components/PublicationRow';
+import {
+  Search,
+  FileText,
+  BookOpen,
+  Award,
+  TrendingUp,
+  Quote,
+  Download,
+  Layers,
+} from 'lucide-react';
 
 interface PublicationsPageProps {
   settings?: SiteSettings;
@@ -146,13 +156,13 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
             </p>
           </header>
 
-          {/* Quick Metrics Bar (Unboxed) */}
+          {/* Quick Metrics Bar (Unboxed with Lucide Icons) */}
           <div
             style={{
               display: 'flex',
               flexWrap: 'wrap',
               gap: '2rem',
-              alignItems: 'baseline',
+              alignItems: 'center',
               paddingBottom: '1.25rem',
               marginBottom: '2rem',
               borderBottom: '1px solid var(--border-hairline)',
@@ -161,23 +171,29 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
               color: 'var(--text-secondary)',
             }}
           >
-            <div>
-              Total Papers: <strong style={{ color: 'var(--text-primary)' }}>{settings?.total_papers || 157}</strong>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <FileText size={13} color="var(--accent-sage-dark)" />
+              <span>Total Papers: <strong style={{ color: 'var(--text-primary)' }}>{settings?.total_papers || 157}</strong></span>
             </div>
-            <div>
-              Journal Articles: <strong style={{ color: 'var(--text-primary)' }}>58</strong> (SCI/SCIE/Scopus)
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <BookOpen size={13} color="var(--accent-sage-dark)" />
+              <span>Journal Articles: <strong style={{ color: 'var(--text-primary)' }}>58</strong> (SCI/SCIE/Scopus)</span>
             </div>
-            <div>
-              Conference Proceedings: <strong style={{ color: 'var(--text-primary)' }}>57</strong> (IEEE/Springer)
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Layers size={13} color="var(--accent-sage-dark)" />
+              <span>Conferences: <strong style={{ color: 'var(--text-primary)' }}>57</strong> (IEEE/Springer)</span>
             </div>
-            <div>
-              Citations: <strong style={{ color: 'var(--text-primary)' }}>{(settings?.citations_count || 5296).toLocaleString()}</strong>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Quote size={13} color="var(--accent-sage-dark)" />
+              <span>Citations: <strong style={{ color: 'var(--text-primary)' }}>{(settings?.citations_count || 5296).toLocaleString()}</strong></span>
             </div>
-            <div>
-              h-index: <strong style={{ color: 'var(--text-primary)' }}>{settings?.h_index || 42}</strong>
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <TrendingUp size={13} color="var(--accent-sage-dark)" />
+              <span>h-index: <strong style={{ color: 'var(--text-primary)' }}>{settings?.h_index || 42}</strong></span>
             </div>
-            <div>
-              Top IF: <strong style={{ color: 'var(--text-primary)' }}>8.2</strong> (IEEE IoT Journal)
+            <div style={{ display: 'inline-flex', alignItems: 'center', gap: '0.4rem' }}>
+              <Award size={13} color="var(--accent-sage-dark)" />
+              <span>Top IF: <strong style={{ color: 'var(--text-primary)' }}>8.2</strong> (IEEE IoT)</span>
             </div>
           </div>
 
@@ -194,8 +210,9 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
               borderBottom: '1px solid var(--border-hairline)',
             }}
           >
-            {/* Search Input — Underlined Editorial Input */}
-            <div style={{ flex: '1 1 320px', minWidth: '240px' }}>
+            {/* Search Input — Underlined Editorial Input with Icon */}
+            <div style={{ flex: '1 1 320px', minWidth: '240px', display: 'flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid var(--border-hairline)' }}>
+              <Search size={15} color="var(--accent-sage-dark)" style={{ flexShrink: 0 }} />
               <input
                 type="text"
                 placeholder="Search by title, author, journal, or topic..."
@@ -208,7 +225,6 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
                   fontSize: '0.9375rem',
                   background: 'transparent',
                   border: 'none',
-                  borderBottom: '1px solid var(--border-hairline)',
                   borderRadius: 0,
                   color: 'var(--text-primary)',
                   outline: 'none',
@@ -278,8 +294,10 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
                 onClick={handleExportBibtex}
                 className="btn-secondary"
                 title="Download BibTeX file of currently filtered publications"
+                style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
               >
-                Export .bib ({filteredPublications.length}) &darr;
+                <Download size={13} />
+                <span>Export .bib ({filteredPublications.length})</span>
               </button>
             </div>
           </div>

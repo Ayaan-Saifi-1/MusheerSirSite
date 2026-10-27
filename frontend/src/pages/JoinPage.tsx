@@ -5,6 +5,18 @@ import { useQuery } from '@tanstack/react-query';
 import { fetchResearchOpenings, submitProspectiveApplication } from '../lib/api';
 import { ApplicationSubmission } from '../lib/types';
 import { Button } from '../components/Button';
+import {
+  Binary,
+  Cpu,
+  Terminal,
+  Award,
+  FileText,
+  Compass,
+  Layers,
+  Send,
+  Briefcase,
+  CheckCircle2,
+} from 'lucide-react';
 
 export const JoinPage: React.FC = () => {
   const { data: openings } = useQuery({
@@ -83,7 +95,7 @@ export const JoinPage: React.FC = () => {
                       <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--text-primary)', margin: 0 }}>
                         {opening.title}
                       </h3>
-                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-green)' }}>
+                      <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                         {opening.position_type}
                       </span>
                     </div>
@@ -139,40 +151,60 @@ export const JoinPage: React.FC = () => {
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    1. Mathematical Rigor
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Proficiency in discrete mathematics, finite fields ($GF(2^n)$), group theory, linear algebra, probability, and dynamical systems theory.
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Binary size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      1. Mathematical Rigor
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Proficiency in discrete mathematics, finite fields ($GF(2^n)$), group theory, linear algebra, probability, and dynamical systems theory.
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    2. Algorithmic Competence
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Deep comprehension of algorithm design, computational complexity, and cryptographic primitive implementation (confusion and diffusion).
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Cpu size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      2. Algorithmic Competence
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Deep comprehension of algorithm design, computational complexity, and cryptographic primitive implementation (confusion and diffusion).
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    3. Scientific Programming
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Hands-on fluency in Python (NumPy, SciPy, PyTorch), MATLAB, C/C++, or Julia for numerical ODE integration and NIST SP 800-22 statistical testing.
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Terminal size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      3. Scientific Programming
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Hands-on fluency in Python (NumPy, SciPy, PyTorch), MATLAB, C/C++, or Julia for numerical ODE integration and NIST SP 800-22 statistical testing.
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    4. National Fellowship Priority
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Candidates holding national research fellowships (UGC-NET JRF, CSIR-NET JRF, or DST-INSPIRE) are strongly encouraged to apply directly.
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Award size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      4. National Fellowship Priority
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Candidates holding national research fellowships (UGC-NET JRF, CSIR-NET JRF, or DST-INSPIRE) are strongly encouraged to apply directly.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -204,35 +236,50 @@ export const JoinPage: React.FC = () => {
               </p>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    Component 1: Comprehensive Curriculum Vitae
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Detailing academic qualifications (B.Tech, M.Tech, M.Sc), percentage/CGPA, national exam ranks (GATE, NET-JRF), and past technical projects.
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <FileText size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      Component 1: Comprehensive Curriculum Vitae
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Detailing academic qualifications (B.Tech, M.Tech, M.Sc), percentage/CGPA, national exam ranks (GATE, NET-JRF), and past technical projects.
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    Component 2: Statement of Research Intent
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    One concise paragraph identifying your primary area of inquiry (e.g. hyperchaotic keystreams, S-box metaheuristic optimization, or IoT authentication).
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Compass size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      Component 2: Statement of Research Intent
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      One concise paragraph identifying your primary area of inquiry (e.g. hyperchaotic keystreams, S-box metaheuristic optimization, or IoT authentication).
+                    </span>
+                  </div>
                 </div>
 
-                <div style={{ borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block' }}>
-                    Component 3: Mandatory Paper Critique &amp; Proposed Extension
-                  </strong>
-                  <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.5 }}>
-                    Read at least one recent research publication by Dr. Musheer Ahmad (see{' '}
-                    <Link to="/publications" className="text-link">
-                      Publications Page
-                    </Link>
-                    ) and write a 1–2 page critique outlining: (a) the paper&apos;s core mathematical mechanism, (b) its limitations or cryptanalytic attack surface, and (c) a concrete proposal for extending or generalizing its findings.
-                  </span>
+                <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                    <Layers size={16} strokeWidth={2.2} />
+                  </div>
+                  <div>
+                    <strong style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-primary)', display: 'block', marginBottom: '0.2rem' }}>
+                      Component 3: Mandatory Paper Critique &amp; Proposed Extension
+                    </strong>
+                    <span style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.55 }}>
+                      Read at least one recent research publication by Dr. Musheer Ahmad (see{' '}
+                      <Link to="/publications" className="text-link">
+                        Publications Page
+                      </Link>
+                      ) and write a 1–2 page critique outlining: (a) the paper&apos;s core mathematical mechanism, (b) its limitations or cryptanalytic attack surface, and (c) a concrete proposal for extending or generalizing its findings.
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -279,14 +326,20 @@ export const JoinPage: React.FC = () => {
               <div
                 style={{
                   padding: '2rem 0',
-                  borderTop: '1px solid var(--accent-green)',
-                  borderBottom: '1px solid var(--accent-green)',
+                  borderTop: '1px solid var(--accent-sage-dark)',
+                  borderBottom: '1px solid var(--accent-sage-dark)',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: '0.75rem',
                 }}
               >
-                <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--accent-green)', margin: '0 0 0.5rem 0' }}>
-                  Inquiry Successfully Registered
-                </h3>
-                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem' }}>
+                  <CheckCircle2 size={24} color="var(--accent-sage-dark)" />
+                  <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.35rem', color: 'var(--accent-sage-dark)', margin: 0, fontWeight: 500 }}>
+                    Inquiry Successfully Registered
+                  </h3>
+                </div>
+                <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.9375rem', color: 'var(--text-secondary)', lineHeight: 1.6, margin: 0 }}>
                   Thank you for submitting your research inquiry. Your dossier has been recorded in Dr. Musheer Ahmad&apos;s research administration queue.
                   Candidates whose background aligns with laboratory requirements will be contacted directly for an academic interview.
                 </p>
@@ -294,7 +347,7 @@ export const JoinPage: React.FC = () => {
                   type="button"
                   onClick={() => setSubmitSuccess(false)}
                   className="btn-secondary"
-                  style={{ marginTop: '1rem' }}
+                  style={{ alignSelf: 'flex-start', marginTop: '0.5rem' }}
                 >
                   Submit Another Inquiry
                 </button>
