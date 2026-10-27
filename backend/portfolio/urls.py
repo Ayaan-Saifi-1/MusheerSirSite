@@ -2,42 +2,44 @@ from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 
 from .views import (
-    PortfolioBundleView,
-    SiteConfigurationViewSet,
-    ImpactMetricViewSet,
-    ResearchAreaViewSet,
+    HomePageView,
+    SiteSettingsView,
+    NavigationListView,
+    ResearchThemeViewSet,
     PublicationViewSet,
-    SponsoredProjectViewSet,
+    HonorViewSet,
+    EditorialRoleViewSet,
+    ServiceItemViewSet,
+    NewsItemViewSet,
     TeamMemberViewSet,
     CourseViewSet,
-    NewsItemViewSet,
     ResearchOpeningViewSet,
-    ProspectiveApplicationViewSet,
-    ImportBibtexAPIView,
+    ProspectiveApplicationCreateView,
+    robots_txt,
+    sitemap_xml,
 )
 
 router = DefaultRouter()
-router.register(r'site-config', SiteConfigurationViewSet, basename='site-config')
-router.register(r'impact-metrics', ImpactMetricViewSet, basename='impact-metrics')
-router.register(r'research-areas', ResearchAreaViewSet, basename='research-areas')
+router.register(r'research-themes', ResearchThemeViewSet, basename='research-themes')
 router.register(r'publications', PublicationViewSet, basename='publications')
-router.register(r'projects', SponsoredProjectViewSet, basename='projects')
-router.register(r'team-members', TeamMemberViewSet, basename='team-members')
+router.register(r'honors', HonorViewSet, basename='honors')
+router.register(r'editorial', EditorialRoleViewSet, basename='editorial')
+router.register(r'service', ServiceItemViewSet, basename='service')
+router.register(r'news', NewsItemViewSet, basename='news')
+router.register(r'team', TeamMemberViewSet, basename='team')
 router.register(r'courses', CourseViewSet, basename='courses')
-router.register(r'news-items', NewsItemViewSet, basename='news-items')
 router.register(r'openings', ResearchOpeningViewSet, basename='openings')
-router.register(r'applications', ProspectiveApplicationViewSet, basename='applications')
 
 urlpatterns = [
-    # Flagship single-payload endpoint
-    path('portfolio-bundle/', PortfolioBundleView.as_view(), name='portfolio-bundle'),
-    
-    # BibTeX direct API import
-    path('publications/import-bibtex/', ImportBibtexAPIView.as_view(), name='api-import-bibtex'),
-    
-    # Public application submission shorthand
-    path('apply/', ProspectiveApplicationViewSet.as_view({'post': 'create'}), name='public-apply'),
-    
-    # REST CRUD ViewSets
+    # Flagship single-payload endpoint for Home page
+    path('home/', HomePageView.as_view(), name='home-payload'),
+    path('portfolio-bundle/', HomePageView.as_view(), name='portfolio-bundle-legacy'),
+
+    # Individual endpoints
+    path('settings/', SiteSettingsView.as_view(), name='site-settings'),
+    path('navigation/', NavigationListView.as_view(), name='navigation-list'),
+    path('apply/', ProspectiveApplicationCreateView.as_view(), name='apply'),
+
+    # ViewSet routes
     path('', include(router.urls)),
 ]

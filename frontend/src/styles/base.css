@@ -1,0 +1,81 @@
+/* ====================================================================
+   SELF-HOSTED FONTS & EDITORIAL BASE STYLES
+   ==================================================================== */
+
+@import "@fontsource/newsreader/400.css";
+@import "@fontsource/newsreader/500.css";
+@import "@fontsource/newsreader/600.css";
+@import "@fontsource/newsreader/400-italic.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/jetbrains-mono/400.css";
+@import "@fontsource/jetbrains-mono/500.css";
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: var(--font-body);
+  line-height: var(--line-body);
+}
+
+/* Restrained selection styling */
+::selection {
+  background: var(--accent-green-tint);
+  color: var(--accent-green);
+}
+
+/* Hairline rule */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-hairline);
+  margin: 0;
+}
+
+/* Accessible, crisp focus rings */
+:focus-visible {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Monospace text */
+code, kbd, samp, pre {
+  font-family: var(--font-mono);
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}

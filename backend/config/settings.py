@@ -30,12 +30,15 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'whitenoise.runserver_nostatic',
     'django.contrib.staticfiles',
 
     # Third party packages
     'rest_framework',
     'rest_framework_simplejwt',
     'corsheaders',
+    'simple_history',
+    'import_export',
 
     # Local application
     'portfolio.apps.PortfolioConfig',
@@ -44,12 +47,14 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'simple_history.middleware.HistoryRequestMiddleware',
 ]
 
 ROOT_URLCONF = 'config.urls'
@@ -169,42 +174,46 @@ UNFOLD = {
     },
     "SIDEBAR": {
         "show_search": True,
-        "show_all_applications": True,
+        "show_all_applications": False,
         "navigation": [
             {
-                "title": "Professor Profile & CMS",
+                "title": "Editorial Content",
                 "separator": True,
                 "items": [
                     {
-                        "title": "Site Configuration",
-                        "icon": "settings",
-                        "link": "/cms-admin/portfolio/siteconfiguration/",
+                        "title": "Home page",
+                        "icon": "home",
+                        "link": "/cms-admin/portfolio/homepage/1/change/",
                     },
                     {
-                        "title": "Impact Metrics",
-                        "icon": "analytics",
-                        "link": "/cms-admin/portfolio/impactmetric/",
-                    },
-                    {
-                        "title": "Research Areas",
+                        "title": "Research",
                         "icon": "biotech",
-                        "link": "/cms-admin/portfolio/researcharea/",
+                        "link": "/cms-admin/portfolio/researchtheme/",
                     },
-                ],
-            },
-            {
-                "title": "Scholarly Works & Grants",
-                "separator": True,
-                "items": [
                     {
-                        "title": "Publications (Auto-BibTeX)",
+                        "title": "Publications",
                         "icon": "menu_book",
                         "link": "/cms-admin/portfolio/publication/",
                     },
                     {
-                        "title": "Sponsored Grants",
-                        "icon": "account_balance",
-                        "link": "/cms-admin/portfolio/sponsoredproject/",
+                        "title": "Honors & Awards",
+                        "icon": "military_tech",
+                        "link": "/cms-admin/portfolio/honor/",
+                    },
+                    {
+                        "title": "Editorial Roles",
+                        "icon": "edit_note",
+                        "link": "/cms-admin/portfolio/editorialrole/",
+                    },
+                    {
+                        "title": "Service & Leadership",
+                        "icon": "handshake",
+                        "link": "/cms-admin/portfolio/serviceitem/",
+                    },
+                    {
+                        "title": "News",
+                        "icon": "campaign",
+                        "link": "/cms-admin/portfolio/newsitem/",
                     },
                 ],
             },
@@ -213,35 +222,40 @@ UNFOLD = {
                 "separator": True,
                 "items": [
                     {
-                        "title": "Lab Members & Alumni",
+                        "title": "People",
                         "icon": "groups",
                         "link": "/cms-admin/portfolio/teammember/",
                     },
                     {
-                        "title": "Teaching & Courses",
+                        "title": "Teaching",
                         "icon": "school",
                         "link": "/cms-admin/portfolio/course/",
                     },
                     {
-                        "title": "News & Announcements",
-                        "icon": "campaign",
-                        "link": "/cms-admin/portfolio/newsitem/",
-                    },
-                ],
-            },
-            {
-                "title": "Recruitment & Inquiries",
-                "separator": True,
-                "items": [
-                    {
-                        "title": "PhD / Intern Openings",
+                        "title": "Recruitment",
                         "icon": "work",
                         "link": "/cms-admin/portfolio/researchopening/",
                     },
                     {
-                        "title": "Student Applications",
+                        "title": "Applications",
                         "icon": "inbox",
                         "link": "/cms-admin/portfolio/prospectiveapplication/",
+                    },
+                ],
+            },
+            {
+                "title": "Configuration",
+                "separator": True,
+                "items": [
+                    {
+                        "title": "Site settings",
+                        "icon": "settings",
+                        "link": "/cms-admin/portfolio/sitesettings/1/change/",
+                    },
+                    {
+                        "title": "Navigation links",
+                        "icon": "link",
+                        "link": "/cms-admin/portfolio/navigationitem/",
                     },
                 ],
             },

@@ -13,7 +13,13 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
 )
 
+from portfolio.views import robots_txt, sitemap_xml
+
 urlpatterns = [
+    # Search Engine Feeds & Discovery
+    path('robots.txt', robots_txt, name='robots_txt'),
+    path('sitemap.xml', sitemap_xml, name='sitemap_xml'),
+
     # Modern django-unfold CMS Admin
     path('cms-admin/', admin.site.urls),
     path('admin/', RedirectView.as_view(url='/cms-admin/', permanent=False)),

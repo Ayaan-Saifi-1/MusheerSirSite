@@ -1,0 +1,724 @@
+
+=== PAGE 1 ===
+  
+  
+DDRR..  MMUUSSHHEEEERR  AAHHMMAADD  
+ASSOCIATE PROFESSOR 
+Department of Computer Engineering,  
+F/O of Engineering and Technology, 
+Jamia Millia Islamia, New Delhi-110025, INDIA. 
+Email ID: mahmad9@jmi.ac.in (Official), musheer.cse@gmail.com (Personal) 
+  
+  
+ACADEMIC QUALIFICATIONS: 
+ Pursued PhD (Computer Engineering) from Jamia Millia Islamia, New Delhi. 
+ Pursued M.Tech ( Computer Science & Engineering ) in 2008 from ZH College of Engineering & 
+Technology, Aligarh Muslim University, Aligarh.  
+ Pursued B.Tech ( Computer Engineering ) in 2004 from ZH College of Engineering & Technology, 
+Aligarh Muslim University, Aligarh.  
+ Pursued XII in 1999 from Senior Secondary School (Boys), Aligarh Muslim University, Aligarh.  
+ Pursued X in 1997 from S.T.S High School (Minto Circle), Aligarh Muslim University, Aligarh.  
+ 
+TEACHING EXPERIENCE: 
+Total Teaching Experience: 18 years 
+ Working as  AAssssoocciiaattee  PPrrooffeessssoorr in the Department of Computer Engineering , F/O Engineering and 
+Technology, JJaammiiaa  MMiilllliiaa  IIssllaammiiaa, New-Delhi-110025. 
+ Worked as Lecturer on temporary basis/Guest Faculty (during 2006-2010) in the Department of 
+Computer Engineering , ZH College of Engineering and Technology, AAlliiggaarrhh  MMuusslliimm  UUnniivveerrssiittyy, 
+Aligarh. 
+THEORIES TAUGHT: 
+ Analysis and Design of Algorithms 
+ Algorithm Design 
+ Discrete Mathematics 
+ Microprocessor Theory and Applications  
+ Soft Computing 
+CLASSES TAUGHT: 
+ M.Tech (Computer Engineering) 
+ M.Tech (Computer Sc. & Engineering) 
+ M.Tech (Computational Mathematics) 
+ B.Tech (Computer Engineering) 
+ B.E. (Computer Engineering) 
+ M.Sc (Industrial Maths with Computer Applications) 
+ 
+ 
+=== PAGE 2 ===
+AREAS OF RESEARCH INTEREST: 
+ Chaos-based Cryptography 
+ Multidisciplinary Cryptography 
+ Cybersecurity 
+ Authentication 
+ Deep Learning 
+ Optimization 
+ 
+RESEARCH PUBLICATIONS 
+Total research papers    : 157  
+SCOPUS indexed papers   :  151 
+Web of Science indexed papers  : 124 
+SCIE indexed papers    : 87 
+Cumulative Impact Factor   : ~ 300 (as per JCR impact factors) 
+Citations       : 5296 (as per Google Scholar), 3878 (as per SCOPUS) 
+h-index       : 42 (Google Scholar), 36 (SCOPUS) 
+ 
+SELECTED PAPERS IN JOURNALS: 
+J.1. Nyangaresi, V. O., Ahmad, M. , Maghrabi, L. A., & Althaqafi, T. (2025). CCoosstt--EEffffeeccttiivvee  PPUUFF  aanndd  EECCCC  BBaasseedd  
+AAuutthheennttiiccaattiioonn  PPrroottooccooll  ffoorr  SSeeccuurree  IInntteerrnneett  ooff  DDrroonneess  CCoommmmuunniiccaattiioonn. IEEE Internet of Things Journal , pp-
+1-13. DOI: 10.1109/JIOT.2025.3576313 [ SCI-E/IF: 8.2] 
+J.2. Lai, Q., Wang, H., Zhao, X. W., & Ahmad, M.  (2025). SShhuuffffllee  mmeeddiiccaall  iimmaaggee  eennccrryyppttiioonn  sscchheemmee  bbaasseedd  oonn  44DD  
+mmeemmrriissttiivvee  hhyyppeerrcchhaaoottiicc  mmaapp. Nonlinear Dynamics, 113 (10), 12289-12307. [SCI-E/IF: 5.2] 
+J.3. Khadem, B., Gholamzadeh, M., Ahmad, M., & Ansari, Z. A. (2025). RRoobbuusstt  IImmaaggee  EEnnccrryyppttiioonn  SScchheemmee  BBaasseedd  oonn  
+66DD  HHyyppeerr--cchhaaooss  aanndd  DDPPAA--rreessiissttaanntt  SS--bbooxx. Physica Scripta , vol. 100, 035213. DOI: 10.1088/1402-
+4896/adadab [SCI-E/IF: 2.6] 
+J.4. Long, G., Verma, V., Jiang, D., Yang, Y.-G., & Ahmad, M.  (2024). AA  LLEE--ccoonnttrroolllleedd  44DD  nnoonn--ddeeggeenneerraattee  
+hhyyppeerrcchhaaoottiicc  ssyysstteemm  aanndd  SSTTPP--CCSS  mmooddeell  bbaasseedd  eeffffiicciieenntt  iimmaaggee  eennccrryyppttiioonn  aallggoorriitthhmm. Physica Scripta , DOI: 
+10.1088/1402-4896/ad9d8b [SCI-E/IF: 2.6] 
+J.5. Ibrahim, M., Venkatesan R, & Ahmad, M.  (2024). AA  HHyybbrriidd  AApppprrooaacchh  ooff  SSuubbssttiittuuttiioonn  aanndd  PPeerrmmuuttaattiioonn  
+tteecchhnniiqquueess  ffoorr  MMooddeerrnn  IImmaaggee--CCrryyppttoossyysstteemm. Physica Scripta , vol. 99,  DOI: 10.1088/1402-4896/ad91f5 
+[SCI-E/IF: 2.6] 
+J.6. Aldosary, A., Tanveer, M., Ahmad, M., Maghrabi, L. A., Ahmed, E. A., Hussain, A., & Abd El-Latif, A. A. (2024). AA  
+SSeeccuurree  AAuutthheennttiiccaattiioonn  FFrraammeewwoorrkk  ffoorr  CCoonnssuummeerr  MMoobbiillee  CCrroowwddssoouurrcciinngg  NNeettwwoorrkkss.. IEEE Transactions on 
+Consumer Electronics, DOI: 10.1109/TCE.2024.3473930 [ SCI-E/IF: 4.3] 
+J.7. Ahmad, R., Maghrabi, L. A., Khaja, I. A., Maghrabi, L. A., & Ahmad, M. (2024). SSMMOOTTEE--BBaasseedd  AAuuttoommaatteedd  PPCCOOSS  
+PPrreeddiiccttiioonn  UUssiinngg  LLiigghhttwweeiigghhtt  DDeeeepp  LLeeaarrnniinngg  MMooddeellss. Diagnostics, 14(19), 2225. [SCI-E/IF: 3.0] 
+J.8. Tahiri, M. A., Karmouni, H., Sayyouri, M., Qjidaa, H., Ahmad, M., Hammad, M., & Abd El-Latif, A. A. (2024). AAnn  
+iimmpprroovveedd  rreevveerrssiibbllee  wwaatteerrmmaarrkkiinngg  sscchheemmee  uussiinngg  eemmbbeeddddiinngg  ooppttiimmiizzaattiioonn  aanndd  qquuaatteerrnniioonn  mmoommeennttss. 
+Scientific Reports, 14(1), 18485. [SCI-E/IF: 3.8] 
+J.9. Bashir, M.H., Ahmad, M.,  Rizvi, D.R., & A Abd El-Latif, A. (2024). EEffffiicciieenntt  CCNNNN  BBaasseedd  DDiissaasstteerr  EEvveennttss  
+CCllaassssiiffiiccaattiioonn  UUssiinngg  UUAAVV--AAiiddeedd  IImmaaggeess  ffoorr  EEmmeerrggeennccyy  RReessppoonnssee  AApppplliiccaattiioonn. Neural Computing and 
+Applications. DOI: 10.1007/s00521-024-09610-4 [ SCI-E/IF: 6.0] 
+J.10. Tanveer, M., Abd El-Latif, A. A., Khan, A., Ahmad, M. , & Ateya, A. A. (2024). LLEEAAFF--IIIIooTT::  LLiigghhttwweeiigghhtt  aanndd  
+EEffffiicciieenntt  AAuutthheennttiiccaattiioonn  FFrraammeewwoorrkk  ffoorr  tthhee  IInndduussttrriiaall  IInntteerrnneett  ooff  TThhiinnggss. IEEE Access,  vol. 12, pp. 31771-
+31787. [SCI-E/IF: 3.4] 
+J.11. Feng, W., Zhang, J., Chen, Y., Qin, Z., Zhang, Y., Ahmad, M., & Woźniak, M. (2024). EExxppllooiittiinngg  RRoobbuusstt  QQuuaaddrraattiicc  
+PPoollyynnoommiiaall  HHyyppeerrcchhaaoottiicc  MMaapp  aanndd  PPiixxeell  FFuussiioonn  SSttrraatteeggyy  ffoorr  EEffffiicciieenntt  IImmaaggee  EEnnccrryyppttiioonn. Expert Systems with 
+Applications, 123190. [SCI-E/IF: 7.5] 
+=== PAGE 3 ===
+J.12. Daoui, A., Yamni, M., Altameem, T., Ahmad, M., Hammad, M., Pławiak, P., & Abd El-Latif, A. A. (2023). AAuuCCFFSSRR::  
+AAuutthheennttiiccaattiioonn  aanndd  CCoolloorr  FFaaccee  SSeellff--RReeccoovveerryy  UUssiinngg  NNoovveell  22DD  HHyyppeerrcchhaaoottiicc  SSyysstteemm  aanndd  DDeeeepp  LLeeaarrnniinngg  
+MMooddeellss. Sensors, 23(21), 8957. [SCI-E/IF: 3.4] 
+J.13. Zhou, X., Jiang, D., Nkapkop, J. D. D., Ahmad, M., Fossi, J. T., Tsafack, N., & Wu, J. (2023). DDyynnaammiiccss  AAnnaallyyssiiss  aanndd  
+CCrryyppttooggrraapphhiicc  IImmpplleemmeennttaattiioonn  ooff  aa  FFrraaccttiioonnaall--OOrrddeerr  MMeemmrriissttiivvee  CCeelllluullaarr  NNeeuurraall  NNeettwwoorrkk  MMooddeell. Chinese 
+Physics B. DOI 10.1088/1674-1056/ad03dd [SCI-E/IF: 1.5] 
+J.14. Hu, X., Jiang, D., Ahmad, M., Tsafack, N., Zhu, L., & Zheng, M. (2023). NNoovveell  33--DD  hhyyppeerrcchhaaoottiicc  mmaapp  wwiitthh  hhiiddddeenn  
+aattttrraaccttoorr  aanndd  iittss  aapppplliiccaattiioonn  iinn  mmeeaanniinnggffuull  iimmaaggee  eennccrryyppttiioonn. Nonlinear Dynamics, 111, 19487–19512. [ SCI-
+E/IF: 5.2] 
+J.15. Shi, Y., Jiang, D., Tsafack, N., Ahmad, M. , Zhu, L., & Zheng, M. (2023). PPrriivvaaccyy  DDaattaa  PPrrootteeccttiioonn  SScchheemmee  uussiinngg  
+MMeemmrriissttiivvee  HHyyppeerrcchhaaooss  aanndd  MMuullttii--SSccaallee  BBlloocckk  CCoommpprreessssiivvee  SSeennssiinngg. Physica Scripta , vol. 98, 095206. DOI: 
+10.1088/1402-4896/ace93a [SCI-E/IF: 2.6] 
+J.16. Masud, U., Sadiq, M., Masood, S., Ahmad, M., & Abd El-Latif, A. A. (2023). LLWW--DDeeeeppFFaakkeeNNeett::  aa  lliigghhttwweeiigghhtt  ttiimmee  
+ddiissttrriibbuutteedd  CCNNNN--LLSSTTMM  nneettwwoorrkk  ffoorr  rreeaall--ttiimmee  DDeeeeppFFaakkee  vviiddeeoo  ddeetteeccttiioonn. Signal, Image and Video 
+Processing, 1-9. [SCI-E/IF: 2.0] 
+J.17. Razaq, A., Alhamzi, G., Abbas, S., Ahmad, M., & Razzaque, A. (2023). SSeeccuurree  ccoommmmuunniiccaattiioonn  tthhrroouugghh  rreelliiaabbllee  SS--
+bbooxx  ddeessiiggnn::  AA  pprrooppoosseedd  aapppprrooaacchh  uussiinngg  ccoosseett  ggrraapphhss  aanndd  mmaattrriixx  ooppeerraattiioonnss. Heliyon, 9(5), e15902 (2023). 
+[SCI-E/IF: 3.4] 
+J.18. Zahid, A. H., Arshad, M. J., Ahmad, M., Soliman, N. F., & El-Shafai, W. (2023). DDyynnaammiicc  SS--BBooxx  GGeenneerraattiioonn  UUssiinngg  
+NNoovveell  CChhaaoottiicc  MMaapp  wwiitthh  NNoonnlliinneeaarriittyy  TTwweeaakkiinngg. Computers, Materials & Continua , vol. 75, no.2, pp. 3011–
+3026, 2023. [SCI-E/IF: 2.0] 
+J.19. Gakam Tegue, G. A., Nkapkop, J. D. D., Abdel, M. A., Tsafack, N., Ahmad, M., Signing, F. V., & Tamba, J. G. (2023). 
+AA  NNoovveell  IImmaaggee  EEnnccrryyppttiioonn  SScchheemmee  CCoommbbiinniinngg  aa  DDyynnaammiicc  SS--BBooxx  GGeenneerraattoorr  aanndd  aa  NNeeww  CChhaaoottiicc  OOsscciillllaattoorr  wwiitthh  
+HHiiddddeenn  BBeehhaavviioorr. Arabian Journal for Science and Engineering , 1-20. DOI: 
+https://doi.org/10.1007/s13369-023-07715-x [ SCI-E/IF: 2.6] 
+J.20. Zhang, X., Jiang, D., Nkapkop, J.D., Tabekoueng, Z.N., Ahmad, M. , Zhu, L., & Tsafack, N. (2023). AA  MMeemmrriissttiivvee  
+AAuuttaappssee--SSyynnaappssee  NNeeuurraall  NNeettwwoorrkk::  AApppplliiccaattiioonn  ttoo  IImmaaggee  EEnnccrryyppttiioonn. Physica Scripta , vol. 98, 035222. DOI: 
+10.1088/1402-4896/acbb38 [SCI-E/IF: 2.6] 
+J.21. Razaq, A., Ahmad, M. , & Abd El-Latif, A. A. (2023). AA  NNoovveell  AAllggeebbrraaiicc  CCoonnssttrruuccttiioonn  ooff  SSttrroonngg  SS--BBooxxeess  oovveerr  
+DDoouubbllee  GGFF((2277))  SSttrruuccttuurreess  aanndd  IImmaaggee  PPrrootteeccttiioonn. Computational and Applied Mathematics , vol. 43, pp. xx-yy, 
+DOI: 10.1007/s40314-023-02215-y [ SCI-E/IF: 2.5] 
+J.22. Abdullah, S. M., Abbas, T., Bashir, M. H., Khaja, I. A., Ahmad, M ., Soliman, N. F., & El-Shafai, W. (2023). DDeeeepp  
+TTrraannssffeerr  LLeeaarrnniinngg  BBaasseedd  PPaarrkkiinnssoonn’’ss  DDiisseeaassee  DDeetteeccttiioonn  UUssiinngg  OOppttiimmiizzeedd  FFeeaattuurree  SSeelleeccttiioonn. IEEE Access , 11, 
+3511-3524. [SCI-E/IF: 3.4] 
+J.23. Tegue, G. A. G., Nkapkop, J. D. D., Tsafack, N., Abdel, M. A., Kengne, J., Ahmad, M., & Tamba, J. G. (2022). AA  NNoovveell  
+IImmaaggee  EEnnccrryyppttiioonn  SScchheemmee  BBaasseedd  oonn  CCoommpprreessssiivvee  SSeennssiinngg,,  EElllliippttiicc  CCuurrvveess  aanndd  AA  NNeeww  JJeerrkk  OOsscciillllaattoorr  wwiitthh  
+MMuullttiissttaabbiilliittyy. Physica Scripta, 97, 125215. DOI: 10.1088/1402-4896/aca0cb [ SCI-E/IF: 2.6] 
+J.24. Haque, A., Abdulhussein, T. A., Ahmad, M ., Falah, M. W., & Abd El-Latif, A. A. (2022). AA  SSttrroonngg  HHyybbrriidd  SS--BBooxx  
+SScchheemmee  BBaasseedd  oonn  CChhaaooss,,  22DD  CCeelllluullaarr  AAuuttoommaattaa  aanndd  AAllggeebbrraaiicc  SSttrruuccttuurree. IEEE Access , 10, 116167-116181. 
+[SCI-E/IF: 3.4] 
+J.25. Ahmad, A., Ahmad, T., Ahmad, M ., Kumar, C., Alenezi, F., & Nour, M. (2022). AA  CCoommpplleexx  NNeettwwoorrkk--BBaasseedd  
+AApppprrooaacchh  ffoorr  SSeeccuurriittyy  aanndd  GGoovveerrnnaannccee  iinn  tthhee  SSmmaarrtt  GGrreeeenn  CCiittyy. Expert Systems with Applications , 119094. 
+[SCI-E/IF: 7.5] 
+J.26. Tanveer, M., Ahmad, M ., Khalifa, H. S., Alkhayyat, A., & Abd El-Latif, A. A. (2022). AA  NNeeww  AAnnoonnyymmoouuss  
+AAuutthheennttiiccaattiioonn  FFrraammeewwoorrkk  ffoorr  SSeeccuurree  SSmmaarrtt  GGrriiddss  AApppplliiccaattiioonnss.. Journal of Information Security and 
+Applications, 71, 103336. [SCI-E/IF: 3.8] 
+J.27. Ahmad, A., Ahmad, T., Ahmad, M ., Muthanna A., Gupta, B., & Abd El-Latif, A. A. (2022). DDeetteerrmmiinnaattiioonn  ooff  
+CCrriittiiccaall  EEddggeess  iinn  AAiirr  RRoouuttee  NNeettwwoorrkk  UUssiinngg  MMooddiiffiieedd  WWeeiigghhtteedd  SSuumm  MMeetthhoodd  aanndd  GGrreeyy  RReellaattiioonnaall  AAnnaallyyssiiss. IEEE 
+Transactions on Intelligent Transportation Systems , pp. 1-12. DOI: 10.1109/TITS.2022.3200140. [ SCI-
+E/IF: 7.9] 
+J.28. Tanveer, M., Khan, A., Ahmad, M., Nguyen, T. N., & Abd El-Latif, A. A. (2022). RReessoouurrccee--EEffffiicciieenntt  AAuutthheennttiiccaatteedd  
+DDaattaa  SShhaarriinngg  MMeecchhaanniissmm  ffoorr  SSmmaarrtt  WWeeaarraabbllee  SSyysstteemmss.. IEEE Transactions on Network Science and 
+Engineering, pp. 1-12, DOI: 10.1109/TNSE.2022.3203927. [ SCI-E/IF: 6.7] 
+J.29. Daoui, A., Yamni, M., Karmouni, H., Sayyouri, M., Qjidaa, H., Ahmad, M ., & Abd El-Latif, A. A. (2022). 
+BBiioommeeddiiccaall  MMuullttiimmeeddiiaa  EEnnccrryyppttiioonn  bbyy  FFrraaccttiioonnaall--OOrrddeerr  MMeeiixxnneerr  PPoollyynnoommiiaallss  MMaapp  aanndd  QQuuaatteerrnniioonn  FFrraaccttiioonnaall--
+OOrrddeerr  MMeeiixxnneerr  MMoommeennttss. IEEE Access, 9, pp. 145459-145470. [SCI-E/IF: 3.4] 
+=== PAGE 4 ===
+J.30. Daoui, A., Yamni, M., Karmouni, H., Sayyouri, M., Qjidaa, H., Ahmad, M ., & Abd El-Latif, A. A. (2022). CCoolloorr  
+SStteerreeoo  IImmaaggee  EEnnccrryyppttiioonn  aanndd  LLooccaall  ZZeerroo--wwaatteerrmmaarrkkiinngg  SScchheemmeess  UUssiinngg  OOccttoonniioonn  HHaahhnn  MMoommeennttss  aanndd  MMooddiiffiieedd  
+HHeennoonn  MMaapp. Journal of King Saud University-Computer and Information Sciences . [SCI-E/IF: 5.2] 
+J.31. Nyangaresi, V. O., Ahmad, M., Alkhayyat, A., & Feng, W. (2022). AArrttiiffiicciiaall  NNeeuurraall  NNeettwwoorrkk  aanndd  SSyymmmmeettrriicc  KKeeyy  
+CCrryyppttooggrraapphhyy  BBaasseedd  VVeerriiffiiccaattiioonn  PPrroottooccooll  ffoorr  55GG  EEnnaabblleedd  IInntteerrnneett  ooff  TThhiinnggss. Expert Systems , e13126. [ SCI-
+E/IF: 3.0] 
+J.32. Zhu, L., Jiang, D., Ni, J., Wang, X., Rong, X., & Ahmad, M., (2022). AA  VViissuuaallllyy  SSeeccuurree  IImmaaggee  EEnnccrryyppttiioonn  SScchheemmee  
+UUssiinngg  AAddaappttiivvee--TThhrreesshhoollddiinngg  SSppaarrssiiffiiccaattiioonn  CCoommpprreessssiioonn  SSeennssiinngg  MMooddeell  aanndd  NNeewwllyy--DDeessiiggnneedd  MMeemmrriissttiivvee  
+CChhaaoottiicc  MMaapp. Information Sciences, 607, 1001-1022. [SCI-E/IF: 8.1] 
+J.33. Kumar, V., Mahmoud, M. S., Alkhayyat, A., Srinivas, J., Ahmad, M ., & Kumari, A. (2022). RRAAPPCCHHII::  RRoobbuusstt  
+AAuutthheennttiiccaattiioonn  PPrroottooccooll  ffoorr  IIooMMTT--BBaasseedd  CClloouudd--HHeeaalltthhccaarree  IInnffrraassttrruuccttuurree. The Journal of Supercomputing, 1-
+30. [SCI-E/IF: 2.5] 
+J.34. Masood, S., Khan, R., Abd El-Latif, A. A., Ahmad, M . (2022). AAnn  FFCCNN--LLSSTTMM  MMooddeell  ffoorr  NNeeuurroollooggiiccaall  SSttaattuuss  
+DDeetteeccttiioonn  ffrroomm  NNoonn--IInnvvaassiivvee  MMuullttiivvaarriiaattee  SSeennssoorr  DDaattaa. Neural Computing and Applications , 36(18), 10599–
+10612. DOI: 10.1007/s00521-022-07117-4. [ SCI-E/IF: 6.0] 
+J.35. Tanveer, M., Khan, A., Nguyen, T., Ahmad, M ., & Abd El-Latif, A. A. (2022). TToowwaarrddss  AA  SSeeccuurree  aanndd  
+CCoommppuuttaattiioonnaall  FFrraammeewwoorrkk  ffoorr  IInntteerrnneett  ooff  DDrroonneess  EEnnaabblleedd  AAeerriiaall  CCoommppuuttiinngg. IEEE Transactions on Network 
+Science and Engineering, pp. 1-13. DOI: 10.1109/TNSE.2022.3151843. [ SCI-E/IF: 6.7] 
+J.36. Alkhayyat, A., Ahmad, M ., Tsafack, N., Tanveer, M., Jiang, D., & Abd El-Latif, A. A. (2022). AA  NNoovveell  44DD  
+HHyyppeerrcchhaaoottiicc  SSyysstteemm  AAssssiisstteedd  JJoosseepphhuuss  PPeerrmmuuttaattiioonn  ffoorr  SSeeccuurree  SSuubbssttiittuuttiioonn--BBooxx  GGeenneerraattiioonn. Journal of 
+Signal Processing Systems, 1-14. DOI: 10.1007/s11265-022-01744-9. [ SCI-E/IF: 1.6] 
+J.37. Ahmad, M ., Agarwal, S., Alkhayyat, A., Alhudhaif, A., Alenezi, F., Zahid, A. H., & Aljehane, N. O. (2022). AAnn  
+IImmaaggee  EEnnccrryyppttiioonn  AAllggoorriitthhmm  BBaasseedd  oonn  NNeeww  GGeenneerraalliizzeedd  FFuussiioonn  FFrraaccttaall  SSttrruuccttuurree. Information Sciences, 592, 
+1-20. [SCI-E/IF: 8.1] 
+J.38. Zhu, L., Jiang, D., Ni, J., Wang, X., Rong, X., Ahmad, M. , & Chen, Y. (2022). AA  SSttaabbllee  MMeeaanniinnggffuull  IImmaaggee  
+EEnnccrryyppttiioonn  SScchheemmee  UUssiinngg  tthhee  NNeewwllyy--DDeessiiggnneedd  22DD  DDiissccrreettee  FFrraaccttiioonnaall--OOrrddeerr  CChhaaoottiicc  MMaapp  aanndd  BBaayyeessiiaann  
+CCoommpprreessssiivvee  SSeennssiinngg. Signal Processing, 195, 108489. [SCI-E/IF: 3.4] 
+J.39. Ahmed, M., Masood, S., Ahmad, M. , & Abd El-Latif, A. A. (2021). IInntteelllliiggeenntt  DDrriivveerr  DDrroowwssiinneessss  DDeetteeccttiioonn  ffoorr  
+TTrraaffffiicc  SSaaffeettyy  BBaasseedd  oonn  MMuullttii  CCNNNN  DDeeeepp  MMooddeell  aanndd  FFaacciiaall  SSuubbssaammpplliinngg. IEEE Transactions on Intelligent 
+Transportation Systems, pp. 1-10. DOI: 10.1109/TITS.2021.3134222. [ SCI-E/IF: 7.9] 
+J.40. Razaq, A., Akhter, S., Yousaf, A. Shuaib, U., Ahmad, M. , (2021). AA  GGrroouupp  TThheeoorreettiicc  CCoonnssttrruuccttiioonn  ooff  HHiigghhllyy  
+NNoonnlliinneeaarr  SSuubbssttiittuuttiioonn  BBooxx  aanndd  IIttss  AApppplliiccaattiioonnss  iinn  IImmaaggee  EEnnccrryyppttiioonn. Multimedia Tools Applications , DOI: 
+10.1007/s11042-021-11635-z. [SCI-E/IF: 3.0] 
+J.41. Feng, W., Qin, Z., Zhang, J., & Ahmad, M . (2021). CCrryyppttaannaallyyssiiss  aanndd  IImmpprroovveemmeenntt  ooff  tthhee  IImmaaggee  EEnnccrryyppttiioonn  
+SScchheemmee  BBaasseedd  oonn  FFeeiisstteell  NNeettwwoorrkk  aanndd  DDyynnaammiicc  DDNNAA  EEnnccooddiinngg, IEEE Access , 9, 145459-145470. [ SCI-E/IF: 
+3.4] 
+J.42. Majid, S., Alenezi, F., Masood, S., Ahmad, M., Gündüz, E. S., & Polat, K. (2021). AAtttteennttiioonn  BBaasseedd  CCNNNN  mmooddeell  ffoorr  
+FFiirree  DDeetteeccttiioonn  aanndd  LLooccaalliizzaattiioonn  iinn  RReeaall--WWoorrlldd  IImmaaggeess. Expert Systems with Applications , 189, 116114. [ SCI-
+E/IF: 7.5] 
+J.43. Khan, A. A., Kumar, V., Ahmad, M., Gupta, B. B., Ahmad, M., & Abd El-Latif, A. A. (2021). AA  SSeeccuurree  aanndd  EEffffiicciieenntt  
+KKeeyy  AAggrreeeemmeenntt  FFrraammeewwoorrkk  ffoorr  CCrriittiiccaall  EEnneerrggyy  IInnffrraassttrruuccttuurree  UUssiinngg  MMoobbiillee  DDeevviiccee. Telecommunication 
+Systems, 78, 539–557. [SCI-E/IF: 1.7] 
+J.44. Razaq, A., Ahmad, M., Yousaf, A., Alawida, M., Ullah, A., & Shuaib, U. (2021). AA  GGrroouupp  TThheeoorreettiicc  CCoonnssttrruuccttiioonn  ooff  
+LLaarrggee  NNuummbbeerr  ooff  AAEESS--LLiikkee  SSuubbssttiittuuttiioonn--BBooxxeess. Wireless Personal Communications , 1-24. [SCI-E/IF: 1.9] 
+J.45. Razaq, A., Ahmad, M. , Yousaf, M. A., & Masood, S. (2021). AA  NNoovveell  FFiinniittee  RRiinnggss  BBaasseedd  AAllggeebbrraaiicc  SScchheemmee  ooff  
+EEvvoollvviinngg  SSeeccuurree  SS--BBooxxeess  ffoorr  IImmaaggeess  EEnnccrryyppttiioonn. Multimedia Tools and Applications , 80(13), 20191-20215. 
+[SCI-E/IF: 3.0] 
+J.46. Alhadawi, H. S., Majid, M. A., Lambić, D., & Ahmad, M.  (2021). AA  NNoovveell  MMeetthhoodd  ooff  SS--BBooxx  DDeessiiggnn  BBaasseedd  oonn  
+DDiissccrreettee  CChhaaoottiicc  MMaappss  aanndd  CCuucckkoooo  SSeeaarrcchh  AAllggoorriitthhmm. Multimedia Tools and Applications , 80(5), 7333-7350. 
+[SCIE/IF: 3.0] 
+J.47. Alawida, M., Samsudin, A., Alajarmeh, N., Teh, J. S., & Ahmad, M.  (2021). AA  NNoovveell  HHaasshh  FFuunnccttiioonn  BBaasseedd  oonn  aa  
+CChhaaoottiicc  SSppoonnggee  aanndd  DDNNAA  SSeeqquueennccee. IEEE Access, 9, 17882-17897. [SCI-E/IF: 3.4] 
+J.48. Ahmad, M. , Doja, M. N., & Beg, M. M. S. (2021). SSeeccuurriittyy  AAnnaallyyssiiss  aanndd  EEnnhhaanncceemmeennttss  ooff  aann  IImmaaggee  
+CCrryyppttoossyysstteemm  BBaasseedd  oonn  HHyyppeerrcchhaaoottiicc  SSyysstteemm. Journal of King Saud University-Computer and Information 
+Sciences, 33(1), 77-85. [SCI-E/IF: 5.2]. 
+=== PAGE 5 ===
+J.49. Alhadawi, H. S., Lambić, D., Zolkipli, M. F., & Ahmad, M.  (2020). GGlloobbaalliizzeedd  FFiirreeffllyy  AAllggoorriitthhmm  aanndd  CChhaaooss  ffoorr  
+DDeessiiggnniinngg  SSuubbssttiittuuttiioonn--BBooxx. Journal of Information Security and Applications , 55, 102671. [SCI-E/IF: 3.8] 
+J.50. Freyre-Echevarría, A., Alanezi, A., Martínez-Díaz, I., Ahmad, M. , Abd El-Latif, A. A. & Razaq, A. (2020). AAnn  
+EExxtteerrnnaall  PPaarraammeetteerr  IInnddeeppeennddeenntt  NNoovveell  CCoosstt  FFuunnccttiioonn  ffoorr  EEvvoollvviinngg  BBiijjeeccttiivvee  SSuubbssttiittuuttiioonn--BBooxxeess. Symmetry, 
+12(11), 1896. [SCI-E/IF: 2.2] 
+J.51. Masood, S., Rai, A., Aggarwal, A., Doja, M. N., & Ahmad, M.  (2020). DDeetteeccttiinngg  DDiissttrraaccttiioonn  ooff  DDrriivveerrss  UUssiinngg  
+CCoonnvvoolluuttiioonnaall  NNeeuurraall  NNeettwwoorrkk. Pattern Recognition Letters, 139, 79-85. [SCI-E/IF: 3.9] 
+J.52. Alawida, M., Teh, J. S., Oyinloye, D. P., Ahmad, M., & Alkhawaldeh, R. S. (2020). AA  NNeeww  HHaasshh  FFuunnccttiioonn  BBaasseedd  oonn  
+CChhaaoottiicc  MMaappss  aanndd  DDeetteerrmmiinniissttiicc  FFiinniittee  SSttaattee  AAuuttoommaattaa. IEEE Access, 8, 113163-113174. [SCI-E/IF: 3.4] 
+J.53. Hussam A. Ahmed, Mohamad Fadli Zolkipli, Musheer Ahmad , (2019) “ AA  NNoovveell  EEffffiicciieenntt  SSuubbssttiittuuttiioonn--BBooxx  
+DDeessiiggnn  BBaasseedd  oonn  FFiirreeffllyy  AAllggoorriitthhmm  aanndd  DDiissccrreettee  CChhaaoottiicc  MMaapp”, Neural Computing and Applications , vol. 31, 
+7201-7219. [SCI-E/IF: 6.0] 
+J.54. Dragan Lambić, Aleksandar Janković, Musheer Ahmad , (2018). “ SSeeccuurriittyy  AAnnaallyyssiiss  ooff  tthhee  EEffffiicciieenntt  CChhaaooss  
+PPsseeuuddoo--rraannddoomm  NNuummbbeerr  GGeenneerraattoorr  AApppplliieedd  ttoo  VViiddeeoo  EEnnccrryyppttiioonn”, Journal of Electronic Testing: Theory and 
+Applications, [SCI-E/IF: 1.1] 
+J.55. Eesa Al Solami, Musheer Ahmad , Christos Volos, Mohammad Najam Doja, Mirza Mohd Sufyan Beg, “ AA  NNeeww  
+HHyyppeerrcchhaaoottiicc  SSyysstteemm--BBaasseedd  DDeessiiggnn  ffoorr  EEffffiicciieenntt  BBiijjeeccttiivvee  SSuubbssttiittuuttiioonn--BBooxxeess”, Entropy, vol. 20, no. 7, July 
+2018 [SCI-E/IF: 2.1] 
+J.56. Musheer Ahmad , Eesa Al Solami, Xingyuan Wang, M N Doja, M M Sufyan Beg, Amer Awad Alzaidi, 
+“CCrryyppttaannaallyyssiiss  ooff  aann  IImmaaggee  EEnnccrryyppttiioonn  AAllggoorriitthhmm  BBaasseedd  oonn  CCoommbbiinneedd  CChhaaooss  ffoorr  BBAANN  SSyysstteemm  aanndd  iittss  
+IImmpprroovveedd  SScchheemmee  UUssiinngg  SSHHAA--551122  aanndd  HHyyppeerrcchhaaooss”, Symmetry, vol. 10, no. 7, 266, July 2018 [SCI-E/IF: 2.2] 
+J.57. Musheer Ahmad , M N Doja, M M Sufyan Beg, “ AABBCC  OOppttiimmiizzaattiioonn  BBaasseedd  CCoonnssttrruuccttiioonn  ooff  SSttrroonngg  SSuubbssttiittuuttiioonn--
+BBooxx”, Wireless Personal Communications , vol. 101, no. 3, pp. 1715-1729, August 2018 [ SCI-E/IF: 1.9] 
+J.58. Musheer Ahmad, Mohammad Zaiyan Alam, Subia Ansari, Dragan Lambić, Hamed D. AlSharari, “ CCrryyppttaannaallyyssiiss  
+ooff  aann  IImmaaggee  EEnnccrryyppttiioonn  AAllggoorriitthhmm  BBaasseedd  oonn  PPWWLLCCMM  AAnndd  IInneerrttiiaall  DDeellaayyeedd  NNeeuurraall  NNeettwwoorrkk”, Journal of 
+Intelligent & Fuzzy Systems, vol. 34, no. 3, pp. 1323-1332, Mar 2018 [ SCI-E/IF: 1.7] 
+ 
+PAPERS IN INTERNATIONAL CONFERENCES: 
+C.1. Ansari, N., Ahmad, M.  Khaja, I. A., & Siddiqui, M. F. I. (2024, November). OOppttiimmiizzeedd  FFeeaattuurree  SSeelleeccttiioonn  
+FFrraammeewwoorrkk  ffoorr  EEffffiicciieenntt  HHeeaarrtt  SSoouunndd  CCllaassssiiffiiccaattiioonn. In 2024 3rd Edition of IEEE Delhi Section Flagship 
+Conference (DELCON) (pp. 1-6). IEEE. [ SCOPUS]. 
+C.2. Khaja, I.A., Ahmad, M.  (2023, December). SSiimmiillaarriittyy  LLeeaarrnniinngg  aanndd  GGeenneettiicc  AAllggoorriitthhmm  BBaasseedd  NNoovveell  SS--BBooxx  
+OOppttiimmiizzaattiioonn. Proceedings of Eighth International Symposium on Intelligent Informatics  (ISI 2023), Pal, S.K., 
+Thampi, S.M., Abraham, A. (eds) Intelligent Informatics. Smart Innovation, Systems and Technologies, vol 389. 
+Springer. [SCOPUS]. 
+C.3. Ahmad, F., Waseem, Z., Ahmad, M., & Ansari, M. Z. (2023, May). FFoorreesstt  FFiirree  PPrreeddiiccttiioonn  UUssiinngg  MMaacchhiinnee  LLeeaarrnniinngg  
+TTeecchhnniiqquueess. In 2023 International Conference on Recent Advances in Electrical, Electronics & Digital 
+Healthcare Technologies (REEDCON) (pp. 705-708). IEEE. [ SCOPUS]. 
+C.4. Ahmad, F., Tarik, M., Ahmad, M.,  & Ansari, M. Z. (2023, May). WWeeaatthheerr  FFoorreeccaassttiinngg  UUssiinngg  DDeeeepp  LLeeaarrnniinngg  
+AAllggoorriitthhmmss. In 2023 International Conference on Recent Advances in Electrical, Electronics & Digital 
+Healthcare Technologies (REEDCON) (pp. 498-502). IEEE. [ SCOPUS]. 
+C.5. Saba Manzoor, Musheer Ahmad,  Hussam S. Alhadawi (2023). IInnttrruussiioonn  DDeetteeccttiioonn  SSyysstteemm  UUssiinngg  EEnnsseemmbbllee  
+MMaacchhiinnee  LLeeaarrnniinngg  iinn  CClloouudd  EEnnvviirroonnmmeenntt. The 2nd International Conference on Emerging Technologies and 
+Intelligent Systems (ICETIS 2022), 2-3 September 2022. Lecture Notes in Networks and Systems, vol. 573, pp. 
+513-522, Springer International Publishing. [ SCOPUS]. 
+C.6. Arora, S., Bindra, S., Ahmad, M., & Ahmad, T. (2023). DDeeccoommppoossiittiioonn  MMaakkeess  BBeetttteerr  RRaaiinn  RReemmoovvaall::  AAnn  EEnnhhaanncceedd  
+AAtttteennttiioonn--GGuuiiddeedd  IImmaaggee  DDee--rraaiinniinngg  UUssiinngg  DDeeccoonnvvoolluuttiioonnss  NNeettwwoorrkk. In Proceedings of Second International 
+Conference in Mechanical and Energy Technology (pp. 323-331). Springer, Singapore. [ SCOPUS]. 
+C.7. Adeen, Z., Ahmad, M., Neggaz, N., & Alkhayyat, A. (2022). MMHHGGSSOO::  AA  MMooddiiffiieedd  HHuunnggeerr  GGaammee  SSeeaarrcchh  OOppttiimmiizzeerr  
+UUssiinngg  OOppppoossiittiioonn--BBaasseedd  LLeeaarrnniinngg  ffoorr  FFeeaattuurree  SSeelleeccttiioonn. Proceedings of Trends in Electronics and Health 
+Informatics (pp. 41-52), 16-17 December 2021. [SCOPUS]. 
+C.8. Arora, S., Bindra, S., Ahmad, M.,  & Ahmad, T. (2021). AAnn  AAnnaallyyssiiss  ooff  DDeepprreessssiioonn  DDeetteeccttiioonn  MMooddeell  AAppppllyyiinngg  
+DDaattaa  MMiinniinngg  AApppprrooaacchheess  UUssiinngg  SSoocciiaall  NNeettwwoorrkk  DDaattaa. Fourth International Conference on Electrical, Computer 
+and Communication Technologies (ICECCT-2021), 15-17 September 2021, pp. 1-7, IEEE. [ SCOPUS]. 
+=== PAGE 6 ===
+C.9. Hamid, M., Ahmad, M., Alhadawi, H. S., & Chandhok, S. (2021). CCrryyppttooggrraapphhiicc  PPsseeuuddoo--RRaannddoomm  BBiitt  GGeenneerraattoorr  
+BBaasseedd  oonn  NNeeww  CCoommbbiinnaattiioonn  DDiissccrreettee  CChhaaoottiicc  SSyysstteemmss. International Conference on Emerging Technologies and 
+Intelligent Systems  (ICETIS-2021), 25-26 June 2021, Lecture Notes in Networks and Systems, vol. 322, pp. 
+921-930, Springer International Publishing. [ SCOPUS]. 
+C.10. Musheer Ahmad, M N Doja, M M Sufyan Beg, “ AA  NNeeww  CChhaaoottiicc  MMaapp  BBaasseedd  SSeeccuurree  aanndd  EEffffiicciieenntt  PPsseeuuddoo--RRaannddoomm  
+BBiitt  SSeeqquueennccee  GGeenneerraattiioonn”, Sixth International Symposium on Security in Computing and Communications 
+(SSCC-2018), Communications in Computer and Information Science , Springer-Verlag Berlin, vol. 969, pp. 543-
+553, 19-22 September 2018, Bangalore. [ SCOPUS]. 
+C.11. Musheer Ahmad, Aisha Aijaz, Subia Ansari, Mohammad Moazzam Siddiqui, Sarfaraz Masood, “ CCrryyppttaannaallyyssiiss  ooff  
+IImmaaggee  CCrryyppttoossyysstteemm  UUssiinngg  SSyynncchhrroonniizzeedd  44DD  LLoorreennzz  SStteennfflloo  HHyyppeerrcchhaaoottiicc  SSyysstteemmss”, International Conference 
+on Frontiers of Intelligent Computing: Theory and Applications (FICTA-2017), Advances in Intelligent Systems 
+and Computing, Springer, vol. 701, pp. 367-376, 14-15 October 2017, Bhubaneswar. [ SCOPUS]. 
+C.12. Sarfaraz Masood, Adhyan Srivastava, Harish Chandra Thuwal,  Musheer Ahmad,  “ RReeaall  TTiimmee  SSiiggnn  LLaanngguuaaggee  
+GGeessttuurree  ((WWoorrdd))  RReeccooggnniittiioonn  ffrroomm  VViiddeeoo  SSeeqquueenncceess  UUssiinngg  CCNNNN  aanndd  RRNNNN”, International Conference on 
+Frontiers of Intelligent Computing: Theory and Applications (FICTA-2017), Advances in Intelligent Systems and 
+Computing, Springer, vol. 695, pp. 623-632, 14-15 October 2017, Bhubaneswar. [ SCOPUS]. 
+C.13. Musheer Ahmad,  Farooq Seeru, Ahmed Masihuddin Siddiqi, Sarfaraz Masood, “ DDyynnaammiicc  99××99  SSuubbssttiittuuttiioonn--
+BBooxxeess  UUssiinngg  CChhaaooss  BBaasseedd  HHeeuurriissttiicc  SSeeaarrcchh”, International Conference on Soft Computing: Theories and 
+Applications (SoCTA-2016), Advances in Intelligent Systems and Computing , Springer, vol. 583, pp. 839-851, 
+28-30 December 2016, Jaipur. [SCOPUS]. 
+C.14. Musheer Ahmad,  M Alauddin, Hamed D. AlSharari, “ HHeeuurriissttiicc  AApppprrooaacchh  ffoorr  NNoonnlliinneeaarr  nn××nn  ((33≤≤nn≤≤77))  
+SSuubbssttiittuuttiioonn--BBooxxeess” 3rd International Conference on Computer & Communication Technologies (IC3T-2016), 
+Advances in Intelligent Systems and Computing , Springer, vol. 542, pp. 347-355, 5-6 November 2016, 
+Vijayawada. [SCOPUS]. 
+C.15. Sarfaraz Masood, Shubham Gupta, Abdul Wajid, Suhani Gupta, Musheer Ahmad,  “ PPrreeddiiccttiioonn  ooff  HHuummaann  
+EEtthhnniicciittyy  ffrroomm  FFaacciiaall  IImmaaggeess  UUssiinngg  NNeeuurraall  NNeettwwoorrkkss” 3rd International Conference on Computer & 
+Communication Technologies (IC3T-2016), Advances in Intelligent Systems and Computing , Springer, vol. 542, 
+pp. 217-226, 5-6 November 2016, Vijayawada. [ SCOPUS]. 
+C.16. Sahil Wadhwa, Musheer Ahmad,  Harsh Vijay, “ CChhaaoottiicc  HHaasshh  FFuunnccttiioonn  BBaasseedd  PPllaaiinn--IImmaaggee  DDeeppeennddeenntt  BBlloocckk  
+CCiipphheerriinngg  TTeecchhnniiqquuee”, International Conference on Advances in Computing, Communications and Informatics 
+(ICACCI-2016), pp. 633-637, 21-24 September 2016, Jaipur. [ SCOPUS]. 
+C.17. Musheer Ahmad,  Hamed D. AlSharari, “ OOnn  tthhee  SSeeccuurriittyy  ooff  CChhaaooss  BBaasseedd  WWaatteerrmmaarrkkiinngg  SScchheemmee  ffoorr  SSeeccuurree  
+CCoommmmuunniiccaattiioonn”, International Conference on Frontiers of Intelligent Computing: Theory and Applications 
+(FICTA-2016), Advances in Intelligent Systems and Computing , Springer, vol. 515, pp. 313-321, 16-17 
+September 2016, Bhubaneswar. [SCOPUS]. 
+C.18. Musheer Ahmad,  Farooq Seeru, “ CChhaaoottiicc  KKeeyy  DDeeppeennddeenntt  GGeenneerraattiioonn  ooff  AAPPAA--lliikkee  SSttrroonngg  NNoonnlliinneeaarr  
+CCoommppoonneennttss”, Sixth International Conference on Advanced Computing & Communication Technologies (ACCT-
+2016), pp. 83-87, 3-4 September 2016, Rohtak. ISBN: 978-981-11-0783-2.  
+C.19. Manish Malik, Musheer Ahmad,  “ PPeerrffoorrmmaannccee  AAnnaallyyssiiss  ooff  CCrryyppttooggrraapphhiicc  88××88  SSuubbssttiittuuttiioonn--BBooxxeess, Sixth 
+International Conference on Advanced Computing & Communication Technologies (ACCT-2016), pp. 200-205, 
+3-4 September 2016, Rohtak. ISBN: 978-981-11-0783-2.  
+C.20. Sushmita Singh, Musheer Ahmad,  Dhruv Malik, “ BBrreeaakkiinngg  aann  IImmaaggee  EEnnccrryyppttiioonn  SScchheemmee  BBaasseedd  oonn  CChhaaoottiicc  
+SSyynncchhrroonniizzaattiioonn  PPhheennoommeennoonn”, Ninth International Conference on Contemporary Computing (IC3-2016), pp. 
+146-149, 11-13 August 2016, Noida. [ SCOPUS]. 
+C.21. Musheer Ahmad,  Nikhil Mittal, Prerit Garg, Manaf Mahtab Khan, “ EEffffiicciieenntt  CCrryyppttooggrraapphhiicc  SSuubbssttiittuuttiioonn  BBooxx  
+DDeessiiggnn  UUssiinngg  TTrraavveelllliinngg  SSaalleessmmaann  PPrroobblleemm  aanndd  CChhaaooss”, International Conference on Recent Trends in 
+Engineering and Material Science (ICEMS-2016), Perspectives in Science , vol. 8, pp. 465-468, 17-19 March 
+2016. 
+C.22. Musheer Ahmad,  Manish Malik, “ DDeessiiggnn  ooff  CChhaaoottiicc  NNeeuurraall  NNeettwwoorrkk  BBaasseedd  MMeetthhoodd  ffoorr  CCrryyppttooggrraapphhiicc  
+SSuubbssttiittuuttiioonn  BBooxx”, International Conference on Electrical, Electronics, and Optimization Techniques (ICEEOT-
+2016), pp. 864-868, 3-5 March 2016, Chennai. [ SCOPUS]. 
+C.23. Musheer Ahmad, Faiyaz Ahmad and Syed Ashar Javed, “ CCrryyppttaannaallyyssiiss  ooff  aann  AAssyymmmmeettrriicc  IImmaaggee  CCrryyppttoossyysstteemm  
+BBaasseedd  oonn  SSyynncchhrroonniizzeedd  UUnniiffiieedd  CChhaaoottiicc  SSyysstteemm  aanndd  CCNNNN”, First International Conference on Intelligent 
+Computing and Communication (ICIC2-2016), Advances in Intelligent Systems and Computing , Springer, vol. 
+458, pp. 559-567, 18-19 February 2016, West Bengal. [ SCOPUS]. 
+=== PAGE 7 ===
+C.24. Pankaj Kumar Sharma, Aditya Kumar and Musheer Ahmad,  “ CCrryyppttaannaallyyssiiss  ooff  IImmaaggee  EEnnccrryyppttiioonn  AAllggoorriitthhmm  
+BBaasseedd  oonn  PPiixxeell  SShhuufffflliinngg  aanndd  BBiittss  SShhuufffflliinngg”, International Congress on Information and Communication 
+Technology, (ICICT-2015), Advances in Intelligent Systems and Computing , Springer, vol. 439, pp. 281-289, 9-
+10 October 2015, Udaipur, [SCOPUS]. 
+C.25. Musheer Ahmad, Faiyaz Ahmad, Zeba Nasim, Zohra Bano, Shadab Zafar, “ CChhaaooss  BBaasseedd  SSttrroonngg  SSuubbssttiittuuttiioonn  BBooxx  
+DDeessiiggnn”, Eight International Conference on Contemporary Computing (IC3-2015), pp. 97-100, 20-22 August 
+2015, Noida. [SCOPUS]. 
+C.26. Shruti Khurana and Musheer Ahmad,  “ DDeessiiggnniinngg  CChhaaoottiicc  CChhiirriikkoovv  MMaapp  BBaasseedd  HHaasshh  FFuunnccttiioonn”, International 
+Conference on Innovations in Computer Science & Engineering (ICICSE-2015), Advances in Intelligent Systems 
+and Computing, Springer, vol. 413, pp. 267-274, 7-8 August 2015, Telangana. [ SCOPUS]. 
+C.27. Musheer Ahmad,  Danish Raza Rizvi and Zishan Ahmad, “ PPWWLLCCMM  BBaasseedd  RRaannddoomm  SSeeaarrcchh  ffoorr  SSttrroonngg  
+SSuubbssttiittuuttiioonn  BBooxx  DDeessiiggnn”, Second International Conference on Computer & Communication Technologies (IC3T-
+2015), Advances in Intelligent Systems and Computing , Springer, vol. 379, pp. 471-478, 24-26 July 2015, 
+Hyderabad. [SCOPUS]. 
+C.28. Akshay Chopra, Musheer Ahmad, Manish Malik, “ AAnn  EEnnhhaanncceedd  MMoodduulloo--bbaasseedd  IImmaaggee  EEnnccrryyppttiioonn  UUssiinngg  CChhaaoottiicc  
+aanndd  FFrraaccttaall  KKeeyyss”, International Conference on Advances in Computer Engineering and Applications (ICACEA-
+2015), pp. 501-506, 19-20 March 2015, Ghaziabad, UP. [ SCOPUS]. 
+C.29. Zeba Nasim, Zohra Bano, Musheer Ahmad,  “ AAnnaallyyssiiss  ooff  RRaannddoomm  PPeerrmmuuttaattiioonnss  GGeenneerraattiioonn  SScchheemmeess  ffoorr  
+SSeeccuurriittyy  AApppplliiccaattiioonnss”, International Conference on Advances in Computer Engineering and Applications 
+(ICACEA-2015), pp. 337-341, 19-20 March 2015, Ghaziabad, UP. [ SCOPUS]. 
+C.30. Shahzad Alam, Amir Jamil, Ankur Saldhi, Musheer Ahmad, “DDiiggiittaall  IImmaaggee  AAuutthheennttiiccaattiioonn  aanndd  EEnnccrryyppttiioonn  uussiinngg  
+DDiiggiittaall  SSiiggnnaattuurree”, International Conference On Advances in Computer Engineering and Applications (ICACEA-
+2015), pp. 332-336, 19-20 March 2015, Ghaziabad, UP. [ SCOPUS]. 
+C.31. Musheer Ahmad, and Bashir Alam, “ AA  NNoovveell  BBiioommeettrriicc  FFiinnggeerrpprriinntt  TTeemmppllaattee  BBaasseedd  MMeetthhoodd  ffoorr  SSttrreeaamm  CCiipphheerr  
+DDeessiiggnn” Second International Conference on Information Systems Design and Intelligent Applications (INDIA-
+2015), Information Systems Design and Intelligent Applications , Advances in Intelligent Systems and Computing , 
+Springer, vol. 340, pp. 419-427, 8-9 January 2015, West Bengal. [ SCOPUS]. 
+C.32. Musheer Ahmad,  Imran Raza Khan and Shahzad Alam, “ CCrryyppttaannaallyyssiiss  ooff  IImmaaggee  EEnnccrryyppttiioonn  BBaasseedd  oonn  
+FFrraaccttiioonnaall--oorrddeerr  LLoorreennzz--lliikkee  CChhaaoottiicc  SSyysstteemmss” International Conference on Emerging ICT for Bridging Future 
+(CSI-2014), Emerging ICT for Bridging the Future , Advances in Intelligent Systems and Computing , Springer, 
+vol. 338, pp. 381-388, 13-14 December 2014, Hyderabad. [ SCOPUS]. 
+C.33. Musheer Ahmad,  Akshay Chopra, Prakhar Jain, and Shahzad Alam, “ AA  CChhaaoottiicc  SSuubbssttiittuuttiioonn  BBaasseedd  IImmaaggee  
+EEnnccrryyppttiioonn  UUssiinngg  AAPPAA--ttrraannssffoorrmmaattiioonn” International Conference on Frontiers of Intelligent Computing: Theory 
+and Applications (FICTA-2014), Advances in Intelligent Systems and Computing , Springer, vol. 328, pp. 75-83, 
+14-15 November 2014, Bhubaneswar. [ SCOPUS]. 
+C.34. Musheer Ahmad,  and Faiyaz Ahmad, “ CCrryyppttaannaallyyssiiss  ooff  IImmaaggee  EEnnccrryyppttiioonn  BBaasseedd  oonn  PPeerrmmuuttaattiioonn--SSuubbssttiittuuttiioonn  
+UUssiinngg  CChhaaoottiicc  MMaapp  aanndd  LLaattiinn  SSqquuaarree  IImmaaggee  CCiipphheerr” International Conference on Frontiers of Intelligent 
+Computing: Theory and Applications (FICTA-2014), Advances in Intelligent Systems and Computing , Springer, 
+vol. 327, pp. 481-488, 14-15 November 2014, Bhubaneswar. [ SCOPUS]. 
+C.35. Pankaj Kumar Sharma, Musheer Ahmad,  and Parvez Mahmood Khan, “ CCrryyppttaannaallyyssiiss  ooff  aann  IImmaaggee  EEnnccrryyppttiioonn  
+AAllggoorriitthhmm  BBaasseedd  oonn  PPiixxeell  SShhuufffflliinngg  SScchheemmee  aanndd  CChhaaoottiicc  SS--bbooxx  TTrraannssffoorrmmaattiioonn”, Second International 
+Symposium on Security in Computing and Communications (SSCC-2014), Communications in Computer and 
+Information Science, Springer-Verlag Berlin, vol. 467, pp. 173-181, 24-27 September 2014, Noida. [ SCOPUS]. 
+C.36. Swaleha Saeed, M Sarosh Umar, M Athar Ali, Musheer Ahmad,  “A Gray-Scale Image Encryption Using Fisher-
+Yates Chaotic Shuffling in Wavelet Domain”,  2014 IEEE Recent Advances and Innovations in Engineering 
+(ICRAIE-2014), pp. 1-5, 9-11 May 2014, Jaipur. [ SCOPUS]. 
+C.37. Shahzad Alam, Vipin Kumar, Waseem A Siddiqui, Musheer Ahmad,  “ KKeeyy--DDeeppeennddeenntt  IImmaaggee  SStteeggaannooggrraapphhyy  
+UUssiinngg  EEddggee  DDeetteeccttiioonn”, International Conference on Advanced Computing & Communication Technologies 
+(ACCT-2014), pp. 85-88, 8-9 February 2014, Rohtak. [ SCOPUS]. 
+C.38. Prateek Singla, Payal Sachdeva and Musheer Ahmad,  “ AA  CChhaaoottiicc  NNeeuurraall  NNeettwwoorrkk  BBaasseedd  CCrryyppttooggrraapphhiicc  
+PPsseeuuddoo--RRaannddoomm  SSeeqquueennccee  DDeessiiggnn”, International Conference on Advanced Computing & Communication 
+Technologies (ACCT-2014), pp. 301-306, 8-9 February 2014, Rohtak. [ SCOPUS]. 
+C.39. Musheer Ahmad,  Shahzad Alam, “ AA  NNoovveell  AApppprrooaacchh  ffoorr  EEffffiicciieenntt  SS--BBooxx  DDeessiiggnn  UUssiinngg  MMuullttiippllee  HHiigghh--
+DDiimmeennssiioonnaall  CChhaaooss”, International Conference on Advanced Computing & Communication Technologies (ACCT-
+2014), pp. 95-99, 8-9 February 2014, Rohtak. [ SCOPUS]. 
+=== PAGE 8 ===
+C.40. Musheer Ahmad, Parvez Mahmood Khan and M Zeeshan Ansari, “ AA  SSiimmppllee  aanndd  EEffffiicciieenntt  KKeeyy--DDeeppeennddeenntt  SS--BBooxx  
+DDeessiiggnn  UUssiinngg  FFiisshheerr--YYaatteess  SShhuuffffllee  TTeecchhnniiqquuee”, International Conference on Security in Networks and 
+Distributed Systems (SNDS-2014), Recent Trends in Computer Networks and Distributed Systems Security , 
+Communications in Computer and Information Science , Springer-Verlag Berlin, vol. 420, pp. 540-550, 13-14 
+March 2014, Kerela. [SCOPUS]. 
+C.41. Musheer Ahmad,  Hammad Haleem and Parvez Mahmood Khan, “ AA  NNeeww  CChhaaoottiicc  SSuubbssttiittuuttiioonn  BBooxx  DDeessiiggnn  ffoorr  
+BBlloocckk  CCiipphheerrss”, International Conference on Signal Processing and Integrated Networks (SPIN-2014), pp. 255-
+258, 20-21 February 2014, Noida. [ SCOPUS]. 
+C.42. Musheer Ahmad, Sonia Gupta and A K Mohapatra, “ AA  BBiioo--CChhaaoottiicc  BBlloocckk  CCrryyppttoossyysstteemm  ffoorr  PPrriivvaaccyy  PPrrootteeccttiioonn  
+ooff  MMuullttiimmeeddiiaa  DDaattaa”, International Conference on Frontiers of Intelligent Computing: Theory and applications 
+(FICTA-2013), Advances in Intelligent Systems and Computing , Springer Switzerland, vol. 247, pp. 527-534, 14-
+16 November 2013, Bhubaneswar. [ SCOPUS]. 
+C.43. Musheer Ahmad,  Hitesh Chugh, Avish Goel and Prateek Singla, “ AA  CChhaaooss  BBaasseedd  MMeetthhoodd  ffoorr  EEffffiicciieenntt  
+CCrryyppttooggrraapphhiicc  SS--BBooxx  DDeessiiggn”, International Symposium on Security in Computing and Communications (SSCC-
+2013), Security in Computing and Communications , Communications in Computer and Information Science , 
+Springer-Verlag Berlin, vol. 377, pp. 130-137, 22-24 August 2013, Mysore. [ SCOPUS]. 
+C.44. Musheer Ahmad,  Bashir Alam, Arpit Jain, Vipul Khare, “ AA  NNoovveell  OOccttuuppllee  IImmaaggeess  EEnnccrryyppttiioonn  AAllggoorriitthhmm  UUssiinngg  
+CChhaaooss  iinn  WWaavveelleett  DDoommaaiinn”, Fourth International Conference on Networks & Communications (NETCOM-2012), 
+Computer Networks & Communications (NetCom),  Lecture Notes in Electrical Engineering, Springer New York, 
+vol. 131, pp. 509-518,  22-24 December 2012, Chennai. [ SCOPUS]. 
+C.45. Arpit Jain, Musheer Ahmad  and Vipul Khare, “ AA  RRiiddggeelleett  BBaasseedd  SSyymmmmeettrriicc  MMuullttiippllee  IImmaaggee  EEnnccrryyppttiioonn  iinn  
+WWaavveelleett  DDoommaaiinn  uussiinngg  CChhaaoottiicc  KKeeyy  IImmaaggee”, International Conference on Eco-friendly Computing and 
+Communication Systems (ICECCS-2012), Eco-friendly Computing and Communication Systems,  Communications 
+in Computer and Information Science , Springer-Verlag Berlin, vol. 305, pp. 135-144, 9-11 August 2012, Cochin. 
+[SCOPUS]. 
+C.46. Musheer Ahmad, Bashir Alam and Omar Farooq, “ CChhaaoottiicc  MMaasskkiinngg  ooff  VVooiiccee  BBiittssttrreeaamm  uussiinngg  MMiixxeedd  SSeeqquueenncceess  
+ffoorr  AAuutthhoorriizzeedd  LLiisstteenniinngg”, The Second International Conference on Computer Science and Information 
+Technology (CCSIT-2012), Advances in Computer Science and Information Technology: Computer Science and 
+Engineering, Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications 
+Engineering, Springer, vol. 85, Part II, pp. 604-611, 2-4 January 2012, Bangalore. [ SCOPUS]. 
+C.47. Musheer Ahmad,  Tanvir Ahmad and Chirag Gupta, “ MMuullttiippllee  33DD  CChhaaoottiicc  SSyysstteemmss  BBaasseedd  AApppprrooaacchh  ffoorr  VViissuuaall  
+MMuullttiimmeeddiiaa  CCoonntteenntt  PPrrootteeccttiioonn”, 4th International Conference on Recent Trends in Computing, Communication 
+& Information Technologies (ObCom-2011), Global Trends in Information Systems and Software Applications , 
+Communications in Computer and Information Science , Springer-Verlag Berlin, vol. 270, pp. 37-46,  9-11 
+December 2011, Vellore. [SCOPUS]. 
+C.48. Musheer Ahmad  and Omar Farooq, “ CChhaaooss  BBaasseedd  PPNN  SSeeqquueennccee  GGeenneerraattoorr  ffoorr  CCrryyppttooggrraapphhiicc  AApppplliiccaattiioonnss”, 
+International Conference on Multimedia, Signal Processing and Communication Technologies  (IMPACT-2011), 
+pp. 83-86, 17-19 December 2011, Aligarh. [ SCOPUS]. 
+C.49. Musheer Ahmad,  M. Ehtashamoul Haque and Omar Farooq, “ AA  NNooiissee  RReessiilliieenntt  SSccrraammbblliinngg  SScchheemmee  ffoorr  NNooiissyy  
+TTrraannssmmiissssiioonn  CChhaannnneell”, International Conference on Multimedia, Signal Processing and Communication 
+Technologies (IMPACT-2011), pp. 91-94, 17-19 December 2011, Aligarh. [SCOPUS]. 
+C.50. Musheer Ahmad,  Shahab Saquib Sohail, Omar Farooq, Anoop L Vyas, Sekharjit Datta and David Mulvaney, 
+“CChhaaooss--bbaasseedd  EEnnccrryyppttiioonn  ooff  BBiioommeeddiiccaall  EEEEGG  SSiiggnnaallss  uussiinngg  RRaannddoomm  QQuuaannttiizzaattiioonn  TTeecchhnniiqquuee”, 4th International 
+Conference on BioMedical Engineering and Informatics (BMEI-2011), pp. 1471-1475, 15-17 October 2011, 
+Shanghai, China. [SCOPUS]. 
+C.51. Musheer Ahmad, “CCrryyppttaannaallyyssiiss  ooff  CChhaaooss--bbaasseedd  SSeeccuurree  SSaatteelllliittee  IImmaaggeerryy  CCrryyppttoossyysstteemm”, Fourth International 
+Conference on Contemporary Computing (IC3-2011), Contemporary Computing, Communications in Computer 
+and Information Science, Springer-Verlag Berlin, vol. 169, pp. 81-91, Noida, 8-10 August 2011. [ SCOPUS]. 
+C.52. Musheer Ahmad  and Omar Farooq, “ SSeeccuurree  SSaatteelllliittee  IImmaaggee  TTrraannssmmiissssiioonn  SScchheemmee  UUssiinngg  CChhaaooss  aanndd  DDiissccrreettee  
+WWaavveelleett  TTrraannssffoorrmm”, International Conference on High Performance Architecture and Grid Computing (HPAGC-
+2011), High Performance Architecture and Grid Computing,  Communications in Computer and Information 
+Science, Springer-Verlag Berlin, vol. 168, pp. 257-264, Punjab, 19-20 July 2011. [SCOPUS]. 
+C.53. Musheer Ahmad  and Izharuddin, “ RRaannddoommnneessss  EEvvaalluuaattiioonn  ooff  SSttrreeaamm  CCiipphheerr  ffoorr  SSeeccuurree  MMoobbiillee  
+CCoommmmuunniiccaattiioonn”, 1st International Conference on Parallel, Distributed and Grid Computing  (PDGC-2010), pp. 
+165-168, Solan, 28-30 October 2010. [SCOPUS]. 
+=== PAGE 9 ===
+C.54. Musheer Ahmad  and Omar Farooq, “ AA  MMuullttii--LLeevveell  BBlloocckkss  SSccrraammbblliinngg  BBaasseedd  CChhaaoottiicc  IImmaaggee  CCiipphheerr”, Third 
+International Conference on Contemporary Computing (IC3-2010), Contemporary Computing,  Communications 
+in Computer and Information Science , Springer-Verlag Berlin, vol. 94, part 1, pp. 171-182, 9-11 August 2010, 
+Noida. [SCOPUS]. 
+C.55. Musheer Ahmad  and Izharuddin, “ EEnnhhaanncceedd  AA55//11  CCiipphheerr  wwiitthh  IImmpprroovveedd  LLiinneeaarr  CCoommpplleexxiittyy”, International 
+Conference on Multimedia, Signal Processing and Communication Technologies  (IMPACT-2009), pp. 266-268, 
+Aligarh, 14 -16 March 2009. [SCOPUS]. 
+C.56. Musheer Ahmad,  Chanki Gupta and Ankit Varshney, “ DDiiggiittaall  IImmaaggee  EEnnccrryyppttiioonn  BBaasseedd  oonn  CChhaaoottiicc  MMaapp  ffoorr  
+SSeeccuurree  TTrraannssmmiissssiioonn”, International Conference on Multimedia, Signal Processing and Communication 
+Technologies (IMPACT-2009), pp. 289-292, Aligarh, 14-16 March 2009. [ SCOPUS]. 
+C.57. Musheer Ahmad  and Izharuddin, “ SSeeccuurriittyy  EEnnhhaanncceemmeennttss  iinn  GGSSMM  CCeelllluullaarr  SSttaannddaarrdd”, Fourth International 
+Conference on Wireless Communication and Sensor Networks  (WCSN-2008), pp. 191-194, Allahabad, 26-29 
+December 2008. [SCOPUS]. 
+ 
+SERVING AS ASSOCIATE EDITOR/EDITORIAL BOARD MEMBER: 
+1. Editorial Board Member of SScciieennttiiffiicc  RReeppoorrttss, Nature, Springer [SCIE- indexed] 
+2. Editorial Board Member of DDiissccoovveerr  CCoommppuuttiinngg, Springer [SCIE- indexed] 
+3. Associate Editor of  IInntteerrnnaattiioonnaall  JJoouurrnnaall  ooff  IInnffoorrmmaattiioonn  SSeeccuurriittyy  aanndd  PPrriivvaaccyy  (IJISP,) IGI (IGI 
+Global Publication) [ESCI-SCOPUS indexed] 
+4. Associate Editor of  IInntteerrnnaattiioonnaall  JJoouurrnnaall  ooff  AArrttiiffiicciiaall  IInntteelllliiggeennccee  iinn  SScciieennttiiffiicc  DDiisscciipplliinneess 
+(IJAISD) IGI (IGI Global Publication) 
+ 
+AWARDS/ACHIEVEMENTS/INTERNATIONAL RECOGNITION: 
+1. Received EEddiittoorriiaall  CCoonnttrriibbuuttiioonn  AAwwaarrdd  22002255 for effectively handling manuscripts as Editorial 
+Board member of SScciieennttiiffiicc  RReeppoorrttss journal from Springer Nature. 
+2. Recently received FFEETT  RReesseeaarrcchh  PPuubblliiccaattiioonn  AAwwaarrdd  22002244 from Honorable Vice Chancellor of JMI 
+Prof. Mazhar Asif, Honorable Registrar Prof. Md. Mehtab Alam Rizvi, and Dean of FET-JMI Prof. 
+Mini Shaji Thomas on 5th November, 2024. 
+3. Received JJaammiiaa  AAcchhiieevveerrss  AAwwaarrdd from Honorable Vice Chancellor of JMI Prof. Najma Akhtar, Ms 
+Sharmila Tagore (Actress), & Dr Shiv Kumar Sarin on 29th October 2023. 
+4. Included among World’s Top 2% Researchers for the year 2024 in the list curated by Stanford 
+University, USA and Elsevier B.V. (in the category of career-long). 
+5. Received appreciation from Dean of FET-JMI Prof. Mini Shaji Thomas for being listed among 
+World’s Top 2% Researchers for the year 2022 list curated by Stanford University, USA and 
+Elsevier B.V. 
+6. Included consecutively three times among World’s Top 2% Researchers for the year 2024, 2023, 
+and 2022 in the lists curated by Stanford University, USA and Elsevier B.V. ( in the category of 
+single year). 
+7. Received few Best papers awards for papers published in International Conferences. 
+8. Received Prize under Best Papers Award category for research paper in a Conference.  
+9. Received Prize for gaining sixth position in Class X Examination 1997. 
+ 
+JOURNAL SPECIAL ISSUE ORGANIZED (GUEST EDITOR): 
+1. Guest Editor of the Collection on “ Post-quantum cybersecurity and cryptography ” in Scientific 
+Reports, Springer ISSN: 2024-3222 ( Springer Nature Publication ) [ SCIE indexed ] ( submissions 
+open till 28th February, 2026) 
+=== PAGE 10 ===
+2. Special Issue on “ Securing Critical Infrastructure in Next-Generation Networks: AI, Machine 
+Learning and Cryptographic Approaches” , Discover Computing , vol. x, no. y, ISSN: 2948-2992, 
+Springer (Springer Publication) [SCIE- indexed](submissions open till 30th September, 2025) 
+3. Special Issue on “ Intelligent Informatics and Computing for Security ” in International Journal of 
+Rough Sets and Data Analysis , vol. 5, no. 3, ISSN: 2334-4601, IGI  (IGI Global Publication ) [DBLP 
+indexed] 
+ 
+BOOKS EDITED: 
+1. Edited a Book on “ AI Based Cybersecurity Management: Securing Digital Economy” , CRC Press, 
+Taylor & Francis, vol. x, ISSN: 2948-2992 series. (under production) 
+ 
+CONFERENCE SESSION CHAIRED: 
+1. Served as Chair of Session on “ Systems and Application Security/Cryptosystems, Algorithms ” in 
+Sixth International Symposium on Security in Computing and Communications (SSCC-2018) 
+held on 19 th –22 nd September 2018, Bangalore, India, CCIS, vol. 969, ISBN: 978-981-10-5826-5 
+(Proceeding by Springer), Available at: https://doi.org/10.1007/978-981-13-5826-5 
+ 
+CONFERENCE SPECIAL SESSION ORGANIZED: 
+1. Organized a Special Session on “ Recent Advancements on Information Security ” with 
+International Conference on Frontiers of Intelligent Computing: Theory and Applications 
+(FICTA-2016) held on 16 th –17th September 2016, Advances in Intelligent Systems and Computing,  
+vol. 515, ISBN: 978-981-10-3153-3  ( Proceeding by Springer ), Available at: 
+https://doi.org/10.1007/978-981-10-3153-3 
+ 
+CONFERENCE TRACK MANAGER: 
+1. Served as track manager for Track: Information Security Applications  in International 
+Conference International Conference on Computer and Communication Technologies 
+(IC3T-2016) held on 5 th – 6th November 2016, Advances in Intelligent Systems and Computing,  vol. 
+542, ISBN: 978-981-10-3223-3 ( Proceeding by Springer ), Available at: 
+https://doi.org/10.1007/978-981-10-3223-3 
+2. Served as track manager for Track:  Network Security, Wireless and Mobile Computing  in Third 
+International Conference on Information systems Design and Intelligent Applications 
+(INDIA-2016) held on 8 th – 9 th January 2016, Advances in Intelligent Systems and Computing,  vol. 
+535, ISBN: 978-81-322-2757-1 ( Proceeding by Springer ), Available at: 
+https://doi.org/10.1007/978-81-322-2757-1 
+ 
+SERVED AS REVIEWER/REFEREE OF FOLLOWING INTERNATIONAL JOURNALS: 
+1. IEEE TRANSACTIONS ON INFORMATION FORENSICS & SECURITY (SCIE), IEEE 
+2. IEEE TRANSACTIONS ON CYBERNETICS (SCIE), IEEE 
+3. IEEE TRANSACTIONS ON PATTERN ANALYSIS AND MACHINE INTELLIGENCE (SCIE), IEEE 
+4. IEEE TRANSACTIONS ON INDUSTRIAL INFORMATICS (SCIE), IEEE 
+5. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS FOR VIDEO TECHNOLOGY (SCIE), IEEE 
+6. IEEE TRANSACTIONS ON CIRCUITS AND SYSTEMS I: REGULAR PAPERS (SCIE), IEEE 
+7. IEEE TRANSACTIONS ON NEURAL NETWORKS & LEARNING SYSTEMS (SCI), IEEE 
+8. IEEE TRANSACTIONS ON SYSTEMS, MAN AND CYBERNETICS: SYSTEMS (SCI), IEEE 
+9. IEEE TRANSACTIONS ON IMAGE PROCESSING (SCIE), IEEE 
+10. IEEE TRANSACTIONS ON INTELLIGENT TRANSPORTATION SYSTEMS (SCIE), IEEE 
+11. IEEE TRANSACTIONS ON COGNITIVE AND DEVELOPMENTAL SYSTEMS (SCIE), IEEE 
+12. IEEE TRANSACTIONS ON CONSUMER ELECTRONICS (SCIE), IEEE 
+13. IEEE TRANSACTIONS ON NETWORK SCIENCE AND ENGINEERING (SCIE), IEEE 
+14. IEEE TRANSACTIONS ON GEOSCIENCE AND REMOTE SENSING (SCIE), IEEE 
+15. IEEE TRANSACTIONS ON GREEN COMMUNICATIONS AND NETWORKING (SCIE), IEEE 
+=== PAGE 11 ===
+16. IEEE TRANSACTIONS ON RELIABILITY (SCIE), IEEE 
+17. IEEE TRANSACTIONS ON INDUSTRIAL CYBER-PHYSICAL SYSTEMS (SCIE), IEEE 
+18. IEEE TRANSACTIONS ON CLOUD COMPUTING (SCIE), IEEE 
+19. IEEE TRANSACTIONS ON MOBILE COMPUTING (SCIE), IEEE 
+20. IEEE TRANSACTIONS ON PARALLEL AND DISTRIBUTED SYSTEMS (SCIE), IEEE 
+21. IEEE TRANSACTIONS ON NANOBIOSCIENCE (SCIE), IEEE 
+22. IEEE JOURNAL ON SELECTED AREAS IN COMMUNICATIONS (SCI), IEEE 
+23. IEEE INTERNET OF THINGS JOURNAL (SCIE), IEEE 
+24. IEEE JOURNAL OF BIOMEDICAL AND HEALTH INFORMATICS (SCIE), IEEE 
+25. IEEE SIGNAL PROCESSING LETTERS (SCIE), IEEE 
+26. IEEE SYSTEMS JOURNAL (SCIE), IEEE 
+27. IEEE MULTIMEDIA (SCIE), IEEE 
+28. IEEE ACCESS (SCIE), IEEE 
+29. IEEE/ACM TRANSACTIONS ON COMPUTATIONAL BIOLOGY AND BIOINFORMATICS (SCIE), IEEE 
+30. ACM TRANSACTIONS ON SENSOR NETWORKS (SCIE), ACM 
+31. ACM TRANSACTIONS ON PRIVACY AND SECURITY (SCIE), ACM 
+32. JOURNAL OF INFORMATION SECURITY AND APPLICATIONS (SCIE), ELSEVIER 
+33. INFORMATION SCIENCES (SCI), ELSEVIER 
+34. SIGNAL PROCESSING (SCIE), ELSEVIER 
+35. JOURNAL OF KING SAUD UNIVERSITY - CIS (SCIE), ELSEVIER 
+36. NEUROCOMPUTING (SCIE), ELSEVIER 
+37. KNOWLEDGE-BASED SYSTEMS (SCIE), ELSEVIER 
+38. EXPERT SYSTEMS WITH APPLICATIONS (SCIE), ELSEVIER 
+39. ENGINEERING APPLICATIONS OF ARTIFICIAL INTELLIGENCE, (SCIE), ELSEVIER 
+40. APPLIED SOFT COMPUTING (SCIE), ELSEVIER 
+41. NEURAL NETWORKS (SCIE), ELSEVIER 
+42. COMPUTERS IN BIOLOGY AND MEDICINE (SCI), ELSEVIER 
+43. PHYSICA A : STATISTICAL MECHANICS AND ITS APPLICATIONS (SCI), ELSEVIER 
+44. CHAOS, SOLITONS & FRACTALS (SCI), ELSEVIER 
+45. SIGNAL PROCESSING: IMAGE COMMUNICATION (SCI), ELSEVIER 
+46. ALEXANDRIA ENGINEERING JOURNAL (SCIE), ELSEVIER 
+47. AIN SHAMS ENGINEERING JOURNAL (SCIE), ELSEVIER 
+48. ENGINEERING SCIENCE AND TECHNOLOGY: AN INTERNATIONAL JOURNAL (SCIE), ELSEVIER 
+49. INTEGRATION (SCIE), ELSEVIER 
+50. ICT EXPRESS (SCIE), ELSEVIER 
+51. SCIENCE CHINA TECHNOLOGICAL SCIENCES (SCIE), SPRINGER 
+52. SCIENTIFIC REPORTS (SCIE), SPRINGER 
+53. NEURAL COMPUTING AND APPLICATIONS (SCIE), SPRINGER  
+54. WIRELESS PERSONAL COMMUNICATIONS (SCIE), SPRINGER 
+55. COMPUTATIONAL AND APPLIED MATHEMATICS (SCIE), SPRINGER 
+56. ARABIAN JOURNAL FOR SCIENCE AND ENGINEERING (SCIE), SPRINGER 
+57. FRONTIERS OF INFORMATION TECHNOLOGY & ELECTRONIC ENGINEERING (SCIE), SPRINGER 
+58. INTERNATIONAL JOURNAL OF DYNAMICS AND CONTROL (SCIE), SPRINGER 
+59. INTERNATIONAL JOURNAL OF BIFURCATION AND CHAOS, (SCIE), WORLD SCIENTIFIC  
+60. NETWORK: COMPUTATION IN NEURAL SYSTEMS (SCIE), TAYLOR & FRANCIS 
+61. IET INTELLIGENT TRANSPORT SYSTEMS (SCIE), IET 
+62. IET INFORMATION SECURITY (SCIE), IET 
+63. IET IMAGE PROCESSING (SCIE), IET 
+64. JOURNAL OF THE CHINESE INSTITUTE OF ENGINEERS (SCIE), TAYLOR & FRANCIS 
+65. IETE JOURNAL OF RESEARCH (SCIE), TAYLOR & FRANCIS 
+66. INFORMATION SECURITY JOURNAL: A GLOBAL PERSPECTIVE (ESCI-SCOPUS), TAYLOR & FRANCIS 
+67. CONCURRENCY AND COMPUTATION: PRACTICE AND EXPERIENCE (SCIE), WILEY 
+68. COMPUTER SYSTEMS SCIENCE AND ENGINEERING (SCIE), TECH SCIENCE PRESS 
+69. COMPUTERS, MATERIALS & CONTINUA (SCIE), TECH SCIENCE PRESS 
+70. PEERJ COMPUTER SCIENCE (SCIE), PEERJ, INC 
+71. SECURITY AND COMMUNICATION NETWORKS (SCIE), HINDAWI - WILEY 
+72. FRACTAL AND FRACTIONAL (SCIE), MDPI 
+73. SENSORS (SCIE), MDPI 
+74. ENTROPY (SCIE), MDPI 
+75. SYMMETRY (SCIE), MDPI 
+=== PAGE 12 ===
+76. APPLIED SCIENCES (SCIE), MDPI 
+77. MATHEMATICS (SCIE), MDPI 
+78. INTERNATIONAL JOURNAL OF BIO-INSPIRED COMPUTING (SCIE), INDERSCIENCE 
+79. INTERNATIONAL JOURNAL OF INFORMATION AND COMPUTER SECURITY (SCOPUS), INDERSCIENCE 
+80. INTERNATIONAL JOURNAL OF INFORMATION SECURITY AND PRIVACY (SCOPUS), IGI GLOBAL 
+ 
+REVIEWER/TPC MEMBER OF CONFERENCES: 
+ Served as TPC member and Reviewer of more than 50 International Conferences. 
+ 
+OTHER ACADEMIC ACTIVITIES: 
+ Designed syllabi of Multimedia Systems , Artificial Neural Networks , Digital Forensics , and 
+Quantum Cryptography for under new curriculum in the Department of Computer Engineering, 
+Jamia Millia Islamia, New Delhi. 
+ Designed syllabi of M.Tech courses of “ Algorithm Design ”, “ Soft Computing ”, “ Multimedia 
+Technology” and “ Digital Image Processing ” in the Department of Computer Engineering, Jamia 
+Millia Islamia, New Delhi. 
+ Revised syllabus of “ Analysis and Design of Algorithms ” and “ Discrete Mathematics ” in the 
+Department of Computer Engineering, Jamia Millia Islamia, New Delhi. 
+ Introduced a B.Tech Elective course “ Soft Computing Techniques ” and designed its syllabus in the 
+Department of Computer Engineering, Jamia Millia Islamia, New Delhi. 
+ Revised syllabus of “ Microprocessor Theory & Applications ” course at  Department of Computer 
+Engineering, AMU, Aligarh. 
+ 
+RESPONSIBILTIES: 
+ Serving as SSuubb--PPuurrcchhaassee  CCoommmmiitttteeee  MMeemmbbeerr for FTK-CIT JMI. 
+ Serving as MMeemmbbeerr  ooff  IInnssttiittuuttiioonnaall  MMuullttiiddiissccpplliinnaarryy  RReesseeaarrcchh  AAddvviissoorryy  CCoommmmiitttteeee (IMRAC) of 
+Regional Research Institute of Unani Medicine, New Delhi, Ministry of Ayush, Govt. of India. 
+ Serving as PPrroojjeecctt  CCoooorrddiinnaattoorr for M.Tech of the Department since 2019. 
+ Serving as CCBBCCSS  PPrrooggrraammmmee  AAddvviissoorr of the Department under CBCS system since 2015. 
+ Serving as Teacher Coordinator of the Department for B.Tech (3rd & 4th Sem) IInd year.  
+ Prepared Departmental NAAC Accreditation Report and served as Nodal faculty member for 2015 
+NAAC related activities. 
+ Served as Member of Departmental Syllabus Committee formed to design Subjects syllabi for M.Tech 
+regular course in the Department in 2015. 
+ Served as member of ICT Guidelines Compliance Committee constituted, in May 2011, to observe the 
+compliance of ICT guidelines and utilization of Personal computers in Jamia Millia Islamia. 
+ 
+ONGOING SUPERVISION: 
+PH.D     : 6 
+M.TECH DISSERTATIONS : 2 
+B.TECH PROJECTS  : 3  
+ 
+DISSERTATIONS/PROJECTS SUPERVISED: 
+M.TECH DISSERTATIONS : 14 
+M.TECH PROJECTS  :  16 
+B.TECH PROJECTS  : 40+  
+=== PAGE 13 ===
+ 
+SHORT-TERM COURSE/FDP/WORKSHOPS ATTENDED: 
+ Participated and completed one week Faculty Development Program on " MMeetthhooddss  ffoorr  IImmpprroovviinngg  
+HHiigghheerr  EEdduuccaattiioonn  TTeeaacchhiinngg  QQuuaalliittyy  UUssiinngg  OOuuttccoommee  BBaasseedd  EEdduuccaattiioonn,,  PPeeddaaggooggiiccaall  AApppprrooaacchheess  aanndd  NNEEPP  
+22002200  ((OOBBEENNEEPP2244))" during 22nd-26th July, 2024, organized by Department of Computer Science & 
+Engineering in association with IQAC, Haldia Institute of Technology. 
+ Completed Two-Week Interdisciplinary Refresher Course on “ AAddvvaanncceedd  RReesseeaarrcchh  MMeetthhooddoollooggyy” 
+during 23 Feb – 9 Mar 2023, organized by Teaching Learning Centre, Ramanujan College, University 
+of Delhi, India. 
+ Attended 3rd One-Week International Workshop on “ TTeecchhnniiccaall  WWrriittiinngg  uussiinngg  LLaaTTeeXX” during 30 Mar 
+– 5 Apr 2023, organized by The School of Electronics Engineering (SENSE) at VIT-AP University, 
+Amravati, India. 
+ Attended Short term training program on “ AArrttiiffiicciiaall  IInntteelllliiggeennccee  aanndd  MMaacchhiinnee  LLeeaarrnniinngg (STTP-
+AI&ML)” during 4th July – 22nd July 2023, organized by Department of Computer Engineering, JMI, 
+New Delhi, India 
+ Attended one week ATAL online Faculty Development Programme in  “ CCyybbeerr  SSeeccuurriittyy” during 21 st 
+September – 25th September 2020 organized by Dr Harisingh Gour University, Sagar, MP. 
+ Completed Two weeks online Refresher Course in  “EEnnggiinneeeerriinngg,,  PPhhyyssiiccaall  SScciieenncceess  aanndd  MMaannaaggeemmeenntt” 
+during 22nd June – 4th July 2020) organized by BVICAM, New Delhi. 
+ Attended Two weeks online Faculty Development Programme on “ EEmmeerrggiinngg  RReesseeaarrcchh  TTrreennddss  iinn  
+CCoommppuutteerr  SScciieennccee  aanndd  IITT” during 8th June – 19th June 2020 organized by BVICAM, New Delhi. 
+ Participated in One-day Workshop over “ EEmmeerrggiinngg  TTrreennddss  iinn  DDiiggiittaall  WWoorrlldd” organized by 
+Department of Computer Engineering, JMI, and FTK-Centre for Information Technology, JMI New-
+Delhi-110025 held on 08th March 2017. 
+ Attended 114th four week Orientation Programme during 03rd Nov – 03rd Dec 2015 organized by JMI-
+Human Resource Development Centre, Jamia Millia Islamia, New Delhi. 
+ Attended 3 rd three week Summer Special Programme during 16 th May – 5 th June 2014 organized by 
+Academic Staff College, Jamia Millia Islamia, New Delhi. 
+ Participated in a Short-term course over “ MMuullttiimmeeddiiaa  TTeecchhnnoollooggyy  &&  AApppplliiccaattiioonnss” organized by 
+Department of Electronics Engineering, AMU, Aligarh held on. 
+ Participated in two-days  Workshop over “ EEmmeerrggiinngg  TTrreennddss  iinn  IInnffoorrmmaattiioonn  &&  CCoommmmuunniiccaattiioonn  
+TTeecchhnnoollooggyy” organized by Department of Computer Engineering, AMU, Aligarh held on. 
+ Participated in One-day Workshop over “ EEmmeerrggiinngg  TTrreennddss  iinn  IICCTT  bbaasseedd  LLeeaarrnniinngg” jointly organized 
+by FTK-Centre for Information Technology, JMI and Department of Computer Engineering, JMI, New-
+Delhi-110025 held on. 
+ 
+CONFERENCES ATTENDED: 
+ International Conference on Recent Advances in Electrical, Electronics & Digital Healthcare 
+Technologies (REEDCON-2023), 01-03 May 2023. 
+ International Symposium on Security in Computing and Communications ( SSCC-2018), 19-22 
+September 2018, Bangalore.  
+ International Conference on Electrical, Electronics, and Optimization Techniques ( ACCT-2016), 3-4 
+September 2016, Rohtak, Haryana. 
+ International Conference on Electrical, Electronics, and Optimization Techniques ( ICEEOT-2016), 3-
+5 March 2016, Ponamallee, Chennai. 
+=== PAGE 14 ===
+ International Congress on Information and Communication Technology ( ICICT-2015), 9-10 October 
+2015, Udaipur.  
+ International Symposium on Security in Computing and Communications ( SSCC-2014), 24-27 
+September 2014, Greater Noida.  
+ International Conference on Multimedia, Signal Processing and Communication Technologies 
+(IMPACT-2011), 17-19 December 2011, Aligarh.  
+ Fourth International Conference on Contemporary Computing (IC3-2011), 8-10 August 2011, Noida.  
+ International Conference on High Performance Architecture and Grid Computing ( HPAGC-2011), 
+19-20 July 2011, Punjab.  
+ 1st International Conference on Parallel, Distributed and Grid Computing ( PDGC-2010), 28-30 
+October 2010, Solan.  
+ Third International Conference on Contemporary Computing (IC3-2010), 9-11 August 2010, Noida.  
+ Fourth International Conference on Wireless Communication and Sensor Networks ( WCSN-2008), 
+26-29 December 2008, Allahabad. 
+ International Conference on Wireless Networks and Embedded Systems ( WECON-2008), 18-19 
+October 2008, Punjab. 
+ 
+PROFESSIONAL MEMBERSHIPS: 
+ Member of Society of Digital Information and Wireless Communication (SDIWC), USA. 
+ Member of International Association of Computer Science and Information Technology (IACSIT), 
+Singapore. 
+ Member of Institute of Doctors, Engineers and Scientists (IDES), India. 
+ 
+PERSONAL DETAILS: 
+Date of Birth  : 08 th JANUARY, 1982 
+Father’s Name  : (L ATE) Mr. SAGHEER AHMAD 
+Contact   : +911126980281 (O) 
+ 
+@WebOfScience : https://www.webofscience.com/wos/author/record/H-9587-2018  
+@SCOPUS  : https://www.scopus.com/authid/detail.uri?authorId=56339090200  
+@GoogleScholar : https://scholar.google.com/citations?user=cPbmjWoAAAAJ&hl=en&sortby=pubdate  
+@csauthors.net : https://www.csauthors.net/musheer-ahmad-002/  
+@ResearchGate : https://www.researchgate.net/profile/Musheer-Ahmad-3  
+@DBLP   : https://dblp.org/pid/89/8467-2.html  
+@Profile  : https://topresearcherslist.com/Home/Profile/862797  
+ 
+ 
+(Dr. Musheer Ahmad) 
+ 
+Last Update: June, 2025 

@@ -1,61 +1,118 @@
 from rest_framework import serializers
 from .models import (
-    SiteConfiguration,
-    ImpactMetric,
-    ResearchArea,
+    SiteSettings,
+    NavigationItem,
+    HomePage,
+    ResearchTheme,
+    NewsItem,
     Publication,
-    SponsoredProject,
+    Honor,
+    EditorialRole,
+    ServiceItem,
     TeamMember,
     Course,
-    NewsItem,
     ResearchOpening,
     ProspectiveApplication,
 )
 
 
-class SiteConfigurationSerializer(serializers.ModelSerializer):
+class SiteSettingsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = SiteConfiguration
+        model = SiteSettings
         fields = '__all__'
 
 
-class ImpactMetricSerializer(serializers.ModelSerializer):
+class NavigationItemSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ImpactMetric
+        model = NavigationItem
+        fields = ['id', 'title', 'path', 'order']
+
+
+class HomePageSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = HomePage
         fields = '__all__'
 
 
-class ResearchAreaSerializer(serializers.ModelSerializer):
-    publication_count = serializers.SerializerMethodField()
-
+class ResearchThemeSerializer(serializers.ModelSerializer):
     class Meta:
-        model = ResearchArea
-        fields = '__all__'
-
-    def get_publication_count(self, obj):
-        return obj.publications.count()
+        model = ResearchTheme
+        fields = ['id', 'title', 'slug', 'summary', 'body', 'order']
 
 
 class PublicationSerializer(serializers.ModelSerializer):
-    research_area_title = serializers.CharField(source='research_area.title', read_only=True)
-    publication_type_display = serializers.CharField(source='get_publication_type_display', read_only=True)
+    theme_title = serializers.CharField(source='theme.title', read_only=True)
 
     class Meta:
         model = Publication
+        fields = [
+            'id',
+            'title',
+            'slug',
+            'authors',
+            'venue',
+            'year',
+            'volume_issue_pages',
+            'publication_type',
+            'doi',
+            'pdf_url',
+            'code_url',
+            'abstract',
+            'bibtex',
+            'theme',
+            'theme_title',
+            'index_tags',
+            'impact_factor_as_listed',
+            'is_selected',
+            'citation_count',
+            'order',
+        ]
+
+
+class HonorSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Honor
         fields = '__all__'
 
 
-class SponsoredProjectSerializer(serializers.ModelSerializer):
-    role_display = serializers.CharField(source='get_role_display', read_only=True)
-    status_display = serializers.CharField(source='get_status_display', read_only=True)
+class EditorialRoleSerializer(serializers.ModelSerializer):
+    role_type_display = serializers.CharField(source='get_role_type_display', read_only=True)
 
     class Meta:
-        model = SponsoredProject
+        model = EditorialRole
         fields = '__all__'
+
+
+class ServiceItemSerializer(serializers.ModelSerializer):
+    category_display = serializers.CharField(source='get_category_display', read_only=True)
+
+    class Meta:
+        model = ServiceItem
+        fields = '__all__'
+
+
+class NewsItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = NewsItem
+        fields = ['id', 'title', 'slug', 'date', 'category', 'body', 'link', 'is_pinned']
+
+
+class HomePagePayloadSerializer(serializers.Serializer):
+    """
+    Combined home payload delivering everything needed for route '/' in a single request.
+    """
+    settings = SiteSettingsSerializer()
+    navigation = NavigationItemSerializer(many=True)
+    home = HomePageSerializer()
+    research_themes = ResearchThemeSerializer(many=True)
+    selected_publications = PublicationSerializer(many=True)
+    honors = HonorSerializer(many=True)
+    editorial_roles = EditorialRoleSerializer(many=True)
+    latest_news = NewsItemSerializer(many=True)
 
 
 class TeamMemberSerializer(serializers.ModelSerializer):
-    role_category_display = serializers.CharField(source='get_role_category_display', read_only=True)
+    role_display = serializers.CharField(source='get_role_display', read_only=True)
 
     class Meta:
         model = TeamMember
@@ -63,59 +120,38 @@ class TeamMemberSerializer(serializers.ModelSerializer):
 
 
 class CourseSerializer(serializers.ModelSerializer):
-    level_display = serializers.CharField(source='get_level_display', read_only=True)
-
     class Meta:
         model = Course
         fields = '__all__'
 
 
-class NewsItemSerializer(serializers.ModelSerializer):
-    category_display = serializers.CharField(source='get_category_display', read_only=True)
-
-    class Meta:
-        model = NewsItem
-        fields = '__all__'
-
-
 class ResearchOpeningSerializer(serializers.ModelSerializer):
-    position_type_display = serializers.CharField(source='get_position_type_display', read_only=True)
-
     class Meta:
         model = ResearchOpening
         fields = '__all__'
 
 
 class ProspectiveApplicationSerializer(serializers.ModelSerializer):
+    website_hp = serializers.CharField(required=False, write_only=True, allow_blank=True)
+
     class Meta:
         model = ProspectiveApplication
         fields = [
             'id',
-            'applicant_name',
+            'full_name',
             'email',
             'phone',
             'current_institution',
-            'degree_and_cgpa',
-            'position_applied',
-            'research_interest_statement',
-            'paper_read_reference',
-            'cv_link',
+            'degree_and_gpa',
+            'position_applied_for',
+            'research_statement',
+            'paper_reference',
+            'cv_url_or_link',
+            'website_hp',
             'created_at',
         ]
 
-
-class BibtexImportSerializer(serializers.Serializer):
-    raw_bibtex = serializers.CharField(required=True)
-    research_area_id = serializers.IntegerField(required=False, allow_null=True)
-
-
-class PortfolioBundleSerializer(serializers.Serializer):
-    site_config = SiteConfigurationSerializer()
-    impact_metrics = ImpactMetricSerializer(many=True)
-    research_areas = ResearchAreaSerializer(many=True)
-    publications = PublicationSerializer(many=True)
-    projects = SponsoredProjectSerializer(many=True)
-    team_members = TeamMemberSerializer(many=True)
-    courses = CourseSerializer(many=True)
-    news_items = NewsItemSerializer(many=True)
-    openings = ResearchOpeningSerializer(many=True)
+    def validate_website_hp(self, value):
+        if value:
+            raise serializers.ValidationError("Bot submission rejected.")
+        return value

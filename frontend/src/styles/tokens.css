@@ -1,0 +1,68 @@
+/* ====================================================================
+   SWISS ACADEMIC EDITORIAL DESIGN TOKENS
+   Dr. Musheer Ahmad — Jamia Millia Islamia
+   ==================================================================== */
+
+:root {
+  /* Color Palette — Authentic Swiss Academic Off-White Paper Palette */
+  --bg-primary: #F7F6F2;
+  --bg-secondary: #ECE9E2;
+  --bg-tertiary: #E2DED5;
+  --text-primary: #14171A;
+  --text-secondary: #4F555D;
+  --text-muted: #7A808A;
+  --border-hairline: #DCD7CE;
+  --border-strong: #14171A;
+
+  /* Single Accent: Deep Scholarly Forest Green (Jamia Millia Islamia Heritage) */
+  --accent-green: #0E4B3B;
+  --accent-green-hover: #093328;
+  --accent-green-tint: rgba(14, 75, 59, 0.08);
+
+  /* Typography Families */
+  --font-serif: "Newsreader", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
+
+  /* Fluid Typography Scale */
+  --font-display: clamp(2.5rem, 5.5vw, 4.25rem);
+  --line-display: 1.05;
+  --track-display: -0.025em;
+
+  --font-h1: clamp(1.85rem, 3.5vw, 2.75rem);
+  --line-h1: 1.15;
+  --track-h1: -0.02em;
+
+  --font-h2: clamp(1.4rem, 2.5vw, 1.85rem);
+  --line-h2: 1.25;
+  --track-h2: -0.015em;
+
+  --font-h3: clamp(1.15rem, 1.8vw, 1.35rem);
+  --line-h3: 1.35;
+  --track-h3: -0.01em;
+
+  --font-body-lg: clamp(1.0625rem, 1.2vw, 1.1875rem);
+  --line-body-lg: 1.65;
+
+  --font-body: 1rem;
+  --line-body: 1.65;
+
+  --font-body-sm: 0.875rem;
+  --line-body-sm: 1.55;
+
+  --font-caption: 0.75rem;
+  --line-caption: 1.45;
+
+  --font-label: 0.6875rem;
+  --track-label: 0.08em;
+
+  /* Grid & Spacing Scale */
+  --max-content-width: 1200px;
+  --text-max-ch: 68ch;
+  --section-spacing: clamp(4rem, 8vw, 7.5rem);
+  --gutter: clamp(1.25rem, 3vw, 2.5rem);
+
+  /* Borders & Radii */
+  --radius-button: 2px;
+  --radius-subtle: 2px;
+}
