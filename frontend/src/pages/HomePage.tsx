@@ -130,19 +130,6 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   className="hero-portrait-img"
                   loading="eager"
                 />
-                <div className="hero-portrait-meta">
-                  <div className="hero-portrait-name">
-                    {settings.professor_name}
-                  </div>
-                  <div className="hero-portrait-affil">
-                    Associate Professor • Dept. of Computer Engineering, JMI
-                  </div>
-                  {settings.office_room && (
-                    <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', color: 'var(--text-secondary)' }}>
-                      Office: {settings.office_room} • {settings.email_primary}
-                    </div>
-                  )}
-                </div>
               </div>
             </div>
           </div>

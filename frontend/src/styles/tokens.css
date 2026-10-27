@@ -64,7 +64,7 @@
   --font-serif: "Newsreader", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
-  --font-cursive: "Alex Brush", "Great Vibes", "Playfair Display", cursive;
+  --font-cursive: "Dancing Script", "Pacifico", "Alex Brush", "Great Vibes", cursive;
 
   /* Fluid Typography Scale */
   --font-display: clamp(2.5rem, 5.5vw, 4.25rem);

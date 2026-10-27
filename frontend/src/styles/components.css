@@ -234,6 +234,7 @@
 @media (min-width: 960px) {
   .hero-portrait-wrap {
     margin-right: 0;
+    margin-top: 2.2rem;
   }
 }
 
@@ -968,15 +969,18 @@
   justify-content: space-between;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  width: 100%;
 }
 
 .site-header__brand {
   font-family: var(--font-cursive);
-  font-size: clamp(1.45rem, 2vw, 1.95rem);
-  font-weight: 500;
+  font-size: clamp(1.5rem, 2.1vw, 2.1rem);
+  font-weight: 700;
+  -webkit-text-stroke: 0.6px currentColor;
+  text-shadow: 0 0.5px 0.5px rgba(31, 31, 31, 0.25);
   color: var(--text-primary);
   text-decoration: none;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   line-height: 1.2;
   white-space: nowrap;
   flex-shrink: 0;
@@ -995,20 +999,20 @@
 
 @media (min-width: 860px) {
   .site-header__nav {
-    display: flex;
-    align-items: baseline;
-    gap: 1.75rem;
+    display: contents;
   }
 }
 
 .site-header__link {
   font-family: var(--font-sans);
-  font-size: var(--font-body-sm);
+  font-size: clamp(0.8125rem, 0.95vw, 0.9375rem);
   color: var(--text-secondary);
   text-decoration: none;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem clamp(0.35rem, 0.6vw, 0.7rem);
   border-radius: var(--radius-pill);
   transition: all 160ms ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .site-header__link:hover {

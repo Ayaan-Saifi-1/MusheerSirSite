@@ -58,16 +58,19 @@ export const Layout: React.FC<LayoutProps> = ({
   const defaultNavLinks = [
     { title: 'Research', path: '/research' },
     { title: 'Publications', path: '/publications' },
-    { title: 'Leadership & Service', path: '/service' },
     { title: 'Group', path: '/group' },
     { title: 'Teaching', path: '/teaching' },
+    { title: 'Service', path: '/service' },
     { title: 'News', path: '/news' },
     { title: 'Join', path: '/join' },
     { title: 'Contact', path: '/contact' },
   ];
 
   const navLinks = (navigation && navigation.length > 0)
-    ? navigation.map((n) => ({ title: n.title, path: n.path }))
+    ? navigation.map((n) => ({
+        title: n.title === 'Leadership & Service' ? 'Service' : n.title,
+        path: n.path,
+      }))
     : defaultNavLinks;
 
   return (
@@ -158,12 +161,6 @@ export const Layout: React.FC<LayoutProps> = ({
                 className={({ isActive }) =>
                   `site-header__link ${isActive ? 'active' : ''}`
                 }
-                style={{
-                  fontFamily: 'var(--font-mono)',
-                  fontSize: '0.8125rem',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.04em',
-                }}
               >
                 CV
               </NavLink>
