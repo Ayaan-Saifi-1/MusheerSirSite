@@ -328,14 +328,21 @@ export const ServicePage: React.FC = () => {
                   style={{
                     padding: '1.15rem 1.25rem',
                     borderLeft: '2px solid var(--border-hairline)',
+                    borderRadius: '0 12px 12px 0',
                     background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'border-left-color var(--transition-fast)',
+                    transition: 'all var(--transition-fast)',
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
+                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
+                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
+                  }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
@@ -389,14 +396,21 @@ export const ServicePage: React.FC = () => {
                   style={{
                     padding: '1.15rem 1.25rem',
                     borderLeft: '2px solid var(--border-hairline)',
+                    borderRadius: '0 12px 12px 0',
                     background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'border-left-color var(--transition-fast)',
+                    transition: 'all var(--transition-fast)',
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
+                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
+                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
+                  }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>
@@ -450,14 +464,21 @@ export const ServicePage: React.FC = () => {
                   style={{
                     padding: '1.15rem 1.25rem',
                     borderLeft: '2px solid var(--border-hairline)',
+                    borderRadius: '0 12px 12px 0',
                     background: 'rgba(31,31,31,0.015)',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'border-left-color var(--transition-fast)',
+                    transition: 'all var(--transition-fast)',
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.borderLeftColor = 'var(--accent-sage)')}
-                  onMouseLeave={(e) => (e.currentTarget.style.borderLeftColor = 'var(--border-hairline)')}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
+                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
+                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
+                  }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
                     <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.1rem', color: 'var(--text-primary)', margin: 0, fontWeight: 500 }}>

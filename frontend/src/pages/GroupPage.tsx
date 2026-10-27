@@ -129,7 +129,7 @@ export const GroupPage: React.FC = () => {
                   <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                     DIRECTION 01
                   </span>
-                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                  <div style={{ padding: '0.35rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)' }}>
                     <Lock size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
                   </div>
                 </div>
@@ -148,7 +148,7 @@ export const GroupPage: React.FC = () => {
                   <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                     DIRECTION 02
                   </span>
-                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                  <div style={{ padding: '0.35rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)' }}>
                     <Binary size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
                   </div>
                 </div>
@@ -167,7 +167,7 @@ export const GroupPage: React.FC = () => {
                   <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                     DIRECTION 03
                   </span>
-                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                  <div style={{ padding: '0.35rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)' }}>
                     <ShieldCheck size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
                   </div>
                 </div>
@@ -186,7 +186,7 @@ export const GroupPage: React.FC = () => {
                   <span style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--accent-sage-dark)', fontWeight: 600 }}>
                     DIRECTION 04
                   </span>
-                  <div style={{ padding: '0.35rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)' }}>
+                  <div style={{ padding: '0.35rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)' }}>
                     <Activity size={16} strokeWidth={2} color="var(--accent-sage-dark)" />
                   </div>
                 </div>

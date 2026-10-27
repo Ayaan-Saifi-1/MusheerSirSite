@@ -173,10 +173,11 @@ export const TeachingPage: React.FC = () => {
                     padding: '1.25rem',
                     borderLeft: '3px solid var(--accent-sage)',
                     background: 'var(--bg-elevated)',
-                    borderRadius: 'var(--radius-subtle)',
+                    borderRadius: '0 12px 12px 0',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '0.4rem',
+                    boxShadow: '0 2px 8px rgba(31,31,31,0.02)',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -193,8 +194,8 @@ export const TeachingPage: React.FC = () => {
                         color: 'var(--accent-sage-dark)',
                         fontWeight: 600,
                         background: 'rgba(117, 160, 106, 0.12)',
-                        padding: '0.2rem 0.5rem',
-                        borderRadius: '3px',
+                        padding: '0.2rem 0.65rem',
+                        borderRadius: 'var(--radius-pill)',
                       }}
                     >
                       <Code size={11} />

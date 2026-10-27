@@ -300,15 +300,15 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                 <span>Academic Qualifications</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Ph.D. in Computer Engineering</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Jamia Millia Islamia, New Delhi</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>M.Tech. in Computer Sc. &amp; Engg. (2008)</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>B.Tech. in Computer Engineering (2004)</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
                 </div>
@@ -321,15 +321,15 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                 <span>Teaching Career &amp; Leadership</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Associate Professor (18 Years Pedagogy)</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Dept. of Computer Engineering, JMI</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Lecturer / Guest Faculty (2006–2010)</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Dept. of Computer Engineering, AMU Aligarh</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Project &amp; Programme Leadership</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>M.Tech Project Coord. (2019–) &bull; CBCS Advisor (2015–)</div>
                 </div>
@@ -342,15 +342,15 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                 <span>Research Supervision</span>
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>6 Ph.D. Scholars Active</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Under active doctoral supervision in cryptology</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>30 M.Tech Theses &amp; Projects</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>14 dissertations + 16 major projects completed</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
+                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
                   <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>40+ B.Tech Engineering Capstones</div>
                   <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>40+ completed; 2 M.Tech &amp; 3 B.Tech ongoing</div>
                 </div>
@@ -565,7 +565,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                 </h3>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                   <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
-                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
+                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
                       <Binary size={16} strokeWidth={2.2} />
                     </div>
                     <div>
@@ -579,7 +579,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   </div>
 
                   <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
-                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
+                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
                       <Terminal size={16} strokeWidth={2.2} />
                     </div>
                     <div>
@@ -593,7 +593,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   </div>
 
                   <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
-                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
+                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
                       <Award size={16} strokeWidth={2.2} />
                     </div>
                     <div>
@@ -607,7 +607,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   </div>
 
                   <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start' }}>
-                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
+                    <div style={{ marginTop: '0.15rem', padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0 }}>
                       <FileText size={16} strokeWidth={2.2} />
                     </div>
                     <div>

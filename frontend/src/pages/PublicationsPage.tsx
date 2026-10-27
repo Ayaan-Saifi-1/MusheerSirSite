@@ -210,8 +210,21 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
               borderBottom: '1px solid var(--border-hairline)',
             }}
           >
-            {/* Search Input — Underlined Editorial Input with Icon */}
-            <div style={{ flex: '1 1 320px', minWidth: '240px', display: 'flex', alignItems: 'center', gap: '0.5rem', borderBottom: '1px solid var(--border-hairline)' }}>
+            {/* Search Input — Curved Pill Input with Icon */}
+            <div
+              style={{
+                flex: '1 1 320px',
+                minWidth: '240px',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.65rem',
+                background: '#FFFFFF',
+                border: '1px solid var(--border-hairline)',
+                borderRadius: 'var(--radius-pill)',
+                padding: '0.5rem 1.15rem',
+                boxShadow: '0 2px 8px rgba(31, 31, 31, 0.03)',
+              }}
+            >
               <Search size={15} color="var(--accent-sage-dark)" style={{ flexShrink: 0 }} />
               <input
                 type="text"
@@ -220,20 +233,19 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
                 onChange={(e) => updateFilter('q', e.target.value)}
                 style={{
                   width: '100%',
-                  padding: '0.5rem 0',
+                  padding: '0.2rem 0',
                   fontFamily: 'var(--font-sans)',
                   fontSize: '0.9375rem',
                   background: 'transparent',
                   border: 'none',
-                  borderRadius: 0,
                   color: 'var(--text-primary)',
                   outline: 'none',
                 }}
               />
             </div>
 
-            {/* Filter Tabs (Unboxed text buttons) */}
-            <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
+            {/* Filter Tabs (Curved Pill Buttons) */}
+            <div style={{ display: 'flex', gap: '0.65rem', flexWrap: 'wrap' }}>
               <button
                 type="button"
                 onClick={() => updateFilter('type', 'ALL')}
@@ -265,7 +277,7 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
             </div>
 
             {/* Sort & Export Actions */}
-            <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+            <div style={{ display: 'flex', gap: '1.25rem', alignItems: 'center' }}>
               <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.75rem', color: 'var(--text-secondary)' }}>
                 <label htmlFor="pub-sort">Sort: </label>
                 <select
@@ -273,14 +285,15 @@ export const PublicationsPage: React.FC<PublicationsPageProps> = ({ settings }) 
                   value={sortOrder}
                   onChange={(e) => updateFilter('sort', e.target.value)}
                   style={{
-                    padding: '0.35rem 0.5rem',
+                    padding: '0.45rem 0.85rem',
                     fontFamily: 'var(--font-mono)',
                     fontSize: '0.75rem',
-                    background: 'transparent',
+                    background: '#FFFFFF',
                     border: '1px solid var(--border-hairline)',
                     color: 'var(--text-primary)',
-                    borderRadius: '2px',
+                    borderRadius: 'var(--radius-pill)',
                     cursor: 'pointer',
+                    outline: 'none',
                   }}
                 >
                   <option value="YEAR_DESC">Newest First</option>

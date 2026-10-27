@@ -152,7 +152,7 @@ export const JoinPage: React.FC = () => {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Binary size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -166,7 +166,7 @@ export const JoinPage: React.FC = () => {
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Cpu size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -180,7 +180,7 @@ export const JoinPage: React.FC = () => {
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Terminal size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -194,7 +194,7 @@ export const JoinPage: React.FC = () => {
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Award size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -237,7 +237,7 @@ export const JoinPage: React.FC = () => {
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <FileText size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -251,7 +251,7 @@ export const JoinPage: React.FC = () => {
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Compass size={16} strokeWidth={2.2} />
                   </div>
                   <div>
@@ -265,7 +265,7 @@ export const JoinPage: React.FC = () => {
                 </div>
 
                 <div style={{ display: 'flex', gap: '0.85rem', alignItems: 'flex-start', borderTop: '1px solid var(--border-hairline)', paddingTop: '1rem' }}>
-                  <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
+                  <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', color: 'var(--accent-sage-dark)', flexShrink: 0, marginTop: '0.15rem' }}>
                     <Layers size={16} strokeWidth={2.2} />
                   </div>
                   <div>

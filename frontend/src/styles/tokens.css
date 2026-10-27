@@ -103,7 +103,15 @@
   --section-spacing: clamp(4rem, 8vw, 7.5rem);
   --gutter: clamp(1.25rem, 3vw, 2.5rem);
 
-  /* Borders & Radii */
-  --radius-button: 2px;
-  --radius-subtle: 2px;
+  /* Borders & Curvature Scale — Organic Academic Architecture */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+  --radius-pill: 9999px;
+  --radius-button: 9999px;
+  --radius-subtle: 8px;
+  --radius-card: 16px;
 }

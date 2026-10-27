@@ -198,7 +198,7 @@ export const ResearchPage: React.FC = () => {
                         {pillar.title}
                       </h2>
                     </div>
-                    <div style={{ padding: '0.45rem', borderRadius: '4px', background: 'rgba(117, 160, 106, 0.12)', display: 'flex', alignItems: 'center' }}>
+                    <div style={{ padding: '0.45rem', borderRadius: 'var(--radius-pill)', background: 'rgba(117, 160, 106, 0.12)', display: 'flex', alignItems: 'center' }}>
                       {pillarIcons[pillar.num]}
                     </div>
                   </div>
@@ -216,12 +216,13 @@ export const ResearchPage: React.FC = () => {
                           display: 'inline-flex',
                           alignItems: 'center',
                           gap: '0.25rem',
-                          padding: '0.25rem 0.55rem',
+                          padding: '0.25rem 0.65rem',
                           background: 'var(--bg-elevated)',
                           border: '1px solid var(--border-hairline)',
-                          borderRadius: 'var(--radius-subtle)',
+                          borderRadius: 'var(--radius-pill)',
                           color: 'var(--text-secondary)',
                           fontSize: '0.75rem',
+                          boxShadow: '0 1px 3px rgba(31,31,31,0.02)',
                         }}
                       >
                         <Hash size={10} color="var(--accent-sage-dark)" />

@@ -169,9 +169,10 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
           <div
             style={{
               marginTop: '0.85rem',
-              padding: '1rem',
-              borderLeft: '2px solid var(--accent-sage)',
+              padding: '1.15rem',
+              borderLeft: '3px solid var(--accent-sage)',
               background: 'var(--bg-secondary)',
+              borderRadius: '0 12px 12px 0',
             }}
           >
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>
@@ -188,9 +189,10 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
           <div
             style={{
               marginTop: '0.85rem',
-              padding: '1rem',
+              padding: '1.15rem',
               border: '1px solid var(--border-hairline)',
               background: 'var(--bg-secondary)',
+              borderRadius: '14px',
             }}
           >
             {/* Format Selector Tabs */}
