@@ -11,6 +11,11 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
   const [copied, setCopied] = useState(false);
   const [showAbstract, setShowAbstract] = useState(false);
 
+  // Sanitize Impact Factor string to remove any duplicate "IF:" or "IF: IF:"
+  const cleanIF = publication.impact_factor_as_listed
+    ? publication.impact_factor_as_listed.replace(/^(?:IF\s*:\s*)+/gi, '').trim()
+    : '';
+
   // Bold "Musheer Ahmad" in authors list without colorful pill badges
   const renderAuthors = (authorsStr: string) => {
     const parts = authorsStr.split(/(Musheer Ahmad)/gi);
@@ -71,24 +76,28 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
           {renderAuthors(publication.authors)}
         </div>
 
+        {/* Venue with completely unboxed typography for IF and Indexing */}
         <div className="pub-row__venue">
           <span>{publication.venue}</span>
           {publication.volume_issue_pages && <span>, {publication.volume_issue_pages}</span>}
           
-          <span className="pub-row__meta-badges">
-            {publication.impact_factor_as_listed && (
-              <span className="pub-badge pub-badge--if" title="Journal Impact Factor as listed in CV">
-                {publication.impact_factor_as_listed.startsWith('IF')
-                  ? publication.impact_factor_as_listed
-                  : `IF: ${publication.impact_factor_as_listed}`}
-              </span>
-            )}
-            {publication.index_tags && (
-              <span className="pub-badge pub-badge--scopus">
-                {publication.index_tags}
-              </span>
-            )}
-          </span>
+          {(cleanIF || publication.index_tags) && (
+            <span className="pub-row__meta-badges">
+              {cleanIF && (
+                <span className="pub-badge pub-badge--if" title="Journal Impact Factor as listed in CV">
+                  IF: {cleanIF}
+                </span>
+              )}
+              {cleanIF && publication.index_tags && (
+                <span className="pub-badge-divider" aria-hidden="true">&bull;</span>
+              )}
+              {publication.index_tags && (
+                <span className="pub-badge pub-badge--scopus">
+                  {publication.index_tags}
+                </span>
+              )}
+            </span>
+          )}
         </div>
 
         {/* Action links separated by thin divider dots without ugly brackets */}

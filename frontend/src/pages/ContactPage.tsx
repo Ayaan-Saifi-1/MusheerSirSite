@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { SiteSettings } from '../lib/types';
 
@@ -7,6 +7,56 @@ interface ContactPageProps {
 }
 
 export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    affiliation: '',
+    subject: '',
+    message: '',
+    website_hp: '',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (formData.website_hp) {
+      setSubmitSuccess(true);
+      return;
+    }
+    setIsSubmitting(true);
+    setErrorMessage(null);
+
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/apply/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          full_name: formData.name,
+          email: formData.email,
+          current_institution: formData.affiliation || 'Direct Correspondence',
+          degree_and_gpa: 'Academic Contact Message',
+          position_applied_for: `Contact: ${formData.subject || 'Direct Inquiry'}`,
+          research_statement: formData.message,
+          paper_reference: `Subject: ${formData.subject || 'Direct Message'}`,
+          cv_url_or_link: 'https://direct-contact.inquiry',
+          website_hp: formData.website_hp,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitSuccess(true);
+      } else {
+        const err = await response.json().catch(() => null);
+        setErrorMessage(err?.detail || 'Failed to transmit message. Please email directly to mahmad9@jmi.ac.in');
+      }
+    } catch {
+      setErrorMessage('Network connection error. Please email directly to mahmad9@jmi.ac.in');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <>
       <Helmet>
@@ -146,6 +196,183 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                   Prior appointment by email with at least 48 hours notice is required for in-person consultations.
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Direct Academic Inquiry & Correspondence Form (Enclosed in a Box) */}
+          <div style={{ marginBottom: '4.5rem' }}>
+            <div className="contact-form-box" style={{ maxWidth: '820px' }}>
+              <span className="section-eyebrow">Direct Message Dispatch</span>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.75rem',
+                  color: 'var(--text-primary)',
+                  margin: '0.35rem 0 0.85rem 0',
+                  fontWeight: 500,
+                }}
+              >
+                Send an Academic Inquiry or Message
+              </h2>
+              <p
+                style={{
+                  fontFamily: 'var(--font-sans)',
+                  fontSize: '0.9375rem',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.6,
+                  marginBottom: '2rem',
+                }}
+              >
+                For research collaboration proposals, keynote/speaker invitations, or doctoral supervision queries, submit your message through this dispatch box or write directly to{' '}
+                <a href={`mailto:${settings?.email_primary || 'mahmad9@jmi.ac.in'}`} className="text-link">
+                  {settings?.email_primary || 'mahmad9@jmi.ac.in'}
+                </a>.
+              </p>
+
+              {submitSuccess ? (
+                <div
+                  style={{
+                    padding: '1.5rem',
+                    background: 'var(--accent-matcha-tint)',
+                    border: '1px solid var(--accent-sage)',
+                    borderRadius: 'var(--radius-subtle)',
+                  }}
+                >
+                  <h3 style={{ fontFamily: 'var(--font-serif)', fontSize: '1.25rem', color: 'var(--accent-sage-dark)', margin: '0 0 0.4rem 0' }}>
+                    Message Transmitted
+                  </h3>
+                  <p style={{ fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)', margin: 0, lineHeight: 1.5 }}>
+                    Thank you. Your message has been received and routed to Dr. Musheer Ahmad&apos;s academic correspondence queue. You will receive an acknowledgment at your email address.
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSubmitSuccess(false);
+                      setFormData({ name: '', email: '', affiliation: '', subject: '', message: '', website_hp: '' });
+                    }}
+                    className="btn-secondary"
+                    style={{ marginTop: '1rem' }}
+                  >
+                    Send Another Message &rarr;
+                  </button>
+                </div>
+              ) : (
+                <form onSubmit={handleSubmit}>
+                  {errorMessage && (
+                    <div
+                      style={{
+                        padding: '0.85rem 1rem',
+                        borderLeft: '3px solid #B02A2A',
+                        background: 'rgba(176, 42, 42, 0.08)',
+                        marginBottom: '1.5rem',
+                        fontFamily: 'var(--font-sans)',
+                        fontSize: '0.875rem',
+                        color: 'var(--text-primary)',
+                      }}
+                    >
+                      {errorMessage}
+                    </div>
+                  )}
+
+                  {/* Honeypot field (hidden from legitimate users, traps automated spam) */}
+                  <div style={{ display: 'none', visibility: 'hidden' }} aria-hidden="true">
+                    <label htmlFor="website_hp">Leave this empty</label>
+                    <input
+                      id="website_hp"
+                      type="text"
+                      tabIndex={-1}
+                      autoComplete="off"
+                      value={formData.website_hp}
+                      onChange={(e) => setFormData({ ...formData, website_hp: e.target.value })}
+                    />
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
+                    <div>
+                      <label htmlFor="name" className="form-label">
+                        Full Name *
+                      </label>
+                      <input
+                        id="name"
+                        type="text"
+                        required
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="e.g. Dr. Sarah Jenkins"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="email" className="form-label">
+                        Email Address *
+                      </label>
+                      <input
+                        id="email"
+                        type="email"
+                        required
+                        value={formData.email}
+                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                        placeholder="e.g. s.jenkins@university.edu"
+                      />
+                    </div>
+                  </div>
+
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '1.5rem', marginBottom: '1.5rem' }}>
+                    <div>
+                      <label htmlFor="affiliation" className="form-label">
+                        Institution / Affiliation
+                      </label>
+                      <input
+                        id="affiliation"
+                        type="text"
+                        value={formData.affiliation}
+                        onChange={(e) => setFormData({ ...formData, affiliation: e.target.value })}
+                        placeholder="e.g. University / Research Lab"
+                      />
+                    </div>
+
+                    <div>
+                      <label htmlFor="subject" className="form-label">
+                        Subject / Topic *
+                      </label>
+                      <input
+                        id="subject"
+                        type="text"
+                        required
+                        value={formData.subject}
+                        onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                        placeholder="e.g. Joint Research Inquiry / S-Box Cryptanalysis"
+                      />
+                    </div>
+                  </div>
+
+                  <div style={{ marginBottom: '2rem' }}>
+                    <label htmlFor="message" className="form-label">
+                      Message Content *
+                    </label>
+                    <textarea
+                      id="message"
+                      required
+                      rows={5}
+                      value={formData.message}
+                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                      placeholder="Outline the nature of your correspondence, proposed collaboration, or academic query..."
+                      style={{ lineHeight: 1.55 }}
+                    />
+                  </div>
+
+                  <div>
+                    <button
+                      type="submit"
+                      disabled={isSubmitting}
+                      className="btn-primary"
+                      style={{ padding: '0.85rem 2.25rem' }}
+                    >
+                      {isSubmitting ? 'Transmitting...' : <>Send Message &rarr;</>}
+                    </button>
+                  </div>
+                </form>
+              )}
             </div>
           </div>
 

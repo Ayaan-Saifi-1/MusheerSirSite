@@ -539,37 +539,41 @@
   font-style: normal;
 }
 
+/* Publication Meta: Completely Unboxed Typography (Zero boxes, zero pills, zero borders) */
+.pub-badge-divider {
+  color: var(--border-hairline);
+  font-size: 0.75rem;
+  margin: 0 0.15rem;
+  user-select: none;
+}
+
 .pub-badge {
-  display: inline-flex;
-  align-items: center;
+  display: inline;
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  font-weight: 600;
+  font-size: 0.75rem;
+  font-weight: 500;
   letter-spacing: 0.02em;
-  padding: 0.12rem 0.5rem;
-  border-radius: var(--radius-subtle);
-  background: var(--accent-sage-tint);
+  padding: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
   color: var(--accent-sage-dark);
-  border: 1px solid rgba(117, 160, 106, 0.4);
 }
 
 .pub-badge--if {
-  background: var(--accent-matcha-tint);
-  color: var(--accent-matcha-text);
-  border: 1px solid rgba(155, 205, 128, 0.65);
+  color: var(--accent-sage-dark);
   font-weight: 600;
 }
 
 .pub-badge--scopus {
-  background: var(--accent-sage-tint);
-  color: var(--accent-sage-dark);
-  border: 1px solid rgba(117, 160, 106, 0.4);
+  color: var(--text-muted);
+  font-weight: 500;
 }
 
 .pub-badge--selected {
-  background: var(--palette-c1-charcoal);
-  color: var(--palette-c3-matcha);
-  border: 1px solid var(--palette-c4-sage);
+  color: var(--palette-c1-charcoal);
+  font-weight: 600;
 }
 
 .pub-row__actions {
@@ -936,4 +940,54 @@
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+}
+
+/* ====================================================================
+   CONTACT & APPLICATION FORM BOX
+   Enclosing card container with subtle elevation and border
+   ==================================================================== */
+
+.contact-form-box {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border-hairline);
+  border-top: 3px solid var(--accent-sage);
+  padding: clamp(1.75rem, 4vw, 3rem);
+  border-radius: var(--radius-subtle);
+  box-shadow: 0 4px 24px rgba(31, 31, 31, 0.04);
+}
+
+.contact-form-box .form-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent-sage-dark);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form-box input[type="text"],
+.contact-form-box input[type="email"],
+.contact-form-box input[type="url"],
+.contact-form-box select,
+.contact-form-box textarea {
+  width: 100%;
+  padding: 0.75rem 0.95rem;
+  border: 1px solid var(--border-hairline);
+  background-color: #FFFFFF;
+  border-radius: var(--radius-subtle);
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 150ms ease, box-shadow 150ms ease;
+}
+
+.contact-form-box input:focus,
+.contact-form-box select:focus,
+.contact-form-box textarea:focus {
+  border-color: var(--accent-sage);
+  box-shadow: 0 0 0 3px rgba(117, 160, 106, 0.18);
 }

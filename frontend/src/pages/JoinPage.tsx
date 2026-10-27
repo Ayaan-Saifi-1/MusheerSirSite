@@ -238,42 +238,42 @@ export const JoinPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Application Submission Form — Unboxed Minimalist Editorial Style */}
+          {/* Application Submission Form — Enclosed in Dedicated Box */}
           <div
             style={{
-              borderTop: '2px solid var(--text-primary)',
-              paddingTop: '3rem',
+              paddingTop: '2.5rem',
               marginBottom: '5rem',
             }}
           >
-            <span className="section-eyebrow">Direct Application Submission</span>
-            <h2
-              style={{
-                fontFamily: 'var(--font-serif)',
-                fontSize: '1.75rem',
-                color: 'var(--text-primary)',
-                margin: '0.35rem 0 1rem 0',
-                fontWeight: 500,
-              }}
-            >
-              Submit Prospective Research Inquiry
-            </h2>
-            <p
-              style={{
-                fontFamily: 'var(--font-sans)',
-                fontSize: '0.9375rem',
-                color: 'var(--text-secondary)',
-                lineHeight: 1.6,
-                maxWidth: '720px',
-                marginBottom: '2.5rem',
-              }}
-            >
-              Submit your inquiry through the research registry below, or transmit your complete dossier via official email to{' '}
-              <a href="mailto:mahmad9@jmi.ac.in" className="text-link">
-                mahmad9@jmi.ac.in
-              </a>{' '}
-              with subject line formatted as: <code style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}>[Prospective Researcher] [Degree/Position] Your Name</code>.
-            </p>
+            <div className="contact-form-box" style={{ maxWidth: '820px' }}>
+              <span className="section-eyebrow">Direct Application Submission</span>
+              <h2
+                style={{
+                  fontFamily: 'var(--font-serif)',
+                  fontSize: '1.75rem',
+                  color: 'var(--text-primary)',
+                  margin: '0.35rem 0 1rem 0',
+                  fontWeight: 500,
+                }}
+              >
+                Submit Prospective Research Inquiry
+              </h2>
+              <p
+                style={{
+                  fontFamily: 'var(--font-sans)',
+                  fontSize: '0.9375rem',
+                  color: 'var(--text-secondary)',
+                  lineHeight: 1.6,
+                  maxWidth: '720px',
+                  marginBottom: '2rem',
+                }}
+              >
+                Submit your inquiry through the research registry below, or transmit your complete dossier via official email to{' '}
+                <a href="mailto:mahmad9@jmi.ac.in" className="text-link">
+                  mahmad9@jmi.ac.in
+                </a>{' '}
+                with subject line formatted as: <code style={{ fontFamily: 'var(--font-mono)', fontSize: '0.8125rem' }}>[Prospective Researcher] [Degree/Position] Your Name</code>.
+              </p>
 
             {submitSuccess ? (
               <div
@@ -573,11 +573,12 @@ export const JoinPage: React.FC = () => {
                     className="btn-primary"
                     style={{ padding: '0.85rem 2.25rem' }}
                   >
-                    {isSubmitting ? 'Registering Application...' : 'Submit Research Inquiry &rarr;'}
+                    {isSubmitting ? 'Registering Application...' : <>Submit Research Inquiry &rarr;</>}
                   </button>
                 </div>
               </form>
             )}
+            </div>
           </div>
         </div>
       </section>
