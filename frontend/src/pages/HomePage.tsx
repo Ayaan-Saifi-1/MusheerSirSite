@@ -54,9 +54,9 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
   const portraitSrc = settings.portrait
     ? settings.portrait.startsWith('http')
-      ? settings.portrait
-      : `http://127.0.0.1:8000${settings.portrait}`
-    : '/portraits/dr_musheer_ahmad.png';
+      ? `${settings.portrait}?v=2`
+      : `http://127.0.0.1:8000${settings.portrait}?v=2`
+    : '/portraits/dr_musheer_ahmad.png?v=2';
 
   const cvHref = settings.cv_file
     ? settings.cv_file.startsWith('http')

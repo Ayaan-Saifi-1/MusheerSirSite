@@ -295,8 +295,9 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                     <div
                       style={{
                         padding: '0.85rem 1rem',
-                        borderLeft: '3px solid #B02A2A',
-                        background: 'rgba(176, 42, 42, 0.08)',
+                        border: '1px solid rgba(176, 42, 42, 0.3)',
+                        borderRadius: 'var(--radius-sm)',
+                        background: 'rgba(176, 42, 42, 0.05)',
                         marginBottom: '1.5rem',
                         fontFamily: 'var(--font-sans)',
                         fontSize: '0.875rem',
