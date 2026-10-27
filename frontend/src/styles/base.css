@@ -75,6 +75,22 @@ code, kbd, samp, pre {
   font-family: var(--font-mono);
 }
 
+p {
+  margin-bottom: 1.25rem;
+  line-height: var(--line-body);
+  color: var(--text-secondary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-wrap: balance;
+}
+
 img, svg {
   display: block;
   max-width: 100%;

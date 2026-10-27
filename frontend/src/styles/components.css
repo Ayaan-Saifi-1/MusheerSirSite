@@ -340,6 +340,76 @@
 }
 
 /* ====================================================================
+   CREDENTIAL SUBSECTIONS — PURE UNBOXED EDITORIAL TYPOGRAPHY
+   (Zero colored edge borders, zero background boxes, high legibility)
+   ==================================================================== */
+
+.credential-subsections-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  padding-top: 2.5rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--border-hairline);
+  font-family: var(--font-sans);
+}
+
+@media (min-width: 860px) {
+  .credential-subsections-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3.5rem;
+  }
+}
+
+.credential-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.credential-col-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-sage-dark);
+  font-weight: 600;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-hairline);
+  margin-bottom: 1.25rem;
+}
+
+.credential-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.credential-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.credential-item__title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.credential-item__meta {
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* ====================================================================
    FIGURE 1: 3D CHAOTIC ATTRACTOR (UNBOXED CANVAS)
    ==================================================================== */
 
@@ -434,25 +504,40 @@
 }
 
 /* ====================================================================
-   RESEARCH THEMES — UNBOXED EDITORIAL COLUMNS (NO CARD BOXES)
+   RESEARCH THEMES — 2x2 QUADRANT WITH CENTER VERTICAL DIVIDER
    ==================================================================== */
 
 .themes-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .themes-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 3.5rem 4rem;
+    column-gap: 5rem;
+    row-gap: 3.5rem;
+  }
+
+  /* Vertical hairline dividing rule strictly between left (01, 03) and right (02, 04) segments */
+  .themes-grid::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: var(--border-hairline);
+    transform: translateX(-50%);
+    pointer-events: none;
   }
 }
 
 .theme-card {
   background: transparent;
-  padding: 1.5rem 0 0 0;
+  padding: 1.6rem 0 0 0;
   border-top: 1px solid var(--border-hairline);
   display: flex;
   flex-direction: column;
@@ -472,31 +557,32 @@
   font-family: var(--font-serif);
   font-size: 2.25rem;
   line-height: 1;
-  color: var(--accent-sage);
+  color: var(--accent-sage-dark);
   margin-bottom: 0.85rem;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   opacity: 0.95;
   transition: color 150ms ease;
 }
 
 .theme-card:hover .theme-num {
-  color: var(--accent-sage-dark);
+  color: var(--palette-c1-charcoal);
 }
 
 .theme-title {
   font-family: var(--font-serif);
   font-size: 1.35rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.35;
   color: var(--text-primary);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.85rem;
 }
 
 .theme-summary {
-  font-size: 0.9375rem;
+  font-size: 0.98rem;
   color: var(--text-secondary);
-  line-height: 1.65;
+  line-height: 1.7;
+  max-width: 58ch;
 }
 
 .theme-footer {
@@ -504,10 +590,10 @@
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-mono);
-  font-size: 0.75rem;
+  font-size: 0.78125rem;
   border-top: 1px solid var(--border-hairline);
   padding-top: 0.85rem;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   color: var(--text-muted);
 }
 

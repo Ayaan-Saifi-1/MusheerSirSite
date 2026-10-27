@@ -286,76 +286,66 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
           </div>
 
           {/* Academic Profile & Career Pillars (from official CV) */}
-          <div
-            style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
-              gap: '2.5rem',
-              paddingTop: '2.5rem',
-              marginTop: '1.5rem',
-              borderTop: '1px solid var(--border-hairline)',
-              fontFamily: 'var(--font-sans)',
-            }}
-          >
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.85rem' }}>
-                <GraduationCap size={15} strokeWidth={2.2} />
+          <div className="credential-subsections-grid">
+            <div className="credential-col">
+              <div className="credential-col-header">
+                <GraduationCap size={16} strokeWidth={2} />
                 <span>Academic Qualifications</span>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Ph.D. in Computer Engineering</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Jamia Millia Islamia, New Delhi</div>
+              <div className="credential-items-list">
+                <div className="credential-item">
+                  <div className="credential-item__title">Ph.D. in Computer Engineering</div>
+                  <div className="credential-item__meta">Jamia Millia Islamia, New Delhi</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>M.Tech. in Computer Sc. &amp; Engg. (2008)</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">M.Tech. in Computer Sc. &amp; Engg. (2008)</div>
+                  <div className="credential-item__meta">Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>B.Tech. in Computer Engineering (2004)</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">B.Tech. in Computer Engineering (2004)</div>
+                  <div className="credential-item__meta">Z.H. College of Engg. &amp; Tech., AMU Aligarh</div>
                 </div>
               </div>
             </div>
 
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.85rem' }}>
-                <BookOpen size={15} strokeWidth={2.2} />
+            <div className="credential-col">
+              <div className="credential-col-header">
+                <BookOpen size={16} strokeWidth={2} />
                 <span>Teaching Career &amp; Leadership</span>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Associate Professor (18 Years Pedagogy)</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Dept. of Computer Engineering, JMI</div>
+              <div className="credential-items-list">
+                <div className="credential-item">
+                  <div className="credential-item__title">Associate Professor (18 Years Pedagogy)</div>
+                  <div className="credential-item__meta">Dept. of Computer Engineering, JMI</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Lecturer / Guest Faculty (2006–2010)</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Dept. of Computer Engineering, AMU Aligarh</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">Lecturer / Guest Faculty (2006–2010)</div>
+                  <div className="credential-item__meta">Dept. of Computer Engineering, AMU Aligarh</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>Project &amp; Programme Leadership</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>M.Tech Project Coord. (2019–) &bull; CBCS Advisor (2015–)</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">Project &amp; Programme Leadership</div>
+                  <div className="credential-item__meta">M.Tech Project Coord. (2019–) &bull; CBCS Advisor (2015–)</div>
                 </div>
               </div>
             </div>
 
-            <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.85rem' }}>
-                <Users size={15} strokeWidth={2.2} />
+            <div className="credential-col">
+              <div className="credential-col-header">
+                <Users size={16} strokeWidth={2} />
                 <span>Research Supervision</span>
               </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.018)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>6 Ph.D. Scholars Active</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>Under active doctoral supervision in cryptology</div>
+              <div className="credential-items-list">
+                <div className="credential-item">
+                  <div className="credential-item__title">6 Ph.D. Scholars Active</div>
+                  <div className="credential-item__meta">Under active doctoral supervision in cryptology</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>30 M.Tech Theses &amp; Projects</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>14 dissertations + 16 major projects completed</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">30 M.Tech Theses &amp; Projects</div>
+                  <div className="credential-item__meta">14 dissertations + 16 major projects completed</div>
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', padding: '0.45rem 0.75rem', background: 'rgba(31,31,31,0.012)', borderRadius: '0 8px 8px 0' }}>
-                  <div style={{ fontWeight: 600, fontSize: '0.875rem', color: 'var(--text-primary)' }}>40+ B.Tech Engineering Capstones</div>
-                  <div style={{ fontSize: '0.8125rem', color: 'var(--text-secondary)' }}>40+ completed; 2 M.Tech &amp; 3 B.Tech ongoing</div>
+                <div className="credential-item">
+                  <div className="credential-item__title">40+ B.Tech Engineering Capstones</div>
+                  <div className="credential-item__meta">40+ completed; 2 M.Tech &amp; 3 B.Tech ongoing</div>
                 </div>
               </div>
             </div>

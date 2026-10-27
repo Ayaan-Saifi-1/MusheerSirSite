@@ -326,22 +326,12 @@ export const ServicePage: React.FC = () => {
                 <article
                   key={idx}
                   style={{
-                    padding: '1.15rem 1.25rem',
-                    borderLeft: '2px solid var(--border-hairline)',
-                    borderRadius: '0 12px 12px 0',
-                    background: 'rgba(31,31,31,0.015)',
+                    padding: '1.25rem 0',
+                    borderBottom: '1px solid var(--border-hairline)',
+                    background: 'transparent',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'all var(--transition-fast)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
-                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
-                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -394,22 +384,12 @@ export const ServicePage: React.FC = () => {
                 <article
                   key={idx}
                   style={{
-                    padding: '1.15rem 1.25rem',
-                    borderLeft: '2px solid var(--border-hairline)',
-                    borderRadius: '0 12px 12px 0',
-                    background: 'rgba(31,31,31,0.015)',
+                    padding: '1.25rem 0',
+                    borderBottom: '1px solid var(--border-hairline)',
+                    background: 'transparent',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'all var(--transition-fast)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
-                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
-                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
@@ -462,22 +442,12 @@ export const ServicePage: React.FC = () => {
                 <article
                   key={idx}
                   style={{
-                    padding: '1.15rem 1.25rem',
-                    borderLeft: '2px solid var(--border-hairline)',
-                    borderRadius: '0 12px 12px 0',
-                    background: 'rgba(31,31,31,0.015)',
+                    padding: '1.25rem 0',
+                    borderBottom: '1px solid var(--border-hairline)',
+                    background: 'transparent',
                     display: 'grid',
                     gridTemplateColumns: '1fr',
                     gap: '0.35rem',
-                    transition: 'all var(--transition-fast)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--accent-sage)';
-                    e.currentTarget.style.background = 'rgba(117,160,106,0.04)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.borderLeftColor = 'var(--border-hairline)';
-                    e.currentTarget.style.background = 'rgba(31,31,31,0.015)';
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>

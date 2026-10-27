@@ -297,10 +297,11 @@ export const NewsPage: React.FC = () => {
                           marginTop: '0.65rem',
                           fontFamily: 'var(--font-mono)',
                           fontSize: '0.6875rem',
-                          color: 'var(--text-primary)',
+                          color: 'var(--palette-c1-charcoal)',
                           background: 'var(--accent-matcha-tint)',
-                          padding: '0.15rem 0.5rem',
-                          borderLeft: '2px solid var(--accent-sage)',
+                          padding: '0.2rem 0.65rem',
+                          borderRadius: 'var(--radius-pill)',
+                          border: '1px solid rgba(117, 160, 106, 0.35)',
                           letterSpacing: '0.03em',
                         }}
                       >

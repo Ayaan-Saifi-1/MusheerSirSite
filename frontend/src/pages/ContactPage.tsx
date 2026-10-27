@@ -215,17 +215,17 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
                 The Faculty of Engineering &amp; Technology is located on the main university campus in Jamia Nagar, South Delhi.
               </p>
 
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontFamily: 'var(--font-sans)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
-                <div style={{ borderLeft: '2px solid var(--accent-sage)', paddingLeft: '0.75rem' }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>Delhi Metro: </strong>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '0.85rem', fontFamily: 'var(--font-sans)', fontSize: '0.90625rem', color: 'var(--text-secondary)' }}>
+                <div>
+                  <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Delhi Metro: </strong>
                   Jamia Millia Islamia Station (Magenta Line), Gate No. 2 exit.
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>Campus Entry: </strong>
+                <div>
+                  <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Campus Entry: </strong>
                   Gate No. 7, approximately 300 meters walking distance from the metro station.
                 </div>
-                <div style={{ borderLeft: '2px solid var(--border-hairline)', paddingLeft: '0.75rem' }}>
-                  <strong style={{ color: 'var(--text-primary)' }}>Meeting Protocol: </strong>
+                <div>
+                  <strong style={{ color: 'var(--text-primary)', fontWeight: 600 }}>Meeting Protocol: </strong>
                   Prior appointment by email with at least 48 hours notice is required for in-person consultations.
                 </div>
               </div>

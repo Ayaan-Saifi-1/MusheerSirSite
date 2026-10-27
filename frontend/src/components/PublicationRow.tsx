@@ -170,9 +170,9 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
             style={{
               marginTop: '0.85rem',
               padding: '1.15rem',
-              borderLeft: '3px solid var(--accent-sage)',
-              background: 'var(--bg-secondary)',
-              borderRadius: '0 12px 12px 0',
+              border: '1px solid var(--border-hairline)',
+              background: 'rgba(31, 31, 31, 0.02)',
+              borderRadius: 'var(--radius-card)',
             }}
           >
             <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', textTransform: 'uppercase', color: 'var(--text-muted)', marginBottom: '0.35rem' }}>

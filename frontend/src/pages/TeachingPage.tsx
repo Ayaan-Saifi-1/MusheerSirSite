@@ -170,14 +170,12 @@ export const TeachingPage: React.FC = () => {
                 <article
                   key={idx}
                   style={{
-                    padding: '1.25rem',
-                    borderLeft: '3px solid var(--accent-sage)',
-                    background: 'var(--bg-elevated)',
-                    borderRadius: '0 12px 12px 0',
+                    padding: '1.35rem 0',
+                    borderBottom: '1px solid var(--border-hairline)',
+                    background: 'transparent',
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '0.4rem',
-                    boxShadow: '0 2px 8px rgba(31,31,31,0.02)',
+                    gap: '0.45rem',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', flexWrap: 'wrap', gap: '0.5rem' }}>
