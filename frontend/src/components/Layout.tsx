@@ -169,14 +169,13 @@ export const Layout: React.FC<LayoutProps> = ({
               </NavLink>
             </nav>
 
-            {/* Mobile Menu Toggle (Professional icon button) */}
+            {/* Mobile Menu Toggle (Professional icon button, strictly hidden on desktop) */}
             <button
               type="button"
               className="mobile-menu-toggle"
               aria-expanded={mobileMenuOpen}
               aria-label="Toggle navigation menu"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}
             >
               {mobileMenuOpen ? <X size={15} /> : <Menu size={15} />}
               <span>{mobileMenuOpen ? 'Close' : 'Menu'}</span>

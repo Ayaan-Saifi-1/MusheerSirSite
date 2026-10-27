@@ -25,19 +25,19 @@
   --bg-elevated: #F7FAF6;
   --bg-dark: #1F1F1F;
 
-  /* Typography Inks */
+  /* Typography Inks — High Contrast Editorial Scale */
   --text-primary: #1F1F1F;
-  --text-secondary: #485246;
-  --text-muted: #727C70;
+  --text-secondary: #262B25;
+  --text-muted: #4D564B;
   --text-on-dark: #F0F0F0;
-  --border-hairline: #D0D6CD;
+  --border-hairline: #CCD3C9;
   --border-strong: #272826;
 
-  /* Primary Accent: Sage Forest Green (Swatch 4 #75A06A & readable text shade #44683B) */
+  /* Primary Accent: Sage Forest Green (Deepened to WCAG AAA contrast) */
   --accent-sage: #75A06A;
-  --accent-sage-dark: #44683B;
-  --accent-sage-hover: #5B8452;
-  --accent-sage-tint: rgba(117, 160, 106, 0.15);
+  --accent-sage-dark: #315328;
+  --accent-sage-hover: #486E3C;
+  --accent-sage-tint: rgba(117, 160, 106, 0.14);
 
   /* Secondary Accent: Matcha / Pistachio (Swatch 3 #9BCD80 for active highlights, badges & glow) */
   --accent-matcha: #9BCD80;
@@ -82,19 +82,19 @@
   --line-h3: 1.35;
   --track-h3: -0.01em;
 
-  --font-body-lg: clamp(1.0625rem, 1.2vw, 1.1875rem);
-  --line-body-lg: 1.65;
+  --font-body-lg: clamp(1.1rem, 1.3vw, 1.25rem);
+  --line-body-lg: 1.7;
 
-  --font-body: 1rem;
-  --line-body: 1.65;
+  --font-body: 1.03125rem;
+  --line-body: 1.7;
 
-  --font-body-sm: 0.875rem;
-  --line-body-sm: 1.55;
+  --font-body-sm: 0.9375rem;
+  --line-body-sm: 1.6;
 
-  --font-caption: 0.75rem;
-  --line-caption: 1.45;
+  --font-caption: 0.8125rem;
+  --line-caption: 1.5;
 
-  --font-label: 0.6875rem;
+  --font-label: 0.75rem;
   --track-label: 0.08em;
 
   /* Grid & Spacing Scale */

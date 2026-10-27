@@ -119,82 +119,6 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   Curriculum Vitae (PDF) &rarr;
                 </Button>
               </div>
-
-              {/* Verified Scholar Indexes — Professional Vector Marks */}
-              <div className="hero-profiles">
-                {settings.google_scholar_url && (
-                  <a
-                    href={settings.google_scholar_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="Google Scholar Citation Index"
-                  >
-                    <GoogleScholarLogo size={14} color="#75A06A" />
-                    <span>Google Scholar</span>
-                  </a>
-                )}
-                {settings.scopus_url && (
-                  <a
-                    href={settings.scopus_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="Scopus Author Profile"
-                  >
-                    <ScopusLogo size={14} color="#75A06A" />
-                    <span>Scopus</span>
-                  </a>
-                )}
-                {settings.researchgate_url && (
-                  <a
-                    href={settings.researchgate_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="ResearchGate Scientific Network"
-                  >
-                    <ResearchGateLogo size={14} color="#75A06A" />
-                    <span>ResearchGate</span>
-                  </a>
-                )}
-                {settings.dblp_url && (
-                  <a
-                    href={settings.dblp_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="DBLP Computer Science Bibliography"
-                  >
-                    <DblpLogo size={14} color="#75A06A" />
-                    <span>DBLP</span>
-                  </a>
-                )}
-                {settings.wos_url && (
-                  <a
-                    href={settings.wos_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="Web of Science ResearcherID"
-                  >
-                    <WebOfScienceLogo size={14} color="#75A06A" />
-                    <span>Web of Science</span>
-                  </a>
-                )}
-                {settings.jmi_profile_url && (
-                  <a
-                    href={settings.jmi_profile_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hero-profile-chip"
-                    title="Official Jamia Millia Islamia Faculty Directory"
-                  >
-                    <UniversityLogo size={14} color="#75A06A" />
-                    <span>JMI Profile</span>
-                  </a>
-                )}
-              </div>
             </div>
 
             {/* 5 Columns: Official Faculty Portrait */}
@@ -220,6 +144,85 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   )}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Verified Scholar Indexes — In One Single Straight Line Across Full Width */}
+          <div className="hero-profiles-bar">
+            <span className="hero-profiles-label">Scholarly Profiles</span>
+            <div className="hero-profiles-list">
+              {settings.google_scholar_url && (
+                <a
+                  href={settings.google_scholar_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="Google Scholar Citation Index"
+                >
+                  <GoogleScholarLogo size={15} color="#75A06A" />
+                  <span>Google Scholar</span>
+                </a>
+              )}
+              {settings.scopus_url && (
+                <a
+                  href={settings.scopus_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="Scopus Author Profile"
+                >
+                  <ScopusLogo size={15} color="#75A06A" />
+                  <span>Scopus</span>
+                </a>
+              )}
+              {settings.researchgate_url && (
+                <a
+                  href={settings.researchgate_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="ResearchGate Scientific Network"
+                >
+                  <ResearchGateLogo size={15} color="#75A06A" />
+                  <span>ResearchGate</span>
+                </a>
+              )}
+              {settings.dblp_url && (
+                <a
+                  href={settings.dblp_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="DBLP Computer Science Bibliography"
+                >
+                  <DblpLogo size={15} color="#75A06A" />
+                  <span>DBLP</span>
+                </a>
+              )}
+              {settings.wos_url && (
+                <a
+                  href={settings.wos_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="Web of Science ResearcherID"
+                >
+                  <WebOfScienceLogo size={15} color="#75A06A" />
+                  <span>Web of Science</span>
+                </a>
+              )}
+              {settings.jmi_profile_url && (
+                <a
+                  href={settings.jmi_profile_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hero-profile-chip"
+                  title="Official Jamia Millia Islamia Faculty Directory"
+                >
+                  <UniversityLogo size={15} color="#75A06A" />
+                  <span>JMI Profile</span>
+                </a>
+              )}
             </div>
           </div>
 

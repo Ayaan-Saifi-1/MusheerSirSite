@@ -153,35 +153,69 @@
   margin-bottom: 2rem;
 }
 
-.hero-profiles {
+/* Hero Profiles Bar — Single Straight Line Across Full Container Width */
+.hero-profiles-bar {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  gap: 0.4rem 0.65rem;
-  padding-top: 1.25rem;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  margin-top: 2.75rem;
   border-top: 1px solid var(--border-hairline);
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.hero-profiles-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.hero-profiles-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-sage-dark);
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.hero-profiles-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0.5rem 0.85rem;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.hero-profiles-list::-webkit-scrollbar {
+  display: none;
 }
 
 .hero-profile-chip {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
-  padding: 0.4rem 0.75rem;
-  background: transparent;
-  border: 1px solid transparent;
+  padding: 0.42rem 0.85rem;
+  background: rgba(31, 31, 31, 0.03);
+  border: 1px solid rgba(31, 31, 31, 0.06);
   border-radius: var(--radius-pill);
   color: var(--text-secondary);
   text-decoration: none !important;
-  font-size: 0.78125rem;
+  font-size: 0.8125rem;
   font-weight: 500;
+  white-space: nowrap;
+  flex-shrink: 0;
   transition: all 180ms ease;
 }
 
 .hero-profile-chip:hover {
   background-color: var(--accent-sage-tint);
-  border-color: rgba(117, 160, 106, 0.25);
+  border-color: rgba(117, 160, 106, 0.35);
   color: var(--palette-c1-charcoal);
   transform: translateY(-1px);
 }
@@ -252,7 +286,7 @@
   border-top: 1px solid var(--border-hairline);
   border-bottom: 1px solid var(--border-hairline);
   padding: 2.25rem 0;
-  margin-top: 3.5rem;
+  margin-top: 1.5rem;
   gap: 2rem 2.5rem;
   background: transparent;
 }
@@ -893,7 +927,9 @@
 
 /* Mobile Menu Toggle */
 .mobile-menu-toggle {
-  display: block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   background: rgba(31, 31, 31, 0.04);
   border: 1px solid var(--border-hairline);
   border-radius: var(--radius-pill);
@@ -912,7 +948,7 @@
 
 @media (min-width: 860px) {
   .mobile-menu-toggle {
-    display: none;
+    display: none !important;
   }
 }
 
