@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState, useCallback } from 'react';
-import { PortfolioBundle } from '../types/portfolio';
+import { PortfolioBundle, Publication } from '../types/portfolio';
 import { fallbackPortfolioData } from '../data/fallbackSeed';
 
 interface PortfolioContextType {
@@ -10,6 +10,10 @@ interface PortfolioContextType {
   toggleTheme: () => void;
   searchOpen: boolean;
   setSearchOpen: (open: boolean) => void;
+  selectedResearchAreaFilter: string | null;
+  setSelectedResearchAreaFilter: (slug: string | null) => void;
+  activeCitationPub: Publication | null;
+  setActiveCitationPub: (pub: Publication | null) => void;
   refetch: () => Promise<void>;
 }
 
@@ -23,6 +27,8 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
   const [isBackendOnline, setIsBackendOnline] = useState<boolean>(false);
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [searchOpen, setSearchOpen] = useState<boolean>(false);
+  const [selectedResearchAreaFilter, setSelectedResearchAreaFilter] = useState<string | null>(null);
+  const [activeCitationPub, setActiveCitationPub] = useState<Publication | null>(null);
 
   // Initialize theme from localStorage or system preference
   useEffect(() => {
@@ -101,6 +107,10 @@ export const PortfolioProvider: React.FC<{ children: React.ReactNode }> = ({ chi
         toggleTheme,
         searchOpen,
         setSearchOpen,
+        selectedResearchAreaFilter,
+        setSelectedResearchAreaFilter,
+        activeCitationPub,
+        setActiveCitationPub,
         refetch: fetchBundle,
       }}
     >

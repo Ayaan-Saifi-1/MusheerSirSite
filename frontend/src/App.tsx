@@ -3,11 +3,14 @@ import { PortfolioProvider } from './context/PortfolioContext';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { ImpactBentoGrid } from './components/ImpactBentoGrid';
-import { PublicationSection } from './components/PublicationSection';
+import { ResearchSection } from './components/ResearchSection';
+import { PublicationsSection } from './components/PublicationsSection';
+import { ProjectsAndGrantsSection } from './components/ProjectsAndGrantsSection';
 import { LabHubSection } from './components/LabHubSection';
 import { RecruitmentSection } from './components/RecruitmentSection';
 import { Footer } from './components/Footer';
-import { CommandPaletteModal } from './components/CommandPaletteModal';
+import { CitationModal } from './components/CitationModal';
+import { CommandPalette } from './components/CommandPalette';
 
 export const AppContent: React.FC = () => {
   return (
@@ -16,12 +19,15 @@ export const AppContent: React.FC = () => {
       <main className="flex-grow">
         <HeroSection />
         <ImpactBentoGrid />
-        <PublicationSection />
+        <ResearchSection />
+        <PublicationsSection />
+        <ProjectsAndGrantsSection />
         <LabHubSection />
         <RecruitmentSection />
       </main>
       <Footer />
-      <CommandPaletteModal />
+      <CitationModal />
+      <CommandPalette />
     </div>
   );
 };
