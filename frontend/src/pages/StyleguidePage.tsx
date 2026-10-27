@@ -65,11 +65,11 @@ export const StyleguidePage: React.FC = () => {
         {/* Color Palette Display */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
           {[
-            { name: 'Carbon Charcoal', hex: '#1F1F1F', text: '#F5F7F8' },
-            { name: 'Light Canvas Foundation', hex: '#F5F7F8', border: true, text: '#1F1F1F' },
+            { name: 'Carbon Charcoal', hex: '#1F1F1F', text: '#FFFFFF' },
+            { name: 'Pure White Canvas', hex: '#FFFFFF', border: true, text: '#1F1F1F' },
             { name: 'Matcha Accent', hex: '#9BCD80', text: '#1F1F1F' },
             { name: 'Mountain Sage', hex: '#75A06A', text: '#FFFFFF' },
-            { name: 'Dark Olive Ink', hex: '#272826', text: '#F5F7F8' },
+            { name: 'Dark Olive Ink', hex: '#272826', text: '#FFFFFF' },
           ].map((c) => (
             <div
               key={c.name}

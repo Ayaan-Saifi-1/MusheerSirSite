@@ -8,20 +8,20 @@
      EXACT 5-SWATCH ORGANIC SAGE & CHARCOAL PALETTE
      Directly extracted from user palette image:
      - Swatch 1 (#1F1F1F): Carbon Charcoal Deep Ink
-     - Swatch 2 (#F5F7F8): Light Alabaster Canvas Foundation
+     - Swatch 2 (#FFFFFF): Pure White Canvas Foundation
      - Swatch 3 (#9BCD80): Vibrant Pistachio / Matcha Accent
      - Swatch 4 (#75A06A): Medium Mountain Sage Foliage
      - Swatch 5 (#272826): Warm Dark Olive Charcoal
      ==================================================================== */
   --palette-c1-charcoal: #1F1F1F;
-  --palette-c2-offwhite: #F5F7F8;
+  --palette-c2-offwhite: #FFFFFF;
   --palette-c3-matcha:   #9BCD80;
   --palette-c4-sage:     #75A06A;
   --palette-c5-deepink:  #272826;
 
   /* Surfaces & Backgrounds */
-  --bg-primary: #F5F7F8;
-  --bg-secondary: #E9ECEE;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F8F9FA;
   --bg-elevated: #FFFFFF;
   --bg-dark: #1F1F1F;
 
@@ -29,8 +29,8 @@
   --text-primary: #1F1F1F;
   --text-secondary: #262B25;
   --text-muted: #4D564B;
-  --text-on-dark: #F5F7F8;
-  --border-hairline: #CCD3C9;
+  --text-on-dark: #FFFFFF;
+  --border-hairline: #E5E7EB;
   --border-strong: #272826;
 
   /* Primary Accent: Sage Forest Green (Deepened to WCAG AAA contrast) */
