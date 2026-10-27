@@ -65,12 +65,11 @@ export const StyleguidePage: React.FC = () => {
         {/* Color Palette Display */}
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: '1rem', marginBottom: '3rem' }}>
           {[
-            { name: 'Background', hex: '#FFFFFF', border: true },
-            { name: 'Secondary Surface', hex: '#F6F5F2', border: true },
-            { name: 'Primary Ink', hex: '#14171A' },
-            { name: 'Secondary Text', hex: '#5B6168' },
-            { name: 'Hairline Rule', hex: '#E3E1DC', border: true },
-            { name: 'Accent Green', hex: '#0E4B3B', text: '#FFFFFF' },
+            { name: 'Carbon Charcoal', hex: '#1F1F1F', text: '#F0F0F0' },
+            { name: 'Off-White Foundation', hex: '#F0F0F0', border: true, text: '#1F1F1F' },
+            { name: 'Matcha Accent', hex: '#9BCD80', text: '#1F1F1F' },
+            { name: 'Mountain Sage', hex: '#75A06A', text: '#FFFFFF' },
+            { name: 'Dark Olive Ink', hex: '#272826', text: '#F0F0F0' },
           ].map((c) => (
             <div
               key={c.name}

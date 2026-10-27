@@ -156,7 +156,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
           {/* Credential Strip — 4 Full Width Columns */}
           <div className="credential-strip">
             <div className="credential-cell">
-              <div className="credential-number">
+              <div className="credential-number" style={{ color: 'var(--palette-c1-charcoal)' }}>
                 {settings.total_papers || 157}
               </div>
               <div className="credential-label">
@@ -168,7 +168,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
 
             <div className="credential-cell">
-              <div className="credential-number">
+              <div className="credential-number" style={{ color: 'var(--accent-sage-dark)' }}>
                 {settings.h_index || 42}
               </div>
               <div className="credential-label">
@@ -180,7 +180,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
 
             <div className="credential-cell">
-              <div className="credential-number">
+              <div className="credential-number" style={{ color: 'var(--palette-c1-charcoal)' }}>
                 {(settings.citations_count || 5296).toLocaleString()}
               </div>
               <div className="credential-label">
@@ -192,7 +192,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
 
             <div className="credential-cell">
-              <div className="credential-number">
+              <div className="credential-number" style={{ color: 'var(--accent-sage-dark)' }}>
                 Top 2%
               </div>
               <div className="credential-label">
@@ -221,7 +221,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             }}
           >
             <div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginBottom: '0.6rem' }}>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.6rem' }}>
                 Academic Qualifications
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -232,7 +232,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
 
             <div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginBottom: '0.6rem' }}>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.6rem' }}>
                 Teaching Career &amp; Leadership
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>
@@ -243,7 +243,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
 
             <div>
-              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-green)', fontWeight: 600, marginBottom: '0.6rem' }}>
+              <div style={{ fontFamily: 'var(--font-mono)', fontSize: '0.6875rem', letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--accent-sage-dark)', fontWeight: 600, marginBottom: '0.6rem' }}>
                 Research Supervision
               </div>
               <ul style={{ listStyle: 'none', padding: 0, margin: 0, fontSize: '0.875rem', color: 'var(--text-secondary)', lineHeight: 1.6 }}>

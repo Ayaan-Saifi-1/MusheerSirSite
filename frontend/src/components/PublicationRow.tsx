@@ -77,12 +77,14 @@ export const PublicationRow: React.FC<PublicationRowProps> = ({ publication }) =
           
           <span className="pub-row__meta-badges">
             {publication.impact_factor_as_listed && (
-              <span className="pub-badge" title="Journal Impact Factor as listed in CV">
-                IF: {publication.impact_factor_as_listed}
+              <span className="pub-badge pub-badge--if" title="Journal Impact Factor as listed in CV">
+                {publication.impact_factor_as_listed.startsWith('IF')
+                  ? publication.impact_factor_as_listed
+                  : `IF: ${publication.impact_factor_as_listed}`}
               </span>
             )}
             {publication.index_tags && (
-              <span className="pub-badge">
+              <span className="pub-badge pub-badge--scopus">
                 {publication.index_tags}
               </span>
             )}

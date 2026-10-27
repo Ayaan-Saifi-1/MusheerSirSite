@@ -220,12 +220,12 @@ export const Attractor3D: React.FC = () => {
     scene.add(group);
     groupRef.current = group;
 
-    // Line material with deep scholarly forest green
+    // Line material with Sage Green from palette (#75A06A)
     const material = new THREE.LineBasicMaterial({
-      color: 0x0E4B3B,
-      linewidth: 1.2,
+      color: 0x75A06A,
+      linewidth: 1.4,
       transparent: true,
-      opacity: 0.88,
+      opacity: 0.92,
     });
 
     const geometry = new THREE.BufferGeometry();

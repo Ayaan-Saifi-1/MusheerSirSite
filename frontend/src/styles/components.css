@@ -35,7 +35,7 @@
   font-size: var(--font-label);
   letter-spacing: var(--track-label);
   text-transform: uppercase;
-  color: var(--accent-green);
+  color: var(--accent-sage-dark);
   font-weight: 600;
   margin-bottom: 0.6rem;
 }
@@ -95,7 +95,7 @@
   font-size: 0.75rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-green);
+  color: var(--accent-sage-dark);
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -269,7 +269,7 @@
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-green);
+  color: var(--accent-sage-dark);
   font-weight: 600;
   margin-bottom: 0.35rem;
 }
@@ -335,9 +335,10 @@
 }
 
 .attractor-tab-btn.active {
-  color: var(--accent-green);
+  color: var(--palette-c1-charcoal);
   font-weight: 600;
-  text-decoration-color: var(--accent-green);
+  text-decoration-color: var(--accent-matcha);
+  text-decoration-thickness: 2px;
 }
 
 .attractor-actions {
@@ -400,6 +401,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: border-top-color 200ms ease;
+}
+
+.theme-card:hover {
+  border-top-color: var(--accent-sage);
 }
 
 .theme-card-top {
@@ -410,11 +416,16 @@
   font-family: var(--font-serif);
   font-size: 2.25rem;
   line-height: 1;
-  color: var(--accent-green);
+  color: var(--accent-sage);
   margin-bottom: 0.85rem;
   font-style: italic;
   font-weight: 400;
-  opacity: 0.9;
+  opacity: 0.95;
+  transition: color 150ms ease;
+}
+
+.theme-card:hover .theme-num {
+  color: var(--accent-sage-dark);
 }
 
 .theme-title {
@@ -529,12 +540,36 @@
 }
 
 .pub-badge {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--font-mono);
   font-size: 0.6875rem;
-  color: var(--accent-green);
   font-weight: 600;
   letter-spacing: 0.02em;
+  padding: 0.12rem 0.5rem;
+  border-radius: var(--radius-subtle);
+  background: var(--accent-sage-tint);
+  color: var(--accent-sage-dark);
+  border: 1px solid rgba(117, 160, 106, 0.4);
+}
+
+.pub-badge--if {
+  background: var(--accent-matcha-tint);
+  color: var(--accent-matcha-text);
+  border: 1px solid rgba(155, 205, 128, 0.65);
+  font-weight: 600;
+}
+
+.pub-badge--scopus {
+  background: var(--accent-sage-tint);
+  color: var(--accent-sage-dark);
+  border: 1px solid rgba(117, 160, 106, 0.4);
+}
+
+.pub-badge--selected {
+  background: var(--palette-c1-charcoal);
+  color: var(--palette-c3-matcha);
+  border: 1px solid var(--palette-c4-sage);
 }
 
 .pub-row__actions {
@@ -694,22 +729,22 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--accent-green);
-  color: #FFFFFF;
+  background-color: var(--palette-c1-charcoal);
+  color: var(--palette-c2-offwhite);
   padding: 0.75rem 1.6rem;
   font-family: var(--font-sans);
   font-size: var(--font-body-sm);
   font-weight: 500;
   border-radius: var(--radius-button);
-  border: 1px solid var(--accent-green);
+  border: 1px solid var(--palette-c4-sage);
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 150ms ease, border-color 150ms ease;
+  transition: all 180ms ease;
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-green-hover);
-  border-color: var(--accent-green-hover);
+  background-color: var(--accent-sage-dark);
+  border-color: var(--accent-matcha);
   color: #FFFFFF;
 }
 
@@ -720,10 +755,11 @@
   font-family: var(--font-sans);
   font-size: var(--font-body-sm);
   font-weight: 500;
-  color: var(--accent-green);
+  color: var(--accent-sage-dark);
   text-decoration: underline;
-  text-decoration-color: var(--accent-green);
+  text-decoration-color: var(--accent-matcha);
   text-underline-offset: 4px;
+  text-decoration-thickness: 1.5px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -731,8 +767,8 @@
 }
 
 .btn-secondary:hover {
-  color: var(--accent-green-hover);
-  text-decoration-color: var(--accent-green-hover);
+  color: var(--palette-c1-charcoal);
+  text-decoration-color: var(--accent-sage);
 }
 
 /* Sticky Header */
@@ -786,9 +822,20 @@
   transition: color 150ms ease;
 }
 
-.site-header__link:hover,
+.site-header__link:hover {
+  color: var(--palette-c1-charcoal);
+  text-decoration: underline;
+  text-decoration-color: var(--accent-matcha);
+  text-underline-offset: 4px;
+}
+
 .site-header__link.active {
-  color: var(--accent-green);
+  color: var(--accent-sage-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-matcha);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
 }
 
 /* Mobile Menu Toggle */

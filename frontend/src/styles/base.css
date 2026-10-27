@@ -48,8 +48,8 @@ body {
 
 /* Restrained selection styling */
 ::selection {
-  background: var(--accent-green-tint);
-  color: var(--accent-green);
+  background: var(--accent-matcha-tint);
+  color: var(--palette-c1-charcoal);
 }
 
 /* Hairline rule */
@@ -61,7 +61,7 @@ hr {
 
 /* Accessible, crisp focus rings */
 :focus-visible {
-  outline: 2px solid var(--accent-green);
+  outline: 2px solid var(--accent-sage);
   outline-offset: 2px;
 }
 

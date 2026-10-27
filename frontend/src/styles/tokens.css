@@ -4,20 +4,61 @@
    ==================================================================== */
 
 :root {
-  /* Color Palette — Authentic Swiss Academic Off-White Paper Palette */
-  --bg-primary: #F7F6F2;
-  --bg-secondary: #ECE9E2;
-  --bg-tertiary: #E2DED5;
-  --text-primary: #14171A;
-  --text-secondary: #4F555D;
-  --text-muted: #7A808A;
-  --border-hairline: #DCD7CE;
-  --border-strong: #14171A;
+  /* ====================================================================
+     EXACT 5-SWATCH ORGANIC SAGE & CHARCOAL PALETTE
+     Directly extracted from user palette image:
+     - Swatch 1 (#1F1F1F): Carbon Charcoal Deep Ink
+     - Swatch 2 (#F0F0F0): Crisp Off-White Foundation
+     - Swatch 3 (#9BCD80): Vibrant Pistachio / Matcha Accent
+     - Swatch 4 (#75A06A): Medium Mountain Sage Foliage
+     - Swatch 5 (#272826): Warm Dark Olive Charcoal
+     ==================================================================== */
+  --palette-c1-charcoal: #1F1F1F;
+  --palette-c2-offwhite: #F0F0F0;
+  --palette-c3-matcha:   #9BCD80;
+  --palette-c4-sage:     #75A06A;
+  --palette-c5-deepink:  #272826;
 
-  /* Single Accent: Deep Scholarly Forest Green (Jamia Millia Islamia Heritage) */
-  --accent-green: #0E4B3B;
-  --accent-green-hover: #093328;
-  --accent-green-tint: rgba(14, 75, 59, 0.08);
+  /* Surfaces & Backgrounds */
+  --bg-primary: #F0F0F0;
+  --bg-secondary: #E3E7E1;
+  --bg-elevated: #F7FAF6;
+  --bg-dark: #1F1F1F;
+
+  /* Typography Inks */
+  --text-primary: #1F1F1F;
+  --text-secondary: #485246;
+  --text-muted: #727C70;
+  --text-on-dark: #F0F0F0;
+  --border-hairline: #D0D6CD;
+  --border-strong: #272826;
+
+  /* Primary Accent: Sage Forest Green (Swatch 4 #75A06A & readable text shade #44683B) */
+  --accent-sage: #75A06A;
+  --accent-sage-dark: #44683B;
+  --accent-sage-hover: #5B8452;
+  --accent-sage-tint: rgba(117, 160, 106, 0.15);
+
+  /* Secondary Accent: Matcha / Pistachio (Swatch 3 #9BCD80 for active highlights, badges & glow) */
+  --accent-matcha: #9BCD80;
+  --accent-matcha-hover: #8ABF6F;
+  --accent-matcha-tint: rgba(155, 205, 128, 0.24);
+  --accent-matcha-text: #274D1C;
+
+  /* Scholarly Accents mapped to the 5-swatch palette */
+  --accent-green: var(--accent-sage-dark);
+  --accent-green-hover: var(--accent-sage-hover);
+  --accent-green-tint: var(--accent-sage-tint);
+  --accent-green-light: var(--accent-matcha);
+
+  --accent-teal: var(--accent-sage);
+  --accent-teal-hover: var(--accent-sage-hover);
+  --accent-teal-tint: var(--accent-sage-tint);
+
+  --accent-amber: var(--accent-matcha);
+  --accent-amber-hover: var(--accent-matcha-hover);
+  --accent-amber-tint: var(--accent-matcha-tint);
+  --accent-amber-text: var(--accent-matcha-text);
 
   /* Typography Families */
   --font-serif: "Newsreader", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
