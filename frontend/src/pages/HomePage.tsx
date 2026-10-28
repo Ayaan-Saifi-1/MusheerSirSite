@@ -119,7 +119,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
               </div>
             </div>
 
-            {/* 5 Columns: Official Faculty Portrait & Archival Office Plate */}
+            {/* 5 Columns: Official Faculty Portrait & Stanford Top 2% Distinction Plaque */}
             <div className="hero-portrait-col">
               <div className="hero-portrait-wrap">
                 <img
@@ -129,21 +129,27 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   loading="eager"
                 />
 
-                {/* Archival Faculty Coordinates Plate (Real campus office location, no redundant title text) */}
-                <div className="faculty-dossier-plate">
-                  <div className="faculty-dossier-plate__item">
-                    <Building2 size={13} strokeWidth={2} />
-                    <span>{settings.office_room || 'Room 318, FET Building, Jamia Millia Islamia'}</span>
+                {/* Global Scientific Recognition Plaque directly in the hero section under the portrait */}
+                <div className="portrait-honor-card">
+                  <div className="portrait-honor-card__kicker">
+                    <Award size={13} strokeWidth={2.2} />
+                    <span>Global Scientific Recognition &bull; Stanford &amp; Elsevier</span>
                   </div>
-                  <div className="faculty-dossier-plate__item">
-                    <Mail size={13} strokeWidth={2} />
-                    <a href={`mailto:${settings.email_primary || 'mahmad9@jmi.ac.in'}`} className="faculty-email-link">
-                      {settings.email_primary || 'mahmad9@jmi.ac.in'}
-                    </a>
-                  </div>
-                  <div className="faculty-dossier-plate__item">
-                    <MapPin size={13} strokeWidth={2} />
-                    <span>{settings.location || 'Jamia Nagar, Okhla, New Delhi - 110025'}</span>
+                  <h3 className="portrait-honor-card__title">
+                    Ranked Among the World's Top 2% Scientists
+                  </h3>
+                  <p className="portrait-honor-card__text">
+                    Recognized in the globally acclaimed Stanford-Elsevier database for exceptional scholarly impact across both <strong>Career-Long Impact</strong> and <strong>Single-Year Impact (2022, 2023, 2024)</strong> in Information &amp; Communication Technologies, Networking &amp; Cryptology.
+                  </p>
+                  <div className="portrait-honor-card__stats">
+                    <div className="portrait-honor-card__stat">
+                      <span className="stat-number">Top 2%</span>
+                      <span className="stat-label">Global Percentile</span>
+                    </div>
+                    <div className="portrait-honor-card__stat">
+                      <span className="stat-number">4+</span>
+                      <span className="stat-label">Consecutive Years</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -226,36 +232,6 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   <span>JMI Profile</span>
                 </a>
               )}
-            </div>
-          </div>
-
-          {/* Stanford University & Elsevier Top 2% Global Scientist Distinction Banner */}
-          <div className="stanford-distinction-banner">
-            <div className="stanford-distinction-banner__inner">
-              <div className="stanford-distinction-banner__badge">
-                <Award size={26} strokeWidth={1.8} />
-              </div>
-              <div className="stanford-distinction-banner__content">
-                <div className="stanford-distinction-banner__kicker">
-                  Global Scientific Recognition &bull; Stanford University &amp; Elsevier BV
-                </div>
-                <h2 className="stanford-distinction-banner__title">
-                  Ranked Among the World's Top 2% Scientists
-                </h2>
-                <p className="stanford-distinction-banner__text">
-                  Recognized in the globally acclaimed Stanford-Elsevier database for exceptional scholarly impact across both <strong>Career-Long Impact</strong> and <strong>Single-Year Impact (2022, 2023, 2024)</strong> in the disciplines of Information &amp; Communication Technologies, Networking &amp; Cryptology.
-                </p>
-              </div>
-              <div className="stanford-distinction-banner__meta">
-                <div className="stanford-distinction-banner__stat">
-                  <span className="stat-number">Top 2%</span>
-                  <span className="stat-label">Global Percentile</span>
-                </div>
-                <div className="stanford-distinction-banner__stat">
-                  <span className="stat-number">4+</span>
-                  <span className="stat-label">Consecutive Years</span>
-                </div>
-              </div>
             </div>
           </div>
 
