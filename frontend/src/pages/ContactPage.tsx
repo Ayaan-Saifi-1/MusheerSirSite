@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { SiteSettings } from '../lib/types';
+import { submitProspectiveApplication } from '../lib/api';
 import {
   GoogleScholarLogo,
   ScopusLogo,
@@ -47,30 +48,25 @@ export const ContactPage: React.FC<ContactPageProps> = ({ settings }) => {
     setErrorMessage(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/apply/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          full_name: formData.name,
-          email: formData.email,
-          current_institution: formData.affiliation || 'Direct Correspondence',
-          degree_and_gpa: 'Academic Contact Message',
-          position_applied_for: `Contact: ${formData.subject || 'Direct Inquiry'}`,
-          research_statement: formData.message,
-          paper_reference: `Subject: ${formData.subject || 'Direct Message'}`,
-          cv_url_or_link: 'https://direct-contact.inquiry',
-          website_hp: formData.website_hp,
-        }),
+      await submitProspectiveApplication({
+        full_name: formData.name,
+        email: formData.email,
+        current_institution: formData.affiliation || 'Direct Correspondence',
+        degree_and_gpa: 'Academic Contact Message',
+        position_applied_for: `Contact: ${formData.subject || 'Direct Inquiry'}`,
+        research_statement: formData.message,
+        paper_reference: `Subject: ${formData.subject || 'Direct Message'}`,
+        cv_url_or_link: 'https://direct-contact.inquiry',
+        website_hp: formData.website_hp,
       });
 
-      if (response.ok) {
-        setSubmitSuccess(true);
-      } else {
-        const err = await response.json().catch(() => null);
-        setErrorMessage(err?.detail || 'Failed to transmit message. Please email directly to mahmad9@jmi.ac.in');
-      }
-    } catch {
-      setErrorMessage('Network connection error. Please email directly to mahmad9@jmi.ac.in');
+      setSubmitSuccess(true);
+    } catch (err) {
+      setErrorMessage(
+        err instanceof Error
+          ? err.message
+          : 'Failed to transmit message. Please email directly to mahmad9@jmi.ac.in'
+      );
     } finally {
       setIsSubmitting(false);
     }

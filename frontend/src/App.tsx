@@ -67,7 +67,7 @@ const App: React.FC = () => {
         </h1>
         <p
           style={{
-            maxWidth: '500px',
+            maxWidth: '520px',
             color: 'var(--text-secondary)',
             marginBottom: '1.5rem',
             fontSize: '0.9375rem',
@@ -76,7 +76,7 @@ const App: React.FC = () => {
         >
           {error instanceof Error ? error.message : 'The API service could not be reached.'}
           <br />
-          Please ensure the Django backend server is running at <code>http://127.0.0.1:8000</code>.
+          Please ensure the Django backend server is running and reachable.
         </p>
         <button
           type="button"

@@ -4,11 +4,42 @@ import {
   ResearchTheme,
   NewsItem,
   ServiceItem,
+  TeamMember,
+  ResearchOpening,
+  ApplicationSubmission,
 } from './types';
 
 // Support Vite import.meta.env safely across TS configs
 const meta = import.meta as unknown as { env?: { VITE_API_URL?: string } };
-const API_BASE = (meta && meta.env && meta.env.VITE_API_URL) || 'http://127.0.0.1:8000/api/v1';
+
+// When VITE_API_URL is set (e.g. https://njbxd17r-8000.inc1.devtunnels.ms/api/v1), use it.
+// Otherwise default to relative '/api/v1', which works seamlessly on localhost and through Dev Tunnels via Vite's proxy.
+export const API_BASE = (() => {
+  if (meta && meta.env && meta.env.VITE_API_URL) {
+    return meta.env.VITE_API_URL.replace(/\/$/, '');
+  }
+  return '/api/v1';
+})();
+
+/**
+ * Resolves media paths (e.g. portraits, CV PDFs).
+ * Handles relative paths via Vite proxy or absolute URLs via backend tunnel.
+ */
+export function getMediaUrl(path?: string | null): string {
+  if (!path) return '';
+  if (path.startsWith('http://') || path.startsWith('https://')) return path;
+
+  if (meta && meta.env && meta.env.VITE_API_URL && meta.env.VITE_API_URL.startsWith('http')) {
+    try {
+      const origin = new URL(meta.env.VITE_API_URL).origin;
+      return `${origin}${path.startsWith('/') ? '' : '/'}${path}`;
+    } catch {
+      // fallback
+    }
+  }
+
+  return path.startsWith('/') ? path : `/${path}`;
+}
 
 export async function fetchHomePagePayload(): Promise<HomePagePayload> {
   const res = await fetch(`${API_BASE}/home/`);

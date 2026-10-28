@@ -146,7 +146,27 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGIN_REGEXES = [
     r"^http://localhost:\d+$",
     r"^http://127\.0\.0\.1:\d+$",
+    r"^https://.*\.devtunnels\.ms$",
+    r"^https://.*\.ngrok-free\.app$",
+    r"^https://.*\.loca\.lt$",
 ]
+
+# CSRF Trusted Origins (Required for Django 4+ when accessed via Dev Tunnels or external domains)
+CSRF_TRUSTED_ORIGINS = [
+    'https://*.devtunnels.ms',
+    'https://*.inc1.devtunnels.ms',
+    'https://*.ngrok-free.app',
+    'https://*.loca.lt',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
+
+# Forwarded headers when proxied through tunnels (VS Code Dev Tunnels, ngrok, reverse proxies)
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+USE_X_FORWARDED_HOST = True
+USE_X_FORWARDED_PORT = True
 
 # Django Unfold Configuration (Tailwind Modern Admin UI)
 UNFOLD = {

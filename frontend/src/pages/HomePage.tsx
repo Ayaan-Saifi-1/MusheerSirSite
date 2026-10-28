@@ -1,6 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { HomePagePayload } from '../lib/types';
+import { getMediaUrl } from '../lib/api';
 import { Section } from '../components/Section';
 import { Heading } from '../components/Heading';
 import { Button } from '../components/Button';
@@ -53,15 +54,11 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
   } = data;
 
   const portraitSrc = settings.portrait
-    ? settings.portrait.startsWith('http')
-      ? `${settings.portrait}?v=2`
-      : `http://127.0.0.1:8000${settings.portrait}?v=2`
+    ? `${getMediaUrl(settings.portrait)}?v=2`
     : '/portraits/dr_musheer_ahmad.png?v=2';
 
   const cvHref = settings.cv_file
-    ? settings.cv_file.startsWith('http')
-      ? settings.cv_file
-      : `http://127.0.0.1:8000${settings.cv_file}`
+    ? getMediaUrl(settings.cv_file)
     : settings.cv_url || '/cv';
 
   return (
