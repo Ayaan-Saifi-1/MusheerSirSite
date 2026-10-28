@@ -138,7 +138,8 @@ export const Layout: React.FC<LayoutProps> = ({
         <div className="container">
           <div className="site-header__inner">
             <Link to="/" className="site-header__brand">
-              {settings?.professor_name || 'Dr. Musheer Ahmad'}
+              <span className="site-header__brand-name">{settings?.professor_name || 'Dr. Musheer Ahmad'}</span>
+              <span className="site-header__brand-sub">Jamia Millia Islamia &bull; Cryptography Lab</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -159,10 +160,10 @@ export const Layout: React.FC<LayoutProps> = ({
               <NavLink
                 to="/cv"
                 className={({ isActive }) =>
-                  `site-header__link ${isActive ? 'active' : ''}`
+                  `site-header__link site-header__link--cv ${isActive ? 'active' : ''}`
                 }
               >
-                CV
+                <span>CV</span>
               </NavLink>
             </nav>
 

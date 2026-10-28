@@ -128,8 +128,13 @@ export interface Honor {
 export interface EditorialRole {
   id: number;
   journal_name: string;
-  role_title: string;
+  role_type?: string;
+  role_type_display?: string;
+  role_title?: string;
   publisher?: string;
+  indexing?: string;
+  special_issue_title?: string;
+  submission_deadline?: string;
   years_active?: string;
   order: number;
 }

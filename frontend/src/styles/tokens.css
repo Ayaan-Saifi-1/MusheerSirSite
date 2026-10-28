@@ -4,7 +4,7 @@
    ==================================================================== */
 
 :root {
-  /* ====================================================================
+   /* ====================================================================
      EXACT 5-SWATCH ORGANIC SAGE & CHARCOAL PALETTE
      Directly extracted from user palette image:
      - Swatch 1 (#1F1F1F): Carbon Charcoal Deep Ink
@@ -13,106 +13,106 @@
      - Swatch 4 (#75A06A): Medium Mountain Sage Foliage
      - Swatch 5 (#272826): Warm Dark Olive Charcoal
      ==================================================================== */
-  --palette-c1-charcoal: #1F1F1F;
-  --palette-c2-offwhite: #FFFFFF;
-  --palette-c3-matcha:   #9BCD80;
-  --palette-c4-sage:     #75A06A;
-  --palette-c5-deepink:  #272826;
+   --palette-c1-charcoal: #1F1F1F;
+   --palette-c2-offwhite: #FFFFFF;
+   --palette-c3-matcha: #9BCD80;
+   --palette-c4-sage: #75A06A;
+   --palette-c5-deepink: #272826;
 
-  /* Surfaces & Backgrounds */
-  --bg-primary: #FFFFFF;
-  --bg-secondary: #F8F9FA;
-  --bg-elevated: #FFFFFF;
-  --bg-dark: #1F1F1F;
+   /* Surfaces & Backgrounds */
+   --bg-primary: #FFFFFF;
+   --bg-secondary: #F8F9FA;
+   --bg-elevated: #FFFFFF;
+   --bg-dark: #1F1F1F;
 
-  /* Typography Inks — High Contrast Editorial Scale */
-  --text-primary: #1F1F1F;
-  --text-secondary: #262B25;
-  --text-muted: #4D564B;
-  --text-on-dark: #FFFFFF;
-  --border-hairline: #E5E7EB;
-  --border-strong: #272826;
+   /* Typography Inks — High Contrast Editorial Scale */
+   --text-primary: #1F1F1F;
+   --text-secondary: #262B25;
+   --text-muted: #4D564B;
+   --text-on-dark: #FFFFFF;
+   --border-hairline: #E5E7EB;
+   --border-strong: #272826;
 
-  /* Primary Accent: Sage Forest Green (Deepened to WCAG AAA contrast) */
-  --accent-sage: #75A06A;
-  --accent-sage-dark: #315328;
-  --accent-sage-hover: #486E3C;
-  --accent-sage-tint: rgba(117, 160, 106, 0.14);
+   /* Primary Accent: Sage Forest Green (Deepened to WCAG AAA contrast) */
+   --accent-sage: #75A06A;
+   --accent-sage-dark: #315328;
+   --accent-sage-hover: #486E3C;
+   --accent-sage-tint: rgba(117, 160, 106, 0.14);
 
-  /* Secondary Accent: Matcha / Pistachio (Swatch 3 #9BCD80 for active highlights, badges & glow) */
-  --accent-matcha: #9BCD80;
-  --accent-matcha-hover: #8ABF6F;
-  --accent-matcha-tint: rgba(155, 205, 128, 0.24);
-  --accent-matcha-text: #274D1C;
+   /* Secondary Accent: Matcha / Pistachio (Swatch 3 #9BCD80 for active highlights, badges & glow) */
+   --accent-matcha: #9BCD80;
+   --accent-matcha-hover: #8ABF6F;
+   --accent-matcha-tint: rgba(155, 205, 128, 0.24);
+   --accent-matcha-text: #274D1C;
 
-  /* Scholarly Accents mapped to the 5-swatch palette */
-  --accent-green: var(--accent-sage-dark);
-  --accent-green-hover: var(--accent-sage-hover);
-  --accent-green-tint: var(--accent-sage-tint);
-  --accent-green-light: var(--accent-matcha);
+   /* Scholarly Accents mapped to the 5-swatch palette */
+   --accent-green: var(--accent-sage-dark);
+   --accent-green-hover: var(--accent-sage-hover);
+   --accent-green-tint: var(--accent-sage-tint);
+   --accent-green-light: var(--accent-matcha);
 
-  --accent-teal: var(--accent-sage);
-  --accent-teal-hover: var(--accent-sage-hover);
-  --accent-teal-tint: var(--accent-sage-tint);
+   --accent-teal: var(--accent-sage);
+   --accent-teal-hover: var(--accent-sage-hover);
+   --accent-teal-tint: var(--accent-sage-tint);
 
-  --accent-amber: var(--accent-matcha);
-  --accent-amber-hover: var(--accent-matcha-hover);
-  --accent-amber-tint: var(--accent-matcha-tint);
-  --accent-amber-text: var(--accent-matcha-text);
+   --accent-amber: var(--accent-matcha);
+   --accent-amber-hover: var(--accent-matcha-hover);
+   --accent-amber-tint: var(--accent-matcha-tint);
+   --accent-amber-text: var(--accent-matcha-text);
 
-  /* Typography Families */
-  --font-serif: "Newsreader", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
-  --font-cursive: "Dancing Script", "Pacifico", "Alex Brush", "Great Vibes", cursive;
+   /* Typography Families */
+   --font-serif: "Newsreader", "Source Serif 4", Georgia, Cambria, "Times New Roman", serif;
+   --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+   --font-mono: "JetBrains Mono", Menlo, Consolas, Monaco, monospace;
+   --font-cursive: "Dancing Script", "Pacifico", "Alex Brush", "Great Vibes", cursive;
 
-  /* Fluid Typography Scale */
-  --font-display: clamp(2.5rem, 5.5vw, 4.25rem);
-  --line-display: 1.05;
-  --track-display: -0.025em;
+   /* Fluid Typography Scale */
+   --font-display: clamp(2.5rem, 5.5vw, 4.25rem);
+   --line-display: 1.05;
+   --track-display: -0.025em;
 
-  --font-h1: clamp(1.85rem, 3.5vw, 2.75rem);
-  --line-h1: 1.15;
-  --track-h1: -0.02em;
+   --font-h1: clamp(1.85rem, 3.5vw, 2.75rem);
+   --line-h1: 1.15;
+   --track-h1: -0.02em;
 
-  --font-h2: clamp(1.4rem, 2.5vw, 1.85rem);
-  --line-h2: 1.25;
-  --track-h2: -0.015em;
+   --font-h2: clamp(1.4rem, 2.5vw, 1.85rem);
+   --line-h2: 1.25;
+   --track-h2: -0.015em;
 
-  --font-h3: clamp(1.15rem, 1.8vw, 1.35rem);
-  --line-h3: 1.35;
-  --track-h3: -0.01em;
+   --font-h3: clamp(1.15rem, 1.8vw, 1.35rem);
+   --line-h3: 1.35;
+   --track-h3: -0.01em;
 
-  --font-body-lg: clamp(1.1rem, 1.3vw, 1.25rem);
-  --line-body-lg: 1.7;
+   --font-body-lg: clamp(1.1rem, 1.3vw, 1.25rem);
+   --line-body-lg: 1.7;
 
-  --font-body: 1.03125rem;
-  --line-body: 1.7;
+   --font-body: 1.03125rem;
+   --line-body: 1.7;
 
-  --font-body-sm: 0.9375rem;
-  --line-body-sm: 1.6;
+   --font-body-sm: 0.9375rem;
+   --line-body-sm: 1.6;
 
-  --font-caption: 0.8125rem;
-  --line-caption: 1.5;
+   --font-caption: 0.8125rem;
+   --line-caption: 1.5;
 
-  --font-label: 0.75rem;
-  --track-label: 0.08em;
+   --font-label: 0.75rem;
+   --track-label: 0.08em;
 
-  /* Grid & Spacing Scale */
-  --max-content-width: 1200px;
-  --text-max-ch: 68ch;
-  --section-spacing: clamp(4rem, 8vw, 7.5rem);
-  --gutter: clamp(1.25rem, 3vw, 2.5rem);
+   /* Grid & Spacing Scale */
+   --max-content-width: 1200px;
+   --text-max-ch: 68ch;
+   --section-spacing: clamp(4rem, 8vw, 7.5rem);
+   --gutter: clamp(1.25rem, 3vw, 2.5rem);
 
-  /* Borders & Curvature Scale — Organic Academic Architecture */
-  --radius-xs: 4px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-  --radius-full: 9999px;
-  --radius-pill: 9999px;
-  --radius-button: 9999px;
-  --radius-subtle: 8px;
-  --radius-card: 16px;
+   /* Borders & Curvature Scale — Organic Academic Architecture */
+   --radius-xs: 4px;
+   --radius-sm: 8px;
+   --radius-md: 12px;
+   --radius-lg: 18px;
+   --radius-xl: 24px;
+   --radius-full: 9999px;
+   --radius-pill: 9999px;
+   --radius-button: 9999px;
+   --radius-subtle: 8px;
+   --radius-card: 16px;
 }

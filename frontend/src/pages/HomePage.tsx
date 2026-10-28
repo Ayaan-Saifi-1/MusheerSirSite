@@ -102,14 +102,22 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
               )}
 
               <p className="hero-statement">
-                {home.hero_statement}
+                {home.hero_statement || "My research investigates the mathematical and algorithmic foundations of nonlinear chaotic dynamics, cryptographic substitution-box synthesis, and secure multimedia systems — bridging dynamical systems theory with practical, provably resilient cyber security."}
               </p>
 
-              {home.intro_body && (
-                <p className="hero-intro">
-                  {home.intro_body}
-                </p>
-              )}
+              <p className="hero-intro">
+                {home.intro_body || "Welcome. I am an Associate Professor in the Department of Computer Engineering at Jamia Millia Islamia, New Delhi, with over 18 years of pedagogical and doctoral research leadership. Our laboratory focuses on the design of hyperchaotic pseudo-random generators, algebraic S-box optimization, and medical DICOM image encryption."}
+              </p>
+
+              {/* Research Inquiries Chips */}
+              <div className="hero-disciplines">
+                <span className="hero-disciplines__label">Active Inquiries:</span>
+                <span className="hero-discipline-tag"># Chaos-Based Cryptography</span>
+                <span className="hero-discipline-tag"># Nonlinear S-Box Synthesis</span>
+                <span className="hero-discipline-tag"># Medical DICOM Encryption</span>
+                <span className="hero-discipline-tag"># Lightweight IoT Ciphers</span>
+                <span className="hero-discipline-tag"># DNA Sequence Computation</span>
+              </div>
 
               <div className="hero-actions">
                 <Button variant="primary" href="/publications">
@@ -121,7 +129,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
               </div>
             </div>
 
-            {/* 5 Columns: Official Faculty Portrait */}
+            {/* 5 Columns: Official Faculty Portrait & Archival Office Plate */}
             <div className="hero-portrait-col">
               <div className="hero-portrait-wrap">
                 <img
@@ -130,6 +138,24 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   className="hero-portrait-img"
                   loading="eager"
                 />
+
+                {/* Archival Faculty Coordinates Plate (Real campus office location, no redundant title text) */}
+                <div className="faculty-dossier-plate">
+                  <div className="faculty-dossier-plate__item">
+                    <Building2 size={13} strokeWidth={2} />
+                    <span>{settings.office_room || 'Room 318, FET Building, Jamia Millia Islamia'}</span>
+                  </div>
+                  <div className="faculty-dossier-plate__item">
+                    <Mail size={13} strokeWidth={2} />
+                    <a href={`mailto:${settings.email_primary || 'mahmad9@jmi.ac.in'}`} className="faculty-email-link">
+                      {settings.email_primary || 'mahmad9@jmi.ac.in'}
+                    </a>
+                  </div>
+                  <div className="faculty-dossier-plate__item">
+                    <MapPin size={13} strokeWidth={2} />
+                    <span>{settings.location || 'Jamia Nagar, Okhla, New Delhi - 110025'}</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -213,6 +239,36 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
             </div>
           </div>
 
+          {/* Stanford University & Elsevier Top 2% Global Scientist Distinction Banner */}
+          <div className="stanford-distinction-banner">
+            <div className="stanford-distinction-banner__inner">
+              <div className="stanford-distinction-banner__badge">
+                <Award size={26} strokeWidth={1.8} />
+              </div>
+              <div className="stanford-distinction-banner__content">
+                <div className="stanford-distinction-banner__kicker">
+                  Global Scientific Recognition &bull; Stanford University &amp; Elsevier BV
+                </div>
+                <h2 className="stanford-distinction-banner__title">
+                  Ranked Among the World's Top 2% Scientists
+                </h2>
+                <p className="stanford-distinction-banner__text">
+                  Recognized in the globally acclaimed Stanford-Elsevier database for exceptional scholarly impact across both <strong>Career-Long Impact</strong> and <strong>Single-Year Impact (2022, 2023, 2024)</strong> in the disciplines of Information &amp; Communication Technologies, Networking &amp; Cryptology.
+                </p>
+              </div>
+              <div className="stanford-distinction-banner__meta">
+                <div className="stanford-distinction-banner__stat">
+                  <span className="stat-number">Top 2%</span>
+                  <span className="stat-label">Global Percentile</span>
+                </div>
+                <div className="stanford-distinction-banner__stat">
+                  <span className="stat-number">4+</span>
+                  <span className="stat-label">Consecutive Years</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Credential Strip — 4 Full Width Columns */}
           <div className="credential-strip">
             <div className="credential-cell">
@@ -256,14 +312,14 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
             <div className="credential-cell">
               <div className="credential-number" style={{ color: 'var(--accent-sage-dark)' }}>
-                Top 2%
+                18+
               </div>
               <div className="credential-label" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.45rem' }}>
-                <Award size={13} strokeWidth={2.2} />
-                <span>World's Top 2% Scientist</span>
+                <BookOpen size={13} strokeWidth={2.2} />
+                <span>Years of Pedagogy</span>
               </div>
               <div className="credential-sub">
-                Stanford University & Elsevier (Career-long & Single-year)
+                Jamia Millia Islamia (2010–) &amp; AMU Aligarh (2006–2010)
               </div>
             </div>
           </div>
@@ -359,27 +415,34 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
       {/* Research Themes — 2x2 Grid Spanning Full Container */}
       {research_themes && research_themes.length > 0 && (
         <Section
-          label="01 / Research Inquiry"
-          title="Core Research Pillars"
-          description="Theoretical foundations and algorithmic contributions across nonlinear cryptography, multimedia security, and lightweight cyber systems."
+          label="Research Program"
+          title="Core Scientific Pillars"
+          description="Theoretical foundations, algebraic methodologies, and applied frameworks developed in the Cryptography & Nonlinear Systems Laboratory at Jamia Millia Islamia."
           id="research"
         >
           <div className="themes-grid">
             {research_themes.map((theme, index) => {
               const themeIcons = [
-                <Lock key="lock" size={20} strokeWidth={1.8} />,
-                <Binary key="bin" size={20} strokeWidth={1.8} />,
-                <ShieldCheck key="shield" size={20} strokeWidth={1.8} />,
-                <Activity key="act" size={20} strokeWidth={1.8} />,
+                <Lock key="lock" size={18} strokeWidth={1.8} />,
+                <Binary key="bin" size={18} strokeWidth={1.8} />,
+                <ShieldCheck key="shield" size={18} strokeWidth={1.8} />,
+                <Activity key="act" size={18} strokeWidth={1.8} />,
+              ];
+              const domainLabels = [
+                'Foundational Cryptology',
+                'Algebraic Optimization',
+                'Applied Cyber Security',
+                'Network Architectures',
               ];
               const selectedIcon = themeIcons[index % themeIcons.length];
+              const domainLabel = domainLabels[index % domainLabels.length];
 
               return (
                 <article key={theme.id} className="theme-card">
                   <div className="theme-card-top">
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.85rem' }}>
-                      <div className="theme-num">
-                        0{index + 1}
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.65rem' }}>
+                      <div className="theme-domain-badge">
+                        {domainLabel}
                       </div>
                       <div style={{ color: 'var(--accent-sage-dark)', opacity: 0.9 }}>
                         {selectedIcon}
@@ -411,9 +474,9 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
       {/* Selected Publications — Full Container Width */}
       {selected_publications && selected_publications.length > 0 && (
         <Section
-          label="02 / Selected Works"
-          title="Featured Publications"
-          description="Representative peer-reviewed papers in high-impact journals (IEEE, Springer, Elsevier) on chaos cryptology, S-box synthesis, and secure multimedia."
+          label="Selected Works"
+          title="Featured Peer-Reviewed Publications"
+          description="Representative contributions in premier IEEE Transactions, Springer, and Elsevier journals on chaos cryptology, S-box synthesis, and secure multimedia."
           id="publications"
         >
           <div className="pub-list">
@@ -437,9 +500,9 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
 
       {/* Recognition Section — Honors & Editorial Roles Split */}
       <Section
-        label="03 / Professional Distinction"
-        title="Honors, Awards & Editorial Boards"
-        description="International scientific recognitions, institutional awards, and editorial leadership across peer-reviewed journals."
+        label="Recognition & Service"
+        title="Honors, Scientific Awards & Editorial Appointments"
+        description="International scientific recognitions, institutional awards, and editorial leadership across SCI/SCIE peer-reviewed journals."
         id="honors"
       >
         <div className="recognition-grid">
@@ -493,12 +556,22 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                       {role.years_active || 'Current'}
                     </div>
                     <div>
+                      <span className="editorial-role-tag">
+                        {role.role_type_display || 'Editorial Board Member'}
+                      </span>
                       <div className="recognition-title">
                         {role.journal_name}
                       </div>
                       <div className="recognition-org">
-                        {role.role_title} {role.publisher && `(${role.publisher})`}
+                        {role.publisher && <span>{role.publisher}</span>}
+                        {role.indexing && <span> &bull; {role.indexing}</span>}
                       </div>
+                      {role.special_issue_title && (
+                        <div className="editorial-special-issue">
+                          Special Collection: &ldquo;{role.special_issue_title}&rdquo;
+                          {role.submission_deadline && ` (Deadline: ${role.submission_deadline})`}
+                        </div>
+                      )}
                     </div>
                   </li>
                 ))
@@ -521,9 +594,9 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
         <section className="editorial-section" id="join">
           <div className="container">
             <header className="section-header">
-              <span className="section-eyebrow">Research Supervision</span>
+              <span className="section-eyebrow">Academic Mentorship</span>
               <h2 className="section-header__title">
-                {settings.student_callout_heading || 'Prospective Researchers & Students'}
+                {settings.student_callout_heading || 'Prospective Researchers & Doctoral Scholars'}
               </h2>
             </header>
 
@@ -609,8 +682,9 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
       {/* Latest News & Announcements */}
       {latest_news && latest_news.length > 0 && (
         <Section
-          label="04 / Recent Milestones"
-          title="Announcements & News"
+          label="Lab Dispatches"
+          title="Recent News & Milestones"
+          description="Latest announcements regarding paper acceptances, keynote invitations, doctoral research milestones, and academic leadership."
           id="news"
         >
           <DateList items={latest_news} />
