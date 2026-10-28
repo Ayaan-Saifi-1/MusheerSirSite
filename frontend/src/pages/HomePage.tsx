@@ -76,7 +76,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
       </Helmet>
 
       {/* Hero Section — 12-Column Balanced Editorial Split (7 / 5) */}
-      <section className="editorial-section" style={{ paddingTop: 'clamp(3rem, 6vw, 5.5rem)' }}>
+      <section className="editorial-section" style={{ paddingTop: 'clamp(2rem, 3.5vw, 3.5rem)' }}>
         <div className="container">
           <div className="hero-grid">
             {/* 7 Columns: Identity, Appointment, Statement & Action Coordinates */}
@@ -119,7 +119,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
               </div>
             </div>
 
-            {/* 5 Columns: Official Faculty Portrait & Stanford Top 2% Distinction Plaque */}
+            {/* 5 Columns: Official Faculty Portrait & Completely Unboxed Stanford Recognition */}
             <div className="hero-portrait-col">
               <div className="hero-portrait-wrap">
                 <img
@@ -129,27 +129,19 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   loading="eager"
                 />
 
-                {/* Global Scientific Recognition Plaque directly in the hero section under the portrait */}
-                <div className="portrait-honor-card">
-                  <div className="portrait-honor-card__kicker">
+                {/* Completely Unboxed Editorial Recognition — Zero box, fits completely within hero above the fold */}
+                <div className="hero-unboxed-honor">
+                  <div className="hero-unboxed-honor__kicker">
                     <Award size={13} strokeWidth={2.2} />
-                    <span>Global Scientific Recognition &bull; Stanford &amp; Elsevier</span>
+                    <span>World's Top 2% Scientists &bull; Stanford &amp; Elsevier</span>
                   </div>
-                  <h3 className="portrait-honor-card__title">
-                    Ranked Among the World's Top 2% Scientists
-                  </h3>
-                  <p className="portrait-honor-card__text">
-                    Recognized in the globally acclaimed Stanford-Elsevier database for exceptional scholarly impact across both <strong>Career-Long Impact</strong> and <strong>Single-Year Impact (2022, 2023, 2024)</strong> in Information &amp; Communication Technologies, Networking &amp; Cryptology.
-                  </p>
-                  <div className="portrait-honor-card__stats">
-                    <div className="portrait-honor-card__stat">
-                      <span className="stat-number">Top 2%</span>
-                      <span className="stat-label">Global Percentile</span>
-                    </div>
-                    <div className="portrait-honor-card__stat">
-                      <span className="stat-number">4+</span>
-                      <span className="stat-label">Consecutive Years</span>
-                    </div>
+                  <div className="hero-unboxed-honor__text">
+                    Ranked across <strong>Career-Long</strong> &amp; <strong>Single-Year Impact (2022–2024)</strong> in Cryptology &amp; Information Security.
+                  </div>
+                  <div className="hero-unboxed-honor__stats">
+                    <span><strong>Top 2%</strong> Global Percentile</span>
+                    <span className="stat-sep" aria-hidden="true">&bull;</span>
+                    <span><strong>4+ Years</strong> Consecutive</span>
                   </div>
                 </div>
               </div>

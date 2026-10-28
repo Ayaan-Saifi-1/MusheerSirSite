@@ -226,7 +226,7 @@
 }
 
 .hero-portrait-wrap {
-  max-width: 360px;
+  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -278,81 +278,67 @@
   text-transform: uppercase;
 }
 
-/* Portrait Honor Card — Stanford Top 2% Global Recognition under Portrait */
-.portrait-honor-card {
-  margin-top: 1.25rem;
-  padding: 1.15rem 1.25rem;
-  background: var(--bg-primary);
-  border: 1px solid var(--border-hairline);
-  border-radius: var(--radius-card);
-  box-shadow: 0 4px 16px rgba(31, 31, 31, 0.04);
-  display: flex;
-  flex-direction: column;
+/* Unboxed Hero Recognition (Completely unboxed, zero borders, zero background) */
+.hero-unboxed-honor {
+  margin-top: 0.85rem;
+  padding: 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-.portrait-honor-card__kicker {
+.hero-unboxed-honor__kicker {
   display: flex;
   align-items: center;
-  gap: 0.45rem;
+  gap: 0.4rem;
   font-family: var(--font-mono);
-  font-size: 0.6875rem;
-  letter-spacing: 0.06em;
+  font-size: 0.71875rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: var(--accent-sage-dark);
   font-weight: 600;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.35;
 }
 
-.portrait-honor-card__kicker svg {
+.hero-unboxed-honor__kicker svg {
   color: var(--accent-sage-dark);
   flex-shrink: 0;
 }
 
-.portrait-honor-card__title {
-  font-family: var(--font-serif);
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: var(--text-primary);
-  line-height: 1.35;
-  margin: 0 0 0.45rem 0;
-}
-
-.portrait-honor-card__text {
+.hero-unboxed-honor__text {
   font-size: 0.8125rem;
   color: var(--text-secondary);
-  line-height: 1.55;
-  margin: 0 0 0.85rem 0;
+  line-height: 1.45;
+  margin-bottom: 0.35rem;
 }
 
-.portrait-honor-card__stats {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.75rem;
-  border-top: 1px solid var(--border-hairline);
-  padding-top: 0.75rem;
-}
-
-.portrait-honor-card__stat {
-  display: flex;
-  flex-direction: column;
-}
-
-.portrait-honor-card__stat .stat-number {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
+.hero-unboxed-honor__text strong {
+  color: var(--text-primary);
   font-weight: 600;
-  color: var(--palette-c1-charcoal);
-  line-height: 1;
 }
 
-.portrait-honor-card__stat .stat-label {
+.hero-unboxed-honor__stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
   font-family: var(--font-mono);
-  font-size: 0.65rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-size: 0.75rem;
   color: var(--text-muted);
-  margin-top: 0.2rem;
 }
+
+.hero-unboxed-honor__stats strong {
+  color: var(--palette-c1-charcoal);
+  font-weight: 600;
+}
+
+.hero-unboxed-honor__stats .stat-sep {
+  color: var(--border-hairline);
+  font-size: 0.75rem;
+  user-select: none;
+}
+
 
 /* Hero Disciplines Chips */
 .hero-disciplines {
