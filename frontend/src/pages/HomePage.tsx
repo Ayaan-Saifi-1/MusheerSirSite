@@ -76,7 +76,7 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
       </Helmet>
 
       {/* Hero Section — 12-Column Balanced Editorial Split (7 / 5) */}
-      <section className="editorial-section" style={{ paddingTop: 'clamp(2rem, 3.5vw, 3.5rem)' }}>
+      <section className="editorial-section" style={{ paddingTop: 'clamp(1.25rem, 2vw, 1.85rem)' }}>
         <div className="container">
           <div className="hero-grid">
             {/* 7 Columns: Identity, Appointment, Statement & Action Coordinates */}
@@ -129,19 +129,25 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                   loading="eager"
                 />
 
-                {/* Completely Unboxed Editorial Recognition — Zero box, fits completely within hero above the fold */}
+                {/* Completely Unboxed Editorial Recognition — Zero box, fills vertical height naturally */}
                 <div className="hero-unboxed-honor">
                   <div className="hero-unboxed-honor__kicker">
-                    <Award size={13} strokeWidth={2.2} />
+                    <Award size={18} strokeWidth={2.4} />
                     <span>World's Top 2% Scientists &bull; Stanford &amp; Elsevier</span>
                   </div>
                   <div className="hero-unboxed-honor__text">
                     Ranked across <strong>Career-Long</strong> &amp; <strong>Single-Year Impact (2022–2024)</strong> in Cryptology &amp; Information Security.
                   </div>
                   <div className="hero-unboxed-honor__stats">
-                    <span><strong>Top 2%</strong> Global Percentile</span>
+                    <div className="hero-unboxed-honor__stat-item">
+                      <span className="stat-number">Top 2%</span>
+                      <span className="stat-desc">Global Percentile</span>
+                    </div>
                     <span className="stat-sep" aria-hidden="true">&bull;</span>
-                    <span><strong>4+ Years</strong> Consecutive</span>
+                    <div className="hero-unboxed-honor__stat-item">
+                      <span className="stat-number">4+ Years</span>
+                      <span className="stat-desc">Consecutive</span>
+                    </div>
                   </div>
                 </div>
               </div>
