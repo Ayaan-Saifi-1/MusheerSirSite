@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Academic Medallion Foundation (High contrast across dark & light browser tabs) -->
+  <defs>
+    <linearGradient id="nib-grad-left" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="nib-grad-right" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BCD80" />
+      <stop offset="100%" stop-color="#75A06A" />
+    </linearGradient>
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9BCD80" />
+      <stop offset="100%" stop-color="#75A06A" />
+    </linearGradient>
+  </defs>
+
+  <!-- Outer Scholarly Seal Base -->
+  <circle cx="32" cy="32" r="30" fill="#1F1F1F" stroke="url(#ring-grad)" stroke-width="2.5" />
+
+  <!-- Academic Fountain Pen Nib — Left Facet -->
+  <path
+    d="M 32 9
+       C 30 14, 21 23, 20 28
+       C 19 33, 22 39, 21.5 45
+       L 19 53
+       C 24 51, 28 50, 32 50
+       L 32 9 Z"
+    fill="url(#nib-grad-left)"
+  />
+
+  <!-- Academic Fountain Pen Nib — Right Facet -->
+  <path
+    d="M 32 9
+       C 34 14, 43 23, 44 28
+       C 45 33, 42 39, 42.5 45
+       L 45 53
+       C 40 51, 36 50, 32 50
+       L 32 9 Z"
+    fill="url(#nib-grad-right)"
+  />
+
+  <!-- Cryptographic / Scholarly Breather Keyhole & Slit -->
+  <!-- Central Slit Line -->
+  <line x1="32" y1="9" x2="32" y2="27" stroke="#1F1F1F" stroke-width="1.75" stroke-linecap="round" />
+
+  <!-- Keyhole Breather (Uniting Cryptography & Academic Authorship) -->
+  <circle cx="32" cy="30" r="3" fill="#1F1F1F" />
+  <polygon points="30.5,31 33.5,31 34.2,36 29.8,36" fill="#1F1F1F" />
+
+  <!-- Classical Nib Hallmark / Scrollwork Engraving -->
+  <path
+    d="M 25 39 C 28 42, 36 42, 39 39"
+    fill="none"
+    stroke="#1F1F1F"
+    stroke-width="1.25"
+    stroke-linecap="round"
+    opacity="0.75"
+  />
+
+  <!-- Precision Nib Point Radiance Accent -->
+  <circle cx="32" cy="9" r="1.2" fill="#FFFFFF" />
+</svg>
