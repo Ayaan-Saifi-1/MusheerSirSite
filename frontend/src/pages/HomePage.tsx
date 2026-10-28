@@ -109,16 +109,6 @@ export const HomePage: React.FC<HomePageProps> = ({ data }) => {
                 {home.intro_body || "Welcome. I am an Associate Professor in the Department of Computer Engineering at Jamia Millia Islamia, New Delhi, with over 18 years of pedagogical and doctoral research leadership. Our laboratory focuses on the design of hyperchaotic pseudo-random generators, algebraic S-box optimization, and medical DICOM image encryption."}
               </p>
 
-              {/* Research Inquiries Chips */}
-              <div className="hero-disciplines">
-                <span className="hero-disciplines__label">Active Inquiries:</span>
-                <span className="hero-discipline-tag"># Chaos-Based Cryptography</span>
-                <span className="hero-discipline-tag"># Nonlinear S-Box Synthesis</span>
-                <span className="hero-discipline-tag"># Medical DICOM Encryption</span>
-                <span className="hero-discipline-tag"># Lightweight IoT Ciphers</span>
-                <span className="hero-discipline-tag"># DNA Sequence Computation</span>
-              </div>
-
               <div className="hero-actions">
                 <Button variant="primary" href="/publications">
                   View Publications ({settings.total_papers || 157})

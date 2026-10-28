@@ -161,7 +161,6 @@ function integrateTrajectory(config: AttractorConfig): Float32Array {
 export const Attractor3D: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const [activeType, setActiveType] = useState<AttractorType>('lorenz');
-  const [autoRotate, setAutoRotate] = useState<boolean>(true);
   const lineMeshRef = useRef<THREE.Line | null>(null);
   const sceneRef = useRef<THREE.Scene | null>(null);
   const cameraRef = useRef<THREE.PerspectiveCamera | null>(null);
@@ -241,7 +240,7 @@ export const Attractor3D: React.FC = () => {
     const animate = () => {
       animationFrameId = requestAnimationFrame(animate);
 
-      if (groupRef.current && autoRotate && !isDraggingRef.current) {
+      if (groupRef.current && !isDraggingRef.current) {
         groupRef.current.rotation.y += 0.0035;
         groupRef.current.rotation.x += 0.001;
       }
@@ -317,15 +316,6 @@ export const Attractor3D: React.FC = () => {
     updateGeometry(type);
   };
 
-  const resetCamera = () => {
-    if (cameraRef.current) {
-      cameraRef.current.position.set(0, 0, 260);
-    }
-    if (groupRef.current) {
-      groupRef.current.rotation.set(0.4, 0.6, 0);
-    }
-  };
-
   return (
     <div className="attractor-figure-wrap">
       <div className="attractor-controls-bar">
@@ -337,26 +327,9 @@ export const Attractor3D: React.FC = () => {
               onClick={() => handleSelectSystem(type)}
               className={`attractor-tab-btn ${activeType === type ? 'active' : ''}`}
             >
-              [{ATTRACTOR_CONFIGS[type].name}]
+              {ATTRACTOR_CONFIGS[type].name}
             </button>
           ))}
-        </div>
-
-        <div className="attractor-actions">
-          <button
-            type="button"
-            onClick={() => setAutoRotate(!autoRotate)}
-            className="attractor-tab-btn"
-          >
-            {autoRotate ? '[Pause Rotation]' : '[Play Rotation]'}
-          </button>
-          <button
-            type="button"
-            onClick={resetCamera}
-            className="attractor-tab-btn"
-          >
-            [Reset Angle]
-          </button>
         </div>
       </div>
 

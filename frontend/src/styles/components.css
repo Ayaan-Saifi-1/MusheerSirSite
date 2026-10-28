@@ -354,20 +354,19 @@
   color: var(--palette-c1-charcoal);
 }
 
-/* Stanford University & Elsevier Distinction Banner */
+/* Stanford University & Elsevier Distinction Banner — Completely Neutral Unboxed / Hairline Styling */
 .stanford-distinction-banner {
   margin-top: 2.75rem;
-  background: linear-gradient(135deg, rgba(117, 160, 106, 0.08) 0%, rgba(245, 247, 248, 0.5) 100%);
-  border: 1px solid rgba(117, 160, 106, 0.3);
-  border-left: 4px solid var(--accent-sage-dark);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-hairline);
   border-radius: var(--radius-card);
   padding: 1.65rem 2rem;
   transition: border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .stanford-distinction-banner:hover {
-  border-color: rgba(117, 160, 106, 0.5);
-  box-shadow: 0 8px 24px rgba(117, 160, 106, 0.09);
+  border-color: var(--border-hairline);
+  box-shadow: 0 6px 20px rgba(31, 31, 31, 0.04);
 }
 
 .stanford-distinction-banner__inner {
@@ -385,14 +384,15 @@
 }
 
 .stanford-distinction-banner__badge {
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   border-radius: var(--radius-pill);
-  background: rgba(117, 160, 106, 0.15);
+  background: rgba(31, 31, 31, 0.04);
+  border: 1px solid var(--border-hairline);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-sage-dark);
+  color: var(--text-primary);
   flex-shrink: 0;
 }
 
@@ -401,7 +401,7 @@
   font-size: 0.6875rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--accent-sage-dark);
+  color: var(--text-muted);
   font-weight: 600;
   margin-bottom: 0.35rem;
 }
@@ -426,14 +426,14 @@
 .stanford-distinction-banner__meta {
   display: flex;
   gap: 1.5rem;
-  border-top: 1px solid rgba(117, 160, 106, 0.2);
+  border-top: 1px solid var(--border-hairline);
   padding-top: 1rem;
 }
 
 @media (min-width: 860px) {
   .stanford-distinction-banner__meta {
     border-top: none;
-    border-left: 1px solid rgba(117, 160, 106, 0.25);
+    border-left: 1px solid var(--border-hairline);
     padding-top: 0;
     padding-left: 2rem;
     flex-direction: column;
